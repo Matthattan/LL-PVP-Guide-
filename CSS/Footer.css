@@ -1,0 +1,12 @@
+footer {
+    margin: auto;
+    border: 3px black solid;
+    text-align: center;
+    background-color: lightblue;
+}
+
+footer a{
+    text-align: center;
+    text-decoration: none;
+    color: #219DD7;
+}

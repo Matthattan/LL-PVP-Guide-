@@ -1,0 +1,20 @@
+body{
+    font-family: 'Russo One', sans-serif;
+    font-size: 28px;
+}
+
+header{
+    font-size: 56px;
+    background-image: url("../PVPImages/Home\ Page\ Image2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 3px black solid;
+    height: 400px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-decoration: underline;
+    color: white;
+}           
