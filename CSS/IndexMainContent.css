@@ -2,13 +2,13 @@
     position: relative;
     top: 20px;
     margin: auto;
-    width: 1200px;
+    width: 1080px;
     margin-bottom: 50px;
 }
 
 img{
     margin: auto;
-    width: 1200px;
+    width: 1080px;
     height: auto;
     border: 3px solid black;
     border-radius: 5px;
@@ -27,10 +27,21 @@ img{
 
 @media screen and (max-width: 600px) {
     .Introduction{
+        width: 400px;
+        font-size: 12px;
+    }
+
+    img{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .Introduction{
         width: 275px;
     }
 
-    .img{
+    img{
         width: 275px;
     }
 }

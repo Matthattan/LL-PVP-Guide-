@@ -1,12 +1,12 @@
 .paragraph1{
     margin: auto;
-    width: 1200px;
+    width: 1080px;
     height: auto;
 }
 
 table {
     border-collapse: collapse;
-    width: 1200px;
+    width: 1080px;
     border: 2px solid black;
     display: block;
 }
@@ -22,7 +22,7 @@ tr:nth-child(even) {
 
 #location{
     margin: auto;
-    width: 1200px;
+    width: 1080px;
     height: auto;
     border: 3px solid #000000;
     border-radius: 5px;
@@ -53,20 +53,16 @@ tr:nth-child(even) {
 
 @media screen and (max-width: 1080px) {
     .paragraph1{
-        margin: 0;
         width: 800px;
         overflow-x:auto
     }
 
     #location{
-        margin: 0;
         width: 800px;
-        display: none;
     }
 
-    .table{
+    table{
         width: 800px;
-        font-size: 2px
     }
 
     #sprite{
@@ -77,18 +73,18 @@ tr:nth-child(even) {
 
 @media screen and (max-width: 800px) {
     .paragraph1{
-        width: 400px;
+        width: 600px;
+        font-size: 12px;
     }
 
     #location{
-        width: 400px;
-        display: none;
+        width: 600px;
     }
 
-    .table{
-        width: 400px;
+    table{
+        width: 600px;
         height: auto;
-        font-size: xx-small;
+        font-size: 12px;
     }
 
     #sprite{
@@ -98,18 +94,17 @@ tr:nth-child(even) {
 
 @media screen and (max-width: 600px) {
     .paragraph1{
-        width: 200px;
+        width: 350px;
     }
 
     #location{
-        width: 200px;
-        display: none;
+        width: 350px;
     }
 
-    .table{
-        width: 200px;
+    table{
+        width: 350px;
         height: auto;
-        font-size: xx-small;
+        font-size: 12px;
     }
 
     #sprite{

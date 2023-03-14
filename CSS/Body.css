@@ -1,6 +1,8 @@
 body{
     font-family: 'Russo One', sans-serif;
     font-size: 28px;
+    /**background-color: rgb(22,22,22,255);
+    color: rgb(120, 128, 134);**/
 }
 
 header{
@@ -17,4 +19,25 @@ header{
     display: flex;
     text-decoration: underline;
     color: white;
-}           
+}
+
+@media screen and (max-width: 1080px) {
+    header{
+        font-size: 30px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header{
+        font-size: 24px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header{
+        font-size: 20px;
+        height: 150px;
+    }
+}
