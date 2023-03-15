@@ -1,0 +1,296 @@
+.paragraph1{
+    margin: auto;
+    width: 1080px;
+    height: auto;
+    text-align: justify;
+}
+
+#Image{
+    margin: auto;
+    position: relative;
+    top: 10px;
+    margin-bottom: 20px;
+    height: 500px;
+    width: auto;
+    border: 3px solid #000000;
+    border-radius: 5px;
+    display: block;
+}
+
+#Team{
+    margin: auto;
+    display: block;
+    width: 800px;
+    border: 3px solid #000000;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.grid-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 16px;
+}
+
+.grid-cell2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+#Garlash{
+  height: 200px;
+  width: auto;
+}
+
+#RadiantForecast{
+  height: 150px;
+  width: auto;
+}
+
+#Falkyrie{
+  height: 300px;
+  width: auto;
+}
+
+#LoomianSprite{
+  height: 150px;
+  width: auto;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .paragraph1{
+    width: 800px;
+    height: auto;
+    text-align: left;
+  }
+
+  #Team{
+    width: 600px;
+    height: auto;
+  }
+
+.grid-container {
+    display: block;
+    grid-template-columns: auto;
+    width: 800px;
+    gap: 16px;
+  }
+
+  #TEChart{
+    width: 600px;
+    height: auto;
+  }
+
+  #LoomianSprite{
+    height: 100px;
+    width: auto;
+  }
+
+  .grid-container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 800px;
+    gap: 16px;
+  }
+
+  #Garlash{
+    height: 150px;
+    width: auto;
+  }
+
+  #RadiantForecast{
+    height: 125px;
+    width: auto;
+  }
+
+  #Falkyrie{
+    height: 250px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .paragraph1{
+    width: 600px;
+    height: auto;
+    text-align: left;
+    font-size: 20px;
+  }
+
+  #Team{
+    width: 400px;
+    height: auto;
+  }
+
+.grid-container {
+    display: block;
+    grid-template-columns: auto;
+    width: 600px;
+    gap: 16px;
+  }
+
+  #TEChart{
+    width: 600px;
+    height: auto;
+  }
+
+  #LoomianSprite{
+    height: 100px;
+    width: auto;
+  }
+
+  .grid-container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 600px;
+    gap: 16px;
+  }
+
+  #Garlash{
+    height: 100px;
+    width: auto;
+  }
+
+  #RadiantForecast{
+    height: 75px;
+    width: auto;
+  }
+
+  #Falkyrie{
+    height: 125px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .paragraph1{
+    width: 400px;
+    height: auto;
+    text-align: left;
+    font-size: 20px;
+  }
+
+  #Team{
+    width: 360px;
+    height: auto;
+  }
+
+  .grid-container {
+    display: block;
+    grid-template-columns: auto;
+    width: 360px;
+    gap: 16px;
+  }
+
+  .TEChart{
+    width: 360px;
+    height: auto;
+  }
+
+  #LoomianSprite{
+    height: 75px;
+    width: auto;
+  }
+
+  .grid-container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 360px;
+    gap: 16px;
+  }
+
+  #Garlash{
+    height: 100px;
+    width: auto;
+  }
+
+  #RadiantForecast{
+    height: 50px;
+    width: auto;
+  }
+
+  #Falkyrie{
+    height: 125px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .paragraph1{
+    width: 350px;
+    height: auto;
+    text-align: left;
+    font-size: 12px;
+  }
+
+  #Team{
+    width: 320px;
+    height: auto;
+  }
+
+  #Image{
+    width: 200px;
+    height: auto;
+  }
+
+  .grid-container {
+    display: block;
+    grid-template-columns: auto;
+    width: 350px;
+    gap: 16px;
+  }
+
+  .TEChart{
+    width: 350px;
+    height: auto;
+  }
+
+  #LoomianSprite{
+    height: 50px;
+    width: auto;
+  }
+
+  .grid-container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 350px;
+    gap: 16px;
+  }
+
+  #Garlash{
+    height: 75px;
+    width: auto;
+  }
+
+  #RadiantForecast{
+    height: 45px;
+    width: auto;
+  }
+
+  #Falkyrie{
+    height: 100px;
+    width: auto;
+  }
+}
+

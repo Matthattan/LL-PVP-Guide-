@@ -3,6 +3,7 @@ footer {
     border: 3px black solid;
     text-align: center;
     background-color: lightblue;
+    margin-top: 20px;
 }
 
 footer a{
