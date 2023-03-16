@@ -15,9 +15,9 @@
       <link rel="stylesheet" href="CSS/Body.css">
       <link rel="stylesheet" href="CSS/Navigation.css">
       <link rel="stylesheet" href="CSS/Footer.css">
+      <script src="JavaScript/NavBar.js"></script>
 
       <link rel="stylesheet" href="CSS/Teambuilding.css">
-
     </head>
     <body>
         <header>
@@ -30,8 +30,8 @@
             <a href="RallyRanch.html">Rally Ranch</a>
             <a href="#set making">Set Making</a>
             <a href="Teambuilding.html" class="active">Teambuilding</a>
-            <a href="#resources">Resources</a>
-            <a href="#credits">Credits</a>
+            <a href="Resources.html">Resources</a>
+            <a href="Credits.html">Credits</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()" title="responsive">
               <i class="fa fa-bars"></i>
             </a>
@@ -112,6 +112,7 @@
                     <u>Roles in PVP</u>
                 </h4>
                 <p>A Role is the function that the Loomian plays in the team. Loomians can also switch roles depending on what Personality they use or even what item they hold.</p>
+                <h4><u>Offensive Roles</u></h4>
                 <li>
                     <b>Wallbreaker</b> - A Loomian in which can deal heavy damage with the purpose of blowing holes into the opponent's defenses. They also can, and often do, have set up options to increase their damage, although some do not and use raw damage.
                 </li>
@@ -154,6 +155,7 @@
                       <img id="LoomianSprite" src="PVPImages/LoomianSprites/Imperior.webp" alt="Image 2">
                   </div>
                 </div>
+                <h4><u>Defensive Roles</u></h4>
                 <li>
                     <b>Wall</b> - A Loomian whose purpose is to halt the progress of the opponent. Usually by being very bulky and utilizing type interactions to take as little damage as possible and chip down the opponent. They can also make opportunities to continue or create momentum through some kind of utility.
                 </li>
@@ -182,6 +184,18 @@
                     <img id="LoomianSprite" src="PVPImages/LoomianSprites/Barblast.webp" alt="Image 2">
                   </div>
                 </div>
+                <p>Theres 3 different types of tanks/walls depending on how they are used defensively:</p>
+                <li>
+                  Melee defensive - These defensive Loomians are used to soak up melee hits and are usually weaker on the ranged side.
+                </li>
+                <li>
+                  Ranged defensive - These defensive Loomians are used to soak up ranged hits and are usually weaker on the melee side.
+                </li>
+                <li>
+                  Mixed defensive - These defensive Loomians primarily focus on dealing with threats that use moves that hit on a particular side but it doesn’t specialize in it. It can handle threats that hit on either side. 
+                </li>
+                <br>
+                <h4><u>Utility Roles</u></h4>
                 <li>
                   <b>Pivot</b> - Loomians that use moves that allows the player to switch Loomians during turns which helps maintain momentum. Pivots can be divided into two types: 
                   <br>
@@ -211,20 +225,58 @@
                       </div>
                     </div>
                 </li>
+                <li>
+                  <b>Barter Users</b> - Loomians that hold an item that can cripple the opposition when bartered. For example, Tahtab can run Specialty Boots purely because of the speed boost however, combined with barter, it can give the boots to a defensive Loomians which may prevent it from healing or putting pressure on your team. Metronette can inconspicuously hold Volcanic Ashes (Due to its Mysterious Cloak ability) and barter it to a melee attack in order to cripple its Melee Attack and chip away at its health.
+                  <br>
+                  <br>
+                  <div class="grid-container3">
+                    <div class="grid-cell2">
+                      <img id="LoomianSprite" src="PVPImages/LoomianSprites/Chartiki.webp" alt="Image 1">
+                    </div>
+                    <div class="grid-cell2">
+                      <img id="LoomianSprite" src="PVPImages/LoomianSprites/Lyricat.webp" alt="Image 2">
+                    </div>
+                    <div class="grid-cell2">
+                      <img id="LoomianSprite" src="PVPImages/LoomianSprites/Metronette.webp" alt="Image 2">
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <b>Priority</b> - Loomians that use priority moves such as shadow sprint or quick punch. It is mainly used on offensive Loomians to sneak in extra damage uncontested to secure a KO. However, this can be used by other Loomians to support the team like with the move Bait where it can be used to protect your teammate in the Doubles format.
+                  <br>
+                  <br>
+                  <div class="grid-container3">
+                    <div class="grid-cell2">
+                      <img id="LoomianSprite" src="PVPImages/LoomianSprites/Ursoul.webp" alt="Image 1">
+                    </div>
+                    <div class="grid-cell2">
+                      <img id="LoomianSprite" src="PVPImages/LoomianSprites/Mutagon.webp" alt="Image 2">
+                    </div>
+                    <div class="grid-cell2">
+                      <img id="LoomianSprite" src="PVPImages/LoomianSprites/Dyeborg.webp" alt="Image 2">
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <b>Stall Breaker</b> - A Loomian that is a wallbreaker however, also has added utility that can hinder the Stall Playstyle. Usually by inhibiting their functions by stopping their heals, status conditions etc. Examples Include Wise Wintrix, Specialization Meditoad and Provoke Zepholen.
+                  <br>
+                  <br>
+                  <div class="grid-container3">
+                    <div class="grid-cell2"> 
+                        <img id="LoomianSprite" src="PVPImages/LoomianSprites/Meditoad.webp" alt="Image 1">
+                    </div>
+                    <div class="grid-cell2">
+                      <img id="LoomianSprite" src="PVPImages/LoomianSprites/Zepholen.webp" alt="Image 2">
+                    </div>
+                    <div class="grid-cell2">
+                      <img id="LoomianSprite" src="PVPImages/LoomianSprites/Wintrix.webp" alt="Image 2">
+                    </div>
+                  </div>
+                </li>
             </div>
         </main>
         <footer>
             <a href="https://www.discordapp.com/users/298479810345172994">Matthattan#0454</a> - <a href="https://twitter.com/stuntmanforlyf"> @stuntmanforlyf</a> - <a href="https://github.com/Matthattan/Matthattan.github.io">Link to Repository</a>
         </footer>
-        <script>
-            function myFunction() {
-              var x = document.getElementById("myTopnav");
-              if (x.className === "topnav") {
-                x.className += " responsive";
-              } else {
-                x.className = "topnav";
-              }
-            }
-            </script>
     </body>
 </html>

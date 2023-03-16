@@ -32,8 +32,8 @@
             <a href="RallyRanch.html">Rally Ranch</a>
             <a href="#set making">Set Making</a>
             <a href="Teambuilding.html">Teambuilding</a>
-            <a href="#resources">Resources</a>
-            <a href="#credits">Credits</a>
+            <a href="Resources.html">Resources</a>
+            <a href="Credits.html">Credits</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()" title="responsive">
               <i class="fa fa-bars"></i>
             </a>
@@ -81,8 +81,10 @@
             <button class="panel">How do you read Damage Calculations?
             </button>
             <div class="panel2">
-                <p>The Damage Calculator is a useful tool that allows people to create and test sets without needing to prepare Loomians in game. After all, it would be a shame if you made a set in game and it turns out it doesn't work. 
-                    The format of the Damage Calculations may be confusing at first but its actually quite simple. Lets take a look at a Revenine vs an Oxidrake:</p>
+                <p>
+                    The Damage Calculator is a useful tool that allows people to create and test sets without needing to prepare Loomians in game. After all, it would be a shame if you made a set in game and it turns out it doesn't work. 
+                    The format of the Damage Calculations may be confusing at first but its actually quite simple. Lets take a look at a Revenine vs an Oxidrake:
+                </p>
                 <h4>
                     <span style="color: CadetBlue;">200</span> 
                     ++AtkR 
@@ -118,13 +120,14 @@
                     <span style="color: chartreuse;">Heavy Shield</span> - the item being used to defend against an attack. Note that if the attacker has the ability sly, the item will be ignored.
                     <br>
                     <br>
-                    <span style="color: deeppink;">111-131</span>- the range of how many health points can be deducted. Below the calculation shows the full range of possible health points that can be deducted.
+                    <span style="color: deeppink;">111-131</span> - the range of how many health points can be deducted. Below the calculation shows the full range of possible health points that can be deducted.
                     <br>
                     <br>
                     <span style="color: deeppink;">(57.8 - 68.2%)</span> - the range of how many health points can be deducted as a percentage
                     <br>
                     <br>
-                    <span style="color: deeppink;">-- 5.1% chance to 2HKO</span> - a summary of how many hits the move will take. Note that Moves such as Slap Down - which varies damage based on if the opposing Loomian has an item - is accounted for.</p>
+                    <span style="color: deeppink;">-- 5.1% chance to 2HKO</span> - a summary of how many hits the move will take. Note that Moves such as Slap Down - which varies damage based on if the opposing Loomian has an item - is accounted for.
+                </p>
             </div>
 
             <button class="panel">What is a Check?</button>
@@ -193,7 +196,7 @@
                 <p id="term">Movepool - the moves a Loomian has access to, whether that be from level up, rally or Move Manuals.</p>
                 <p id="term">OHKO/2HKO/3HKO...  - One Hit Knock Out/Two Hit Knock Out/Three Hit Knock Out.</p>
                 
-                <p id="term">SA - Secret Ability which are rarer abilities that Loomians have. Exceptions include Harvesect Evo Line, Icigool, Boonary and Swirelle.</p>
+                <p id="term">SA - Secret Ability which are rarer abilities that Loomians have. Exceptions include Harvesect Evo Line, Boonary and Swirelle.</p>
                 <h5>Usage Tierlist Definitions</h5>
                 <p id="term">Broke/Ubers - Loomians considered uncompetitive or over-centralizing to the competitive scene thus banned in tournaments.</p>
                 <p id="term">OU (OverUsed) - Loomians that have at least an 8.3% usage. Loomians in this tier can be used in OU tournaments and above.</p>
@@ -206,31 +209,6 @@
         <footer>
             <a href="https://www.discordapp.com/users/298479810345172994">Matthattan#0454</a> - <a href="https://twitter.com/stuntmanforlyf"> @stuntmanforlyf</a> - <a href="https://github.com/Matthattan/Matthattan.github.io">Link to Repository</a>
         </footer>
-        <script>
-            function myFunction() {
-              var x = document.getElementById("myTopnav");
-              if (x.className === "topnav") {
-                x.className += " responsive";
-              } else {
-                x.className = "topnav";
-              }
-            }
-        </script>
-        <script>
-            var acc = document.getElementsByClassName("panel");
-      var i;
-
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var panel = this.nextElementSibling;
-          if (panel.style.display === "block") {
-            panel.style.display = "none";
-          } else {
-            panel.style.display = "block";
-          }
-        });
-      }
-        </script>
+        <script src="JavaScript/Accordion.js"></script>
     </body>
 </html>
