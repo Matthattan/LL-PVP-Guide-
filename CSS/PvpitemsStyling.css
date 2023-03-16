@@ -72,7 +72,7 @@ tr:nth-child(even) {
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .paragraph1{
         width: 600px;
         font-size: 12px;
@@ -93,17 +93,17 @@ tr:nth-child(even) {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
     .paragraph1{
         width: 350px;
     }
 
     #location{
-        width: 350px;
+        width: 325px;
     }
 
     table{
-        width: 350px;
+        width: 335px;
         height: auto;
         font-size: 12px;
     }

@@ -77,6 +77,11 @@
   width: auto;
 }
 
+.note{
+  font-size: 20px;
+  text-align: left;
+}
+
 
 @media screen and (max-width: 1200px) {
   .paragraph1{
@@ -181,6 +186,11 @@
     height: 125px;
     width: auto;
   }
+
+  .note{
+    font-size: 12px;
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -233,6 +243,11 @@
   #Falkyrie{
     height: 125px;
     width: auto;
+  }
+
+  .note{
+    font-size: 12px;
+    text-align: left;
   }
 }
 
@@ -291,6 +306,11 @@
   #Falkyrie{
     height: 100px;
     width: auto;
+  }
+
+  .note{
+    font-size: 10px;
+    text-align: left;
   }
 }
 
