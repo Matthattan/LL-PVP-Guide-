@@ -17,7 +17,7 @@
     display: block;
 }
 
-#Team{
+.Team{
     margin: auto;
     display: block;
     width: 800px;
@@ -57,6 +57,10 @@
     gap: 16px;
 }
 
+ul{
+  padding-left: 0px;
+}
+
 #Garlash{
   height: 200px;
   width: auto;
@@ -72,7 +76,7 @@
   width: auto;
 }
 
-#LoomianSprite{
+.LoomianSprite{
   height: 150px;
   width: auto;
 }
@@ -90,12 +94,12 @@
     text-align: left;
   }
 
-  #Team{
+  .Team{
     width: 600px;
     height: auto;
   }
 
-.grid-container {
+  .grid-container {
     display: block;
     grid-template-columns: auto;
     width: 800px;
@@ -107,7 +111,7 @@
     height: auto;
   }
 
-  #LoomianSprite{
+  .LoomianSprite{
     height: 100px;
     width: auto;
   }
@@ -143,7 +147,7 @@
     font-size: 20px;
   }
 
-  #Team{
+  .Team{
     width: 400px;
     height: auto;
   }
@@ -155,12 +159,12 @@
     gap: 16px;
   }
 
-  #TEChart{
+  .TEChart{
     width: 600px;
     height: auto;
   }
 
-  #LoomianSprite{
+  .LoomianSprite{
     height: 100px;
     width: auto;
   }
@@ -201,7 +205,7 @@
     font-size: 20px;
   }
 
-  #Team{
+  .Team{
     width: 360px;
     height: auto;
   }
@@ -218,7 +222,7 @@
     height: auto;
   }
 
-  #LoomianSprite{
+  .LoomianSprite{
     height: 75px;
     width: auto;
   }
@@ -259,7 +263,7 @@
     font-size: 12px;
   }
 
-  #Team{
+  .Team{
     width: 320px;
     height: auto;
   }
@@ -281,7 +285,7 @@
     height: auto;
   }
 
-  #LoomianSprite{
+  .LoomianSprite{
     height: 50px;
     width: auto;
   }

@@ -7,12 +7,14 @@
 
 #location{
     margin: auto;
+    position: relative;
+    top: 10px;
     display: block;
     width: 1080px;
     height: auto;
     border: 3px solid #000000;
     border-radius: 5px;
-    margin-top: 10px;
+
 }
 
 #sprite{
@@ -30,7 +32,6 @@ table {
 
 th, td {
     text-align: left;
-    padding: 8px;
 }
 
 tr:nth-child(even) {
@@ -50,7 +51,6 @@ tr:nth-child(even) {
     table{
         width: 800px;
     }
-
 
 }
 

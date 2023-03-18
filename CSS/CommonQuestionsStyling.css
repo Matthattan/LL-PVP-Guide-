@@ -49,7 +49,7 @@ img{
     text-decoration:double;
 }
 
-#term{
+.term{
     background-color: #ccc;
     height: auto;
     padding: 10px;
