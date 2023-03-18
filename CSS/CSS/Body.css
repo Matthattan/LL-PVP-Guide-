@@ -1,0 +1,43 @@
+body{
+    font-family: 'Russo One', sans-serif;
+    font-size: 28px;
+    /**background-color: rgb(22,22,22,255);
+    color: rgb(120, 128, 134);**/
+}
+
+header{
+    font-size: 56px;
+    background-image: url("../PVPImages/Diagrams/Home\ Page\ Image2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 3px black solid;
+    height: 400px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-decoration: underline;
+    color: white;
+}
+
+@media screen and (max-width: 1080px) {
+    header{
+        font-size: 30px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header{
+        font-size: 24px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header{
+        font-size: 20px;
+        height: 150px;
+    }
+}

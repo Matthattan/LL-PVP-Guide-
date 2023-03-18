@@ -1,0 +1,26 @@
+footer {
+    margin: auto;
+    border: 3px black solid;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+}
+
+footer a{
+    text-align: center;
+    text-decoration: none;
+    color: #219DD7;
+}
+
+
+@media screen and (max-width: 600px) {
+    footer{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    footer{
+        font-size: 12px;
+    }
+}
