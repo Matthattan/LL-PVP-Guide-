@@ -2,13 +2,13 @@
 <html lang="en">
     <head>
         <title>Common Questions</title>
-        <meta charset="utf-8">
-        <meta name="author" content="Matthattan">
 
-        <meta name="title" content="Loomian Legacy PVP - Index Page">
-        <meta name="description" content="Introductory page">
+        <meta name="author" content="Matthattan">
+        <meta name="title" content="Loomian Legacy PVP - Common Questions">
+        <meta name="description" content="Simple FAQ for people getting into the competitive scene of Loomian Legacy">
         <meta name="keywords" content="Loomian Legacy, PVP, Loomian Legacy PVP, Matthattan, stuntmanforlyf, Roblox">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
        
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo+One">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,6 +18,7 @@
         <script src="JavaScript/NavBar.js"></script>
 
         <link rel="stylesheet" href="CSS/CommonQuestionsStyling.css">
+        <link rel="stylesheet" href="CSS/Calculation.css">
     </head>
     <style>
         
@@ -31,7 +32,7 @@
             <a href="CommonQuestions.html" class="active">Common Questions</a>
             <a href="PvpItems.html">PVP Items</a>
             <a href="RallyRanch.html">Rally Ranch</a>
-            <a href="#set making">Set Making</a>
+            <a href="SetMaking.html">Set Making</a>
             <a href="Teambuilding.html">Teambuilding</a>
             <a href="Resources.html">Resources</a>
             <a href="Credits.html">Credits</a>
@@ -87,47 +88,47 @@
                     The format of the Damage Calculations may be confusing at first but its actually quite simple. Lets take a look at a Revenine vs an Oxidrake:
                 </p>
                 <h4>
-                    <span style="color: CadetBlue;">200</span> 
+                    <span class="TPs">200</span> 
                     ++AtkR 
-                    <span style="color: chartreuse;">Power Cuffs</span> 
-                    <span style="color: blueviolet;"> Vengeance</span>
-                    <span style="color: darkred;">Revenine</span>
-                    <span style="color: darkgreen;"> Fire Breath</span> 
+                    <span class="Item">Power Cuffs</span> 
+                    <span class="Ability"> Vengeance</span>
+                    <span class="Loomian">Revenine</span>
+                    <span class="Attack"> Fire Breath</span> 
                     vs. 
-                    <span style="color: cadetblue;">200 HP / 200</span> ++DefR 
-                    <span style="color: chartreuse;">Heavy Shield</span> 
-                    <span style="color: darkred;">Oxidrake</span>
-                    <span style="color: deeppink">111-131 (57.8 - 68.2%) -- 5.1% chance to 2HKO</span>
+                    <span class="TPs">200 HP / 200</span> ++DefR 
+                    <span class="Item">Heavy Shield</span> 
+                    <span class="Loomian">Oxidrake</span>
+                    <span class="Summary">111-131 (57.8 - 68.2%) -- 5.1% chance to 2HKO</span>
                 </h4>
                 <p>
-                    <span style="color:cadetblue;">200</span> - the amount of TPs invested in the stat, note that UPs are not displayed in calculations due to users preferring them to be 40 by default.
+                    <span class="TPs">200</span> - the amount of TPs invested in the stat, note that UPs are not displayed in calculations due to users preferring them to be 40 by default.
                     <br>
                     <br>
                     ++AtkR/++DefR -  also known as Very Smart and Very Clever respectively, this is the indicator to what personality is being used in the Calculations (if any).
                     <br>
                     <br>
-                    <span style="color: chartreuse">Power Cuffs</span> - if the attacker is using an item that affects damage then it will be counted in the calculation.
+                    <span class="Item">Power Cuffs</span> - if the attacker is using an item that affects damage then it will be counted in the calculation.
                     <br>
                     <br>
-                    <span style="color: blueviolet;">Vengeance</span> - if an ability that impacts the attack is being used, it will be included in the calculation. Abilities such as Combustible or Noxious Weeds require the box next to their name to be selected for it to be counted in the calculation.
+                    <span class="Ability">Vengeance</span> - if an ability that impacts the attack is being used, it will be included in the calculation. Abilities such as Combustible or Noxious Weeds require the box next to their name to be selected for it to be counted in the calculation.
                     <br>
                     <br>
-                    <span style="color: darkred;">Revenine/Oxidrake</span> - the Loomian attacking and the Loomian defending, respectively.
+                    <span class="Loomian">Revenine/Oxidrake</span> - the Loomian attacking and the Loomian defending, respectively.
                     <br>
                     <br>
-                    <span style="color: darkgreen;">Fire Breath</span> - the move being used, the damage calculator also checks if the Type of the Move corresponds to the Type of the Loomian so the appropriate ATB (Attack Type Boost) can be given.
+                    <span class="Attack">Fire Breath</span> - the move being used, the damage calculator also checks if the Type of the Move corresponds to the Type of the Loomian so the appropriate ATB (Attack Type Boost) can be given.
                     <br>
                     <br>
-                    <span style="color: chartreuse;">Heavy Shield</span> - the item being used to defend against an attack. Note that if the attacker has the ability sly, the item will be ignored.
+                    <span class="Item">Heavy Shield</span> - the item being used to defend against an attack. Note that if the attacker has the ability sly, the item will be ignored.
                     <br>
                     <br>
-                    <span style="color: deeppink;">111-131</span> - the range of how many health points can be deducted. Below the calculation shows the full range of possible health points that can be deducted.
+                    <span class="Summary">111-131</span> - the range of how many health points can be deducted. Below the calculation shows the full range of possible health points that can be deducted.
                     <br>
                     <br>
-                    <span style="color: deeppink;">(57.8 - 68.2%)</span> - the range of how many health points can be deducted as a percentage
+                    <span class="Summary">(57.8 - 68.2%)</span> - the range of how many health points can be deducted as a percentage
                     <br>
                     <br>
-                    <span style="color: deeppink;">-- 5.1% chance to 2HKO</span> - a summary of how many hits the move will take. Note that Moves such as Slap Down - which varies damage based on if the opposing Loomian has an item - is accounted for.
+                    <span class="Summary">-- 5.1% chance to 2HKO</span> - a summary of how many hits the move will take. Note that Moves such as Slap Down - which varies damage based on if the opposing Loomian has an item - is accounted for.
                 </p>
             </div>
 
@@ -169,7 +170,6 @@
                     <h4>+1 200 +AtkM Dark Essence Power Jaw Tyrecks Chomp vs. 200 HP / 200 ++DefM Heavy Armor Luminami: 80-96 (38.6 - 46.4%) -- guaranteed 3HKO</h4> 
                 </p>
             </div>
-
             <button class="panel">What is a Counter?</button>
             <div class="panel2">
                 <p>
@@ -184,32 +184,32 @@
                     <h4>0 AtkM Sharp Claws Vesperatu Slap Down vs. 64 HP / 0 DefM Power Cuffs Mutagon: 102-122 (52.3 - 62.6%) -- 13.3% chance to 2HKO</h4>
                 </p>
             </div>
+            <script src="JavaScript/Accordion.js"></script>
             <div id="Terminology">
                 <h3>Terminology</h3>
-                <p id="term">2v2 - refers to the pvp format where 4 people battle sending out 1 Loomian at any one time.</p>
-                <p id="term">7x40 - 40 refers to how many UPS and the 7 refers to how many stats have those amount of UPs. Variations include 6x40 which means all UP stats are 40 and 7x0 which means all UP stats are 0.</p>
-                <p id="term">Attack Type Boost (ATB) - 25% strength Increase on moves that share the same type with the Loomian. if the Loomian has Awakening, ATB changes to 50% and if the Loomian has Ace, ATB changes to 100%.</p>
-                <p id="term">Chip(ped) - minimal amount of damage done to a Loomian allowing it to be within range of a fatal attack.</p>
-                <p id="term">Coverage - when a Loomian receives a move of a different type to be able to hit a Typing/Loomian.</p>
-                <p id="term">Doubles - refers to the pvp format where 2 people battle sending out 2 Loomians at any one time.</p>
-                <p id="term">GPVP - (Alpha) Gleaming PVP Loomians. They're mainly used to show off as alphas aren't a necessity for PVP.</p>
-                <p id="term">Meta(game) - what is currently being used within the colosseum, especially amongst competitive players.</p>
-                <p id="term">Movepool - the moves a Loomian has access to, whether that be from level up, rally or Move Manuals.</p>
-                <p id="term">OHKO/2HKO/3HKO...  - One Hit Knock Out/Two Hit Knock Out/Three Hit Knock Out.</p>
+                <p class="term">2v2 - refers to the pvp format where 4 people battle sending out 1 Loomian at any one time.</p>
+                <p class="term">7x40 - 40 refers to how many UPS and the 7 refers to how many stats have those amount of UPs. Variations include 6x40 which means all UP stats are 40 and 7x0 which means all UP stats are 0.</p>
+                <p class="term">Attack Type Boost (ATB) - 25% strength Increase on moves that share the same type with the Loomian. if the Loomian has Awakening, ATB changes to 50% and if the Loomian has Ace, ATB changes to 100%.</p>
+                <p class="term">Chip(ped) - minimal amount of damage done to a Loomian allowing it to be within range of a fatal attack.</p>
+                <p class="term">Coverage - when a Loomian receives a move of a different type to be able to hit a Typing/Loomian.</p>
+                <p class="term">Doubles - refers to the pvp format where 2 people battle sending out 2 Loomians at any one time.</p>
+                <p class="term">GPVP - (Alpha) Gleaming PVP Loomians. They're mainly used to show off as alphas aren't a necessity for PVP.</p>
+                <p class="term">Meta(game) - what is currently being used within the colosseum, especially amongst competitive players.</p>
+                <p class="term">Movepool - the moves a Loomian has access to, whether that be from level up, rally or Move Manuals.</p>
+                <p class="term">OHKO/2HKO/3HKO...  - One Hit Knock Out/Two Hit Knock Out/Three Hit Knock Out.</p>
                 
-                <p id="term">SA - Secret Ability which are rarer abilities that Loomians have. Exceptions include Harvesect Evo Line, Boonary and Swirelle.</p>
+                <p class="term">SA - Secret Ability which are rarer abilities that Loomians have. Exceptions include Harvesect Evo Line, Boonary and Swirelle.</p>
                 <h5>Usage Tierlist Definitions</h5>
-                <p id="term">Broke/Ubers - Loomians considered uncompetitive or over-centralizing to the competitive scene thus banned in tournaments.</p>
-                <p id="term">OU (OverUsed) - Loomians that have at least an 8.3% usage. Loomians in this tier can be used in OU tournaments and above.</p>
-                <p id="term">UUBL (UnderUsed BanList) - Loomians that have a usage lower than 8.3% however banned from UnderUsed tournaments due to being too powerful. They can be used in OU tournaments and above.</p>
-                <p id="term">UU (UnderUsed) - Loomians Loomians that have a usage lower than 8.3%. Loomians in this tier can be used in UU tournaments and above.</p>
-                <p id="term">NUBL (NeverUsed BanList) -  Loomians that do not have a usage however they are banned from Neverused tournaments due to being too powerful. They can be used in UU tournaments and above.</p>
-                <p id="term">NU (NeverUsed) - Loomians that do not have a usage. Loomians in this tier can be used to OU tournements and above.</p>
+                <p class="term">Broke/Ubers - Loomians considered uncompetitive or over-centralizing to the competitive scene thus banned in tournaments.</p>
+                <p class="term">OU (OverUsed) - Loomians that have at least an 8.3% usage. Loomians in this tier can be used in OU tournaments and above.</p>
+                <p class="term">UUBL (UnderUsed BanList) - Loomians that have a usage lower than 8.3% however banned from UnderUsed tournaments due to being too powerful. They can be used in OU tournaments and above.</p>
+                <p class="term">UU (UnderUsed) - Loomians Loomians that have a usage lower than 8.3%. Loomians in this tier can be used in UU tournaments and above.</p>
+                <p class="term">NUBL (NeverUsed BanList) -  Loomians that do not have a usage however they are banned from Neverused tournaments due to being too powerful. They can be used in UU tournaments and above.</p>
+                <p class="term">NU (NeverUsed) - Loomians that do not have a usage. Loomians in this tier can be used to OU tournements and above.</p>
             </div>
         </main>
         <footer>
             <a href="https://www.discordapp.com/users/298479810345172994">Matthattan#0454</a> - <a href="https://twitter.com/stuntmanforlyf"> @stuntmanforlyf</a> - <a href="https://github.com/Matthattan/Matthattan.github.io">Link to Repository</a>
         </footer>
-        <script src="JavaScript/Accordion.js"></script>
     </body>
 </html>
