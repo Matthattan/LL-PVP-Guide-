@@ -60,6 +60,11 @@
         background-color: gray;
     }
 
+    div.title
+    div.summary{
+        margin-left: 20px;
+    }
+
     @media only screen and (max-width: 1200px) {
         .grid-container {
             width: 300px;
