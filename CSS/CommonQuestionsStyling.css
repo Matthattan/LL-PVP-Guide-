@@ -59,70 +59,92 @@ img{
 
 @media screen and (max-width: 1080px) {
     .Article{
-        width: 600px;
+        width: 780px;
     }
 
     img{
-        width: 600px;
+        width: 780px;
     }
 
     .panel{
-        width: 600px;
+        width: 780px;
     }
 
     .panel2{
-        width: 600px;
+        width: 780px;
     }
 
     #Terminology{
-        width: 600px;
+        width: 780px;
     }
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .Article{
-        width: 400px;
+        width: 580px;
     }
 
     img{
-        width: 400px;
+        width: 580px;
     }
 
     .panel{
-        width: 400px;
+        width: 580px;
         font-size: 12px
     }
 
     .panel2{
-        width: 400px;
+        width: 580px;
         font-size: 12px;
     }
 
     #Terminology{
-        width: 400px;
+        width: 580px;
         font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Article{
+        width: 380px;
+    }
+
+    img{
+        width: 380px;
+    }
+
+    .panel{
+        width: 380px;
+    }
+
+    .panel2{
+        width: 380px;
+    }
+
+    #Terminology{
+        width: 380px;
     }
 }
 
 @media screen and (max-width: 400px) {
     .Article{
-        width: 275px;
+        width: 350px;
     }
 
     img{
-        width: 275px;
+        width: 350px;
     }
 
     .panel{
-        width: 275px;
+        width: 350px;
     }
 
     .panel2{
-        width: 275px;
+        width: 350px;
     }
 
     #Terminology{
-        width: 275px;
+        width: 350px;
     }
 }

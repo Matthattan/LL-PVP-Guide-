@@ -2,19 +2,22 @@
     margin: auto;
     width: 1080px;
     height: auto;
-    text-align: justify;
+    text-align: left;
 }
 
 table {
+    margin: auto;
     border-collapse: collapse;
     width: 1080px;
     border: 2px solid black;
     display: block;
+    margin-bottom: 20px;
 }
 
 th, td {
     text-align: left;
-    padding: 8px;
+    width: auto;
+    padding-right: 20px;
 }
 
 tr:nth-child(even) {
@@ -24,11 +27,14 @@ tr:nth-child(even) {
 .location{
     margin: auto;
     width: 1080px;
+}
+
+.location img{
+    width: 1080px;
     height: auto;
     border: 3px solid #000000;
     border-radius: 5px;
 }
-
 
 .sprite{
     margin: auto;
@@ -37,7 +43,9 @@ tr:nth-child(even) {
 }
 
 #footnote{
+    margin: auto;
     font-size: 16px;
+    width: 1080px;
 }
 
 .rows5{
@@ -52,38 +60,70 @@ tr:nth-child(even) {
     background-color: #D6EEEE;
 }
 
-@media screen and (max-width: 1080px) {
+h3{
+    margin: auto;
+    width: 1080px;
+}
+
+@media screen and (max-width: 1100px) {
     .paragraph1{
-        width: 800px;
-        overflow-x:auto
+        width: 780px;
     }
 
     .location{
-        width: 800px;
+        width: 780px;
+        height: auto;
     }
 
     table{
-        width: 800px;
+        width: 780px;
     }
 
     .sprite{
         width: 40px;
     }
 
+    .location{
+        width: 780px;
+    }
+
+    .location img{
+        width: 780px;
+        height: auto;
+    }
+
+    h3{
+        margin: auto;
+        width: 780px;
+    }
+
+    #footnote{
+        width: 780px;
+    }
+
+    th, td {
+        font-size: 24px;
+    }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
     .paragraph1{
-        width: 600px;
+        width: 580px;
         font-size: 12px;
     }
 
     .location{
-        width: 600px;
+        width: 580px;
+        height: auto;
+    }
+
+    .location img{
+        width: 580px;
+        height: auto;
     }
 
     table{
-        width: 600px;
+        width: 580px;
         height: auto;
         font-size: 12px;
     }
@@ -93,26 +133,102 @@ tr:nth-child(even) {
     }
 
     #footnote{
+        width: 580px;
         font-size: 12px;
     }
-}
 
-@media screen and (max-width: 640px) {
-    .paragraph1{
-        width: 350px;
+    h3{
+        width: 580px;
+        font-size: 28px;
     }
 
     .location{
-        width: 325px;
+        width: 580px;
+    }
+
+    th, td {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .paragraph1{
+        width: 380px;
+    }
+
+    .location{
+        width: 380px;
+        height: auto;
+    }
+
+    .location img{
+        width: 380px;
+        height: auto;
     }
 
     table{
-        width: 335px;
+        width: 380px;
         height: auto;
         font-size: 12px;
     }
 
     .sprite{
         width: 40px;
+    }
+
+    #footnote{
+        width: 380px;
+        font-size: 12px;
+    }
+
+    h3{
+        margin: auto;
+        width: 380px;
+        font-size: 20px;
+    }
+
+    th, td {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .paragraph1{
+        width: 350px;
+        font-size: 18px;
+    }
+
+    .location{
+        width: 350px;
+        height: auto;
+    }
+
+    .location img{
+        width: 350px;
+        height: auto;
+    }
+
+    table{
+        width: 350px;
+        height: auto;
+        font-size: 12px;
+    }
+
+    .sprite{
+        width: 40px;
+    }
+
+    #footnote{
+        width: 350px;
+        font-size: 12px;
+    }
+
+    h3{
+        margin: auto;
+        width: 350px;
+    }
+
+    th, td {
+        font-size: 10px;
     }
 }

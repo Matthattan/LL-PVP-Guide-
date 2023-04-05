@@ -38,6 +38,12 @@ tr:nth-child(even) {
     background-color: #D6EEEE;
 }
 
+h1{
+    margin: auto;
+    width: 1080px;
+    text-align: center;
+}
+
 @media screen and (max-width: 1080px) {
     .paragraph1{
         width: 800px;
@@ -52,6 +58,11 @@ tr:nth-child(even) {
         width: 800px;
     }
 
+    h1{
+        margin: auto;
+        width: 800px;
+        text-align: center;
+    }
 }
 
 
@@ -68,6 +79,13 @@ tr:nth-child(even) {
     table{
         width: 400px;
     }
+
+    h1{
+        margin: auto;
+        width: 400px;
+        text-align: center;
+        font-size: 28px;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -83,5 +101,12 @@ tr:nth-child(even) {
     table{
         width: 350px;
         font-size: 12px;
+    }
+
+    h1{
+        margin: auto;
+        width: 350px;
+        text-align: center;
+        font-size: 20px;
     }
 }

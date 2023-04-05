@@ -1,14 +1,9 @@
 .paragraph1{
-    margin: auto;
-    width: 1080px;
-    height: auto;
-    text-align: justify;
-    margin-top: 20px;
-}
-
-p{
-  margin-top: 15px;
-  display: block;
+  margin: auto;
+  width: 1080px;
+  height: auto;
+  text-align: justify;
+  margin-top: 20px;
 }
 
 ul{
@@ -19,60 +14,56 @@ ul{
 }
 
 #Image{
-    margin: auto;
-    position: relative;
-    top: 10px;
-    margin-bottom: 20px;
-    height: 500px;
-    width: auto;
-    border: 3px solid #000000;
-    border-radius: 5px;
-    display: block;
+  margin: auto;
+  position: relative;
+  top: 10px;
+  margin-bottom: 20px;
+  height: 500px;
+  width: auto;
+  border: 3px solid #000000;
+  border-radius: 5px;
+  display: block;
 }
 
 .Team{
-    margin: auto;
-    display: block;
-    width: 800px;
-    border: 3px solid #000000;
-    border-radius: 5px;
-    margin-top: 10px;
+  margin: auto;
+  display: block;
+  width: 800px;
+  border: 3px solid #000000;
+  border-radius: 5px;
+  margin-top: 10px;
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-    margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 20px;
 }
 
 .grid-cell {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
 }
 
 .grid-container2 {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 16px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 16px;
 }
 
 .grid-cell2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .grid-container3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 16px;
-}
-
-ul{
-  padding-left: 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
 }
 
 #Garlash{
@@ -100,28 +91,27 @@ ul{
   text-align: left;
 }
 
-
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1080px) {
   .paragraph1{
-    width: 800px;
+    width: 780px;
     height: auto;
     text-align: left;
   }
 
   .Team{
-    width: 600px;
+    width: 780px;
     height: auto;
   }
 
   .grid-container {
     display: block;
     grid-template-columns: auto;
-    width: 800px;
+    width: 780px;
     gap: 16px;
   }
 
   #TEChart{
-    width: 600px;
+    width: 780px;
     height: auto;
   }
 
@@ -133,7 +123,7 @@ ul{
   .grid-container2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 800px;
+    width: 780px;
     gap: 16px;
   }
 
@@ -151,11 +141,12 @@ ul{
     height: 250px;
     width: auto;
   }
+
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 800px) {
   .paragraph1{
-    width: 600px;
+    width: 580px;
     height: auto;
     text-align: left;
     font-size: 20px;
@@ -166,15 +157,15 @@ ul{
     height: auto;
   }
 
-.grid-container {
+  .grid-container {
     display: block;
     grid-template-columns: auto;
-    width: 600px;
+    width: 580px;
     gap: 16px;
   }
 
   .TEChart{
-    width: 600px;
+    width: 580px;
     height: auto;
   }
 
@@ -186,7 +177,7 @@ ul{
   .grid-container2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 600px;
+    width: 580px;
     gap: 16px;
   }
 
@@ -211,33 +202,33 @@ ul{
   }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 600px) {
   .paragraph1{
-    width: 400px;
+    width: 380px;
     height: auto;
     text-align: left;
     font-size: 20px;
   }
 
   .Team{
-    width: 360px;
+    width: 380px;
     height: auto;
   }
 
   #Image{
-    width: 350px;
+    width: 380px;
     height: auto;
   }
 
   .grid-container {
     display: block;
     grid-template-columns: auto;
-    width: 360px;
+    width: 380px;
     gap: 16px;
   }
 
   .TEChart{
-    width: 360px;
+    width: 380px;
     height: auto;
   }
 
@@ -249,7 +240,7 @@ ul{
   .grid-container2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 360px;
+    width: 380px;
     gap: 16px;
   }
 
@@ -274,7 +265,7 @@ ul{
   }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 400px) {
   .paragraph1{
     width: 350px;
     height: auto;
@@ -335,5 +326,6 @@ ul{
     font-size: 10px;
     text-align: left;
   }
+
 }
 

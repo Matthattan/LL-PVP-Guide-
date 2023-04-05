@@ -12,10 +12,21 @@ footer a{
     color: #219DD7;
 }
 
+@media screen and (max-width: 1080px) {
+    footer{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    footer{
+        font-size: 16px;
+    }
+}
 
 @media screen and (max-width: 600px) {
     footer{
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
