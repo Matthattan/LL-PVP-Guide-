@@ -1,4 +1,4 @@
-function SwitchTabs(evt, RallyName) {
+function SwitchTabs(evt, Name) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -8,6 +8,6 @@ function SwitchTabs(evt, RallyName) {
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementById(RallyName).style.display = "grid";
+    document.getElementById(Name).style.display = "grid";
     evt.currentTarget.className += " active";
   }

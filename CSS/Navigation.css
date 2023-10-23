@@ -28,7 +28,10 @@ nav .icon {
 }
 
 @media screen and (max-width: 600px) {
-    nav a:not(:first-child) {display: none;}
+    nav a:not(:first-child) {
+        display: none;
+    }
+
     nav a.icon {
         float: right;
         display: block;
@@ -36,7 +39,9 @@ nav .icon {
 }
 
 @media screen and (max-width: 600px) {
-    nav.responsive {position: relative;}
+    nav.responsive {
+        position: relative;
+    }
     nav.responsive .icon {
         position: absolute;
         right: 0;

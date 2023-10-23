@@ -17,87 +17,87 @@ table {
 th, td {
     text-align: left;
     width: auto;
-    padding-right: 20px;
 }
 
 tr:nth-child(even) {
     background-color: #D6EEEE;
 }
 
-.location{
+.location {
     margin: auto;
     width: 1080px;
 }
 
-.location img{
+.location img {
+    margin: auto;
     width: 1080px;
     height: auto;
     border: 3px solid #000000;
     border-radius: 5px;
 }
 
-.sprite{
+.sprite {
     margin: auto;
     width: 50px;
     height: auto;
 }
 
-#footnote{
+#footnote {
     margin: auto;
     font-size: 16px;
     width: 1080px;
 }
 
-.rows5{
+.rows5 {
     background-color: #D6EEEE;
 }
 
-.rows6{
+.rows6 {
     background-color: white;
 }
 
-.rows7{
+.rows7 {
     background-color: #D6EEEE;
 }
 
-h3{
+h3 {
     margin: auto;
     width: 1080px;
 }
 
 @media screen and (max-width: 1100px) {
-    .paragraph1{
+    .paragraph1 {
         width: 780px;
     }
 
-    .location{
+    .location {
         width: 780px;
         height: auto;
     }
 
-    table{
+    table {
         width: 780px;
     }
 
-    .sprite{
+    .sprite {
         width: 40px;
     }
 
-    .location{
+    .location {
         width: 780px;
     }
 
-    .location img{
+    .location img {
         width: 780px;
         height: auto;
     }
 
-    h3{
+    h3 {
         margin: auto;
         width: 780px;
     }
 
-    #footnote{
+    #footnote {
         width: 780px;
     }
 
@@ -107,42 +107,42 @@ h3{
 }
 
 @media screen and (max-width: 800px) {
-    .paragraph1{
+    .paragraph1 {
         width: 580px;
+        font-size: 20px;
+    }
+
+    .location {
+        width: 580px;
+        height: auto;
+    }
+
+    .location img {
+        width: 580px;
+        height: auto;
+    }
+
+    table {
+        width: 580px;
+        height: auto;
         font-size: 12px;
     }
 
-    .location{
-        width: 580px;
-        height: auto;
-    }
-
-    .location img{
-        width: 580px;
-        height: auto;
-    }
-
-    table{
-        width: 580px;
-        height: auto;
-        font-size: 12px;
-    }
-
-    .sprite{
+    .sprite {
         width: 40px;
     }
 
-    #footnote{
+    #footnote {
         width: 580px;
         font-size: 12px;
     }
 
-    h3{
+    h3 {
         width: 580px;
         font-size: 28px;
     }
 
-    .location{
+    .location {
         width: 580px;
     }
 
@@ -152,80 +152,122 @@ h3{
 }
 
 @media screen and (max-width: 600px) {
-    .paragraph1{
-        width: 380px;
+    .paragraph1 { 
+        width: 480px;
+        font-size: 18px;
     }
 
-    .location{
-        width: 380px;
+    .location {
+        width: 480px;
         height: auto;
     }
 
-    .location img{
-        width: 380px;
+    .location img {
+        width: 480px;
         height: auto;
     }
 
-    table{
-        width: 380px;
+    table {
+        width: 480px;
         height: auto;
-        font-size: 12px;
+        font-size: 16px;
     }
 
-    .sprite{
+    .sprite {
         width: 40px;
     }
 
-    #footnote{
-        width: 380px;
-        font-size: 12px;
+    #footnote {
+        width: 480px;
+        font-size: 16px;
     }
 
-    h3{
+    h3 {
         margin: auto;
-        width: 380px;
+        width: 480px;
         font-size: 20px;
     }
 
     th, td {
-        font-size: 10px;
+        font-size: 12px;
     }
 }
 
-@media screen and (max-width: 400px) {
-    .paragraph1{
+@media screen and (max-width: 480px) {
+    .paragraph1 {
         width: 350px;
-        font-size: 18px;
+        font-size: 16px;
     }
 
-    .location{
-        width: 350px;
-        height: auto;
-    }
-
-    .location img{
+    .location {
         width: 350px;
         height: auto;
     }
 
-    table{
+    .location img {
+        width: 350px;
+        height: auto;
+    }
+
+    table {
         width: 350px;
         height: auto;
         font-size: 12px;
     }
 
-    .sprite{
+    .sprite {
         width: 40px;
     }
 
-    #footnote{
+    #footnote {
         width: 350px;
         font-size: 12px;
     }
 
-    h3{
+    h3 {
         margin: auto;
         width: 350px;
+    }
+
+    th, td {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .paragraph1 {
+        width: 300px;
+        font-size: 14px;
+    }
+
+    .location {
+        width: 300px;
+        height: auto;
+    }
+
+    .location img {
+        width: 300px;
+        height: auto;
+    }
+
+    table {
+        width: 300px;
+        height: auto;
+        font-size: 12px;
+    }
+
+    .sprite {
+        width: 40px;
+    }
+
+    #footnote {
+        width: 300px;
+        font-size: 12px;
+    }
+
+    h3 {
+        margin: auto;
+        width: 300px;
     }
 
     th, td {

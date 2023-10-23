@@ -1,4 +1,4 @@
-img{
+img {
     margin: auto;
     position: relative;
     top: 10px;
@@ -42,14 +42,14 @@ img{
     width: 1080px;
 }
 
-#Terminology{
+#Terminology {
     width: 1080px;
     margin: auto;
     display: block;
     text-decoration:double;
 }
 
-.term{
+.term {
     background-color: #ccc;
     height: auto;
     padding: 10px;
@@ -58,93 +58,116 @@ img{
 }
 
 @media screen and (max-width: 1080px) {
-    .Article{
+    .Article {
         width: 780px;
     }
 
-    img{
+    img {
         width: 780px;
     }
 
-    .panel{
+    .panel {
         width: 780px;
     }
 
-    .panel2{
+    .panel2 {
         width: 780px;
     }
 
-    #Terminology{
+    #Terminology {
         width: 780px;
     }
 
 }
 
 @media screen and (max-width: 800px) {
-    .Article{
+    .Article {
         width: 580px;
     }
 
-    img{
+    img {
         width: 580px;
     }
 
-    .panel{
+    .panel {
         width: 580px;
         font-size: 12px
     }
 
-    .panel2{
+    .panel2 {
         width: 580px;
         font-size: 12px;
     }
 
-    #Terminology{
+    #Terminology {
         width: 580px;
         font-size: 12px;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .Article{
+    .Article {
         width: 380px;
     }
 
-    img{
+    img {
         width: 380px;
     }
 
-    .panel{
+    .panel {
         width: 380px;
     }
 
-    .panel2{
+    .panel2 {
         width: 380px;
     }
 
-    #Terminology{
+    #Terminology {
         width: 380px;
     }
 }
 
 @media screen and (max-width: 400px) {
-    .Article{
+    .Article {
         width: 350px;
     }
 
-    img{
+    img {
+        width: 350px;
+    }
+ 
+    .panel {
         width: 350px;
     }
 
-    .panel{
+    .panel2 {
         width: 350px;
     }
 
-    .panel2{
-        width: 350px;
-    }
-
-    #Terminology{
+    #Terminology {
         width: 350px;
     }
 }
+
+@media screen and (max-width: 360px) {
+    .Article {
+        width: 300px;
+    }
+
+    img {
+        width: 300px;
+    }
+
+    .panel {
+        width: 300px;
+    }
+
+    .panel2 {
+        width: 300px;
+    }
+
+    #Terminology {
+        width: 300px;
+    }
+}
+
