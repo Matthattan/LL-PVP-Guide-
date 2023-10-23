@@ -1,4 +1,4 @@
-.Introduction{
+.Introduction {
     position: relative;
     top: 20px;
     margin: auto;
@@ -6,7 +6,7 @@
     margin-bottom: 50px;
 }
 
-img{
+img {
     margin: auto;
     width: 1000px;
     height: auto;
@@ -16,50 +16,67 @@ img{
 }
 
 @media screen and (max-width: 1080px) {
-    .Introduction{
+    .Introduction {
         width: 780px;
     }
 
-    img{
+    img {
         width: 780px;
     }
-
 }
 
 @media screen and (max-width: 800px) {
-    .Introduction{
+    .Introduction {
         width: 580px;
         font-size: 20px;
     }
 
-    img{
+    img {
         width: 580px;
     }   
 }
 
 @media screen and (max-width: 600px) {
-    .Introduction{
+    .Introduction {
         width: 380px;
         font-size: 16px;
     }
 
-    img{
+    img {
         width: 380px;
     }
 }
 
 @media screen and (max-width: 400px) {
-    .Introduction{
+    .Introduction {
         width: 350px;
     }
 
-    img{
+    img {
         width: 350px;
     }
 
-    h1{
+    h1 {
         margin: auto;
         width: 350px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    .Introduction {
+        width: 300px;
+    }
+
+    img {
+        width: 300px;
+    }
+
+    h1 {
+        margin: auto;
+        width: 300px;
         text-align: center;
         font-size: 20px;
     }

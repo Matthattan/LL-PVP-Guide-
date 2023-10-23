@@ -46,25 +46,29 @@
   font-size: 18px;
 }
 
-main a{
+main a {
   text-decoration: none;
 }
 
-main a:visited{
+main a:visited {
   color: black;
 }
 
-main a:link{
+main a:link {
   color: black;
 }
 
-.grid-container:hover{
+.grid-container:hover {
   background-color: gray;
 }
 
 div.title
-div.summary{
+div.summary {
   margin-left: 20px;
+}
+
+h1 {
+  width: inherit;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -84,10 +88,14 @@ div.summary{
     width: 300px;
   }
 
-  .description h1{
+  .description h1 {
     width: 300px;
     font-size: 20px;
     overflow-wrap: normal;
+  }
+
+  h1 {
+    width: inherit;
   }
   
 }
