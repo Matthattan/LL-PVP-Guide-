@@ -25,7 +25,6 @@ img {
     outline: none;
     font-family: "Russo One", sans-serif;
     font-size: 24px;
-    transition: 0.4s;
     margin-bottom: 10px;
 }
 
@@ -40,7 +39,7 @@ img {
     width: 1000px;
 }
 
-#Terminology {
+.Section {
     width: 1080px;
     margin: auto;
     display: block;
@@ -73,7 +72,7 @@ img {
         height: auto;
     }
 
-    #Terminology {
+    .Section {
         width: 780px;
     }
 
@@ -99,7 +98,7 @@ img {
         font-size: 12px;
     }
 
-    #Terminology {
+    .Section {
         width: 580px;
         font-size: 12px;
     }
@@ -123,7 +122,7 @@ img {
         width: 380px;
     }
 
-    #Terminology {
+    .Section {
         width: 380px;
     }
 }
@@ -146,7 +145,7 @@ img {
         width: 350px;
     }
 
-    #Terminology {
+    .Section {
         width: 350px;
     }
 }
@@ -169,7 +168,7 @@ img {
         width: 300px;
     }
 
-    #Terminology {
+    .Section {
         width: 300px;
     }
 }

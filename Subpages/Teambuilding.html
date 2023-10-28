@@ -17,7 +17,8 @@
         <link rel="stylesheet" href="../CSS/Footer.css">
         <script src="../JavaScript/NavBar.js"></script>
 
-        <link rel="stylesheet" href="../CSS/Teambuilding.css">
+        <link rel="stylesheet" href="../CSS/Teambuilding.css">  
+        <link rel="stylesheet" href="../CSS/ContentsBox.css">
     </head>
     <body>
         <header>
@@ -42,24 +43,65 @@
                     Teambuilding
                 </u>
             </h1>
+            <button class="ParContent">Contents</button>
+            <div class="ChildPanel">
+                <ul>
+                    <li>
+                        <a href="#What">What is Teambuilding?</a>
+                    </li>
+                    <li>
+                        <a href="#How">How should I build a Team?</a>
+                    </li>
+                    <ul>
+                        <li>
+                            <a href="#Archetypes">Team Archetypes</a>
+                        </li>
+                        <li>
+                            <a href="#Playstyles">What different Playstyles are there?</a>
+                        </li>
+                    </ul>
+                    <li>
+                        <a href="#Cores">Cores</a>
+                    </li>
+                    <ul>
+                        <li>
+                            <a href="#UseCore">How do I make and use a Core?</a>
+                        </li>
+                    </ul>
+                    <li>
+                        <a href="#Roles">Roles in PVP</a>
+                    </li>
+                    <ul>
+                        <li>
+                            <a href="#Offensive">Offensive Roles</a>
+                        </li>
+                        <li>
+                            <a href="#Defensive">Defensive Roles</a>
+                        </li>
+                        <li>
+                            <a href="#Utility">Utility Roles</a>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
             <div class="paragraph1">
-                <h3>
+                <h3 id="What">
                     <u>What is Teambuilding?</u>
                 </h3>
                 <p> Teambuilding is the process of finding Loomians that work well with eachother in a team so you can win pvp battles. 
                     You may look at Loomians' weaknesses and how their commonly used in the meta to make your team as effective as possible when trying to win with your team.</p>
-                <h3>
+                <h3 id="How">
                     <u>How should I build a Team?</u>
                 </h3>
                 <p> First, you should understand some concepts in teambuilding that can make choosing Loomians and understanding when to use certain Loomians easier to comprehend.</p>
                 <img id="Image"src="../PVPImages/HOTeam.png" alt="Example of Hyper Offensive">
-                <h4>
+                <h4 id="Archetypes">
                     <u>Team Archetypes</u>
                 </h4>
                 <p>A Team Archetype or “Team Arc” for short, describes the playstyle of Loomians in a Team. 
                     Playstyle refers to the general strategy when using a team. 
                     These are some of the more known and used Playstyles in the competitive scene:</p>
-                <h4>
+                <h4 id="Playstyles">
                     <u>What different Playstyles are there?</u>
                 </h4>
                 <div>
@@ -96,14 +138,14 @@
                     </p>
             </div>
             <div class="paragraph1">
-                <h3>
+                <h3 id="Cores">
                     <u>Cores</u>
                 </h3>
                 <p>A Core is 2 or more Loomians that work well together either offensively, defensively or both. In other words, they have good synergy with eachother. 
                     They are a great tool to use for teambuilding because of their synergy. 
                     You can build around/with them to put your team together like puzzle pieces.</p>
                 <br>
-                <h4>
+                <h4 id="UseCore">
                     <u>How do I make and use a Core?</u>
                 </h4>
                 <p>Say you want to use Stratasour. A great Loomian to pair it with would be Eleguana. 
@@ -134,11 +176,11 @@
                     </div>
                 </div>
                 <a href=".\Cores.html">Main Article: Cores - Examples</a>
-                <h3>
+                <h3 id="Roles">
                     <u>Roles in PVP</u>
                 </h3>
                 <p>A Role is the function that the Loomian plays in the team. Loomians can also switch roles depending on what Personality they use or even what item they hold.</p>
-                <h4>
+                <h4 id="Offensive">
                     <u>Offensive Roles</u>
                 </h4>
                 <div>
@@ -201,7 +243,7 @@
                                 <img class="LoomianSprite" src="../PVPImages/LoomianSprites/Imperior.webp" alt="Imperior">
                             </div>
                         </div>
-                    <h4>
+                    <h4 id="Defensive">
                         <u>
                             Defensive Roles
                         </u>
@@ -250,7 +292,7 @@
                                 It can handle threats that hit on either side. 
                             </li>
                         </ul>
-                    <h4>
+                    <h4 id="Utility">
                         <u>Utility Roles</u>
                     </h4>
                     <p>
@@ -374,6 +416,7 @@
                     </div>
                 </div>
             </div>
+        <script src="../JavaScript/ContentList.js"></script>
         </main>
         <footer>
             <a href="https://www.discordapp.com/users/298479810345172994">stuntmanforlyf</a> - 

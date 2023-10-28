@@ -18,6 +18,7 @@
         <script src="../JavaScript/NavBar.js"></script>
 
         <link rel="stylesheet" href="../CSS/RallyRanch.css">
+        <link rel="stylesheet" href="../CSS/ContentsBox.css">
 
     </head>
     <body>
@@ -43,15 +44,40 @@
                     Rally Ranch
                 </u>
             </h1>
+            <button class="ParContent">Contents</button>
+            <div class="ChildPanel">
+                <ul>
+                    <li>
+                        <a href="#What">What is Rally Ranch?</a>
+                    </li>
+                    <li>
+                        <a href="#Why">As a PVPer, Why should I use this?</a>
+                    </li>
+                    <li>
+                        <a href="#Items">What Items does Rally Ranch offer?</a>
+                    </li>
+                    <ul>
+                        <li>
+                            <a href="#RallyFeed">Rally Feed</a>
+                        </li>
+                        <li>
+                            <a href="#RallyToys">Rally Toys</a>
+                        </li>
+                        <li>
+                            <a href="#RallyTotems">Rally Totems</a>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
             <img id="location" src="../PVPImages/Locations/Rally_Ranch.webp" alt="Rally Ranch">
             <div class="paragraph1">
-                <h3>What is Rally Ranch?</h3>
+                <h3 id="What">What is Rally Ranch?</h3>
                 <p> Rally Ranch is located on Route 6 which allows Players to 
                     collect new Loomians using their own Loomians that have been given to the Ranch. 
                     By default, the Ranch gives you 3 rally spaces to collect Loomians and 1 feed. Currently, all other items can be earned through Trainer Mastery.</p>
             </div>
             <div class="paragraph1">
-                <h3>As a PVPer, Why should I use this?</h3>
+                <h3 id="Why">As a PVPer, Why should I use this?</h3>
                 <p> 
                     With Rallying, Loomians you obtain can get 3 Personalities (known as a Totemised Personality) which means 
                     3 stats of a Loomian are changed instead of 2 personalities (or even one). 
@@ -70,12 +96,12 @@
                 </p>
             </div>
             <div class="paragraph1">
-                <h3>What Items does Rally Ranch offer?</h3>
+                <h3 id="Items">What Items does Rally Ranch offer?</h3>
                 <p> Rally Ranch offers Feeds which changes what Unique Points your Rallied Loomians will inherit, 
                     Toys which change what personality your Rallied Loomians inherit and 
                     Totems that change the type of Personality your Rallied Loomians will obtain.
                 </p>
-                <h4>Rally Feed</h4>
+                <h4 id="RallyFeed">Rally Feed</h4>
                 <table>
                     <tr>
                         <th>Sprite</th>
@@ -124,7 +150,7 @@
                         <td>Trainer Mastery level 78</td>
                     </tr>
                 </table>
-                <h4>Rally Toys</h4>
+                <h4 id="RallyToys">Rally Toys</h4>
                 <table>
                     <tr>
                         <th>Sprite</th>
@@ -165,7 +191,7 @@
                         <td>Trainer Mastery level 39</td>
                     </tr>
                 </table>
-                <h4>Rally Totems</h4>
+                <h4 id="RallyTotems">Rally Totems</h4>
                 <table>
                     <tr>
                         <th>Sprite</th>
@@ -191,6 +217,7 @@
                     </tr>
                 </table>
             </div>
+        <script src="../JavaScript/ContentList.js"></script>
         </main>
         <footer>
             <a href="https://www.discordapp.com/users/298479810345172994">stuntmanforlyf</a> - 
