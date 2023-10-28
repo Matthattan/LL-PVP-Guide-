@@ -1,0 +1,101 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.ParContent {
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+    background-color:  #DAF7A6;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    width: 1080px;
+    height: auto;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-family: "Russo One", sans-serif;
+    font-size: 24px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.RevealContent, .ParContent:hover {
+    background-color: #c2f562;
+}
+
+.ChildPanel {
+    margin: auto;
+    background-color: #eaf5d6;
+    display: none;
+    width: 1000px;
+    padding-bottom: 1px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.ChildPanel ul li a{
+    color: inherit;
+}
+
+.ChildPanel ul li a:hover{
+    color: royalblue;
+}
+
+@media screen and (max-width: 1080px) {
+    .ParContent {
+        width: 780px;
+    }
+
+    .ChildPanel {
+        width: 740px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .ParContent {
+        width: 580px;
+        font-size: 12px
+    }
+
+    .ChildPanel {
+        width: 540px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .ParContent {
+        width: 380px;
+        padding: 8px;
+    }
+
+    .ChildPanel {
+        width: 340px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .ParContent {
+        width: 350px;
+    }
+
+    .ChildPanel {
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .ParContent {
+        width: 300px;
+    }
+
+    .ChildPanel {
+        width: 260px;
+        font-size: 9px;
+    }
+}
+

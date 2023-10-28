@@ -19,6 +19,7 @@
 
         <link rel="stylesheet" href="../CSS/CommonQuestionsStyling.css">
         <link rel="stylesheet" href="../CSS/Calculation.css">
+        <link rel="stylesheet" href="../CSS/ContentsBox.css">
     </head>
     <body>
         <header>
@@ -43,175 +44,191 @@
                     Frequently Asked Questions
                 </u>
             </h1>
-            <button class="panel">What is a "PVP" Loomian?</button>
-            <div class="panel2">
-                <p>A PVP Loomian is a Loomian that is trained to use against other players in the Battle Colosseum. 
-                    This can be detemined by its Moveset, TP (Training Points) Spread, UP (Unique Points) Spread, its item and more. 
-                    You may find "Standard" sets which are what many players use however some may choose to utilise 
-                    more niche sets to challenge those standard sets and get an edge in battle.
-                </p>
+            <button class="ParContent">Contents</button>
+            <div class="ChildPanel">
+                <ul>
+                    <li>
+                        <a href="#BeginnerQuestions">Beginner Questions</a>
+                    </li>
+                    <li>
+                        <a href="#Terminology">Terminology</a>
+                    </li>
+                    <li>
+                        <a href="#UsageTerms">Usage Tierlist Definitions</a>
+                    </li>
+                </ul>
             </div>
-            <button class="panel">What is the best Loomian(s) for PVP?</button>
-            <div class="panel2">
-                <p>There is no "one above all" Loomian when it comes to pvp. However you can use 
-                    <a href="https://discord.com/channels/549360766600347658/615582246170001409/1037283160309895268">usage lists and viability rankings </a>
-                    to determine which Loomians offer more in competitive PVP.
-                </p>
+            <div class="Section">
+                <h3 id="BeginnerQuestions">Beginner Questions</h3>
+                <button class="panel">What is a "PVP" Loomian?</button>
+                <div class="panel2">
+                    <p>A PVP Loomian is a Loomian that is trained to use against other players in the Battle Colosseum. 
+                        This can be detemined by its Moveset, TP (Training Points) Spread, UP (Unique Points) Spread, its item and more. 
+                        You may find "Standard" sets which are what many players use however some may choose to utilise 
+                        more niche sets to challenge those standard sets and get an edge in battle.
+                    </p>
+                </div>
+                <button class="panel">What is the best Loomian(s) for PVP?</button>
+                <div class="panel2">
+                    <p>There is no "one above all" Loomian when it comes to pvp. However you can use 
+                        <a href="https://discord.com/channels/549360766600347658/615582246170001409/1037283160309895268">usage lists and viability rankings </a>
+                        to determine which Loomians offer more in competitive PVP.
+                    </p>
+                </div>
+                <button class="panel">What is the best set for this Loomian/The new Loomian has been released, what set should I run?</button>
+                <div class="panel2">
+                    <p>Majority of Loomians can use many sets whether it be for the same purpose but an original set or 
+                        for different purposes such as Barblast having a ranged defensive variant to handle Cephalops.
+                    </p> 
+                    <p>There might be an objectively more popular way to run a Loomian however: 
+                        "acting like there is only one way to run something [is a] Bad mentality."
+                    </p>
+                    <p>When a new Loomian is released, it takes time for users to find the base stats of the Loomian, 
+                        its movepool and what Loomians it would prefer to have a matchup with. These, and much more factors, 
+                        are needed to make sets for a Loomian so don't expect ready-made sets immediately after an update releases.
+                    </p>
+                <img src="../PVPImages/Diagrams/NoBestSet.jpeg" alt="No Best Set (By Draco564)">
+                </div>
+                <button class="panel">What are TPs/ UPs/ Personalities?</button>
+                <div class="panel2">
+                    <h3>TPs</h3>
+                    <p>
+                        TPs mean Training Points and are earned by either defeating Loomians (trainers and wild) or using Gummies.
+                    </p>
+                    <p>
+                        Training Points scale based on level: at level 50, 8 Training Points is equivalent to 1 total stat point and 
+                        at level 100, 4 Training Points is equivalent to 1 total stat point. 
+                        Energy is an exception as at level 50, 4 training points are needed to increase the total stat by 1 and at level 100, 4 Training Points increase the total stat by 2.
+                    </p>
+                    <p>
+                        The maximum amount of Training Points a Loomian can have is 500 overall but only 200 can be put into any stat. 
+                        TP yield can be increased by using the 5x TP Loomiboost which requires boost Tokens and 
+                        Protein Shake which can be earned from beating the Heavy Bag - at Gym Rats, Sepharite City - in less than 5 turns.
+                    </p>
+                    <p>
+                        Route 6/Rally Ranch is currently the most ideal location to earn TPs due to having specialised trainers for nearly all the stats. 
+                        Energy TPs can be earned from Tamyra located in the water of Lotusun Beach or Igneols, Skilavas and Varis found in Igneus Hollow.Teddy 
+                        (the last trainer on Route 8) offers 2 speed and 4 Melee Attack Training Points which makes him an ideal choice for experience points grinding as well as TP training.
+                    </p>
+                    <img alt="https://gyazo.com/e7aff5bb58cdf0a1fdf41098e5fd9a8f" src="../PVPImages/TP_Hotspots.jpg">
+                    <h3>UPs</h3> 
+                    <p> UPs mean Unique Points and also increase the total stat points of a Loomian. 
+                        However, Unique Points are a set value when a Loomian is captured/rallied between 0 and 40 but can be increased by 10 using shards and decreased by 10 using dark shards. 
+                        Unique Points are also scaled based on level: 
+                        <br><br> Level 50: 2 Unique Points = 1 Total Stat Point
+                        <br><br> Level 100: 1 Unique Points = 1 Total Stat Point
+                    </p>
+                    <h3>Personalities</h3>
+                    <p>
+                        Personalities help boost the total stats of a Loomian.
+                        Wild loomians have access to pure (one) personalities or 
+                        1 negative 1 positive whereas Rallied Loomians have access to "Totemised Personalities".
+                    </p> 
+                    <p>
+                        These are 3 combo personalities that take the form of "[Negative] [Negative] Very [Positive]" 
+                        or "[Positive] [Positive] Very [Negative]" (See Rally Ranch).
+                    </p>
+                    <img src="../PVPImages/Diagrams/SmilingTotemPerso.png">
+                    <img src="../PVPImages/Diagrams/ScowlingTotemPerso.png">
+                    <p>
+                        These are usually preferred for PVP use due to offering more stat boosts either for one stat or increasing multiple. 
+                        This is also why event reskins of loomians aren't advised to be used in PVP however there are exceptions (see Set Making).
+                    </p>    
+                    <img alt="https://discord.com/channels/549360766600347658/615581619725533251/884954551327785031" src="../PVPImages/Diagrams/LLStatistics.jpeg">
+                </div>
+                <button class="panel">How do you read Damage Calculations?</button>
+                <div class="panel2">
+                    <p>
+                        The Damage Calculator is a useful tool that allows people to create and test sets without needing to prepare Loomians in game. 
+                        After all, it would be a shame if you made a set in game and it turns out it doesn't work. 
+                        The format of the Damage Calculations may be confusing at first but its actually quite simple. 
+                        Lets take a look at a Revenine vs an Oxidrake:
+                    </p>
+                    <h4>
+                        <span class="TPs">200</span> 
+                        ++AtkR 
+                        <span class="Item">Power Cuffs</span> 
+                        <span class="Ability"> Vengeance</span>
+                        <span class="Loomian">Revenine</span>
+                        <span class="Attack"> Fire Breath</span> 
+                        vs. 
+                        <span class="TPs">200 HP / 200</span> ++DefR 
+                        <span class="Item">Heavy Shield</span> 
+                        <span class="Loomian">Oxidrake</span>
+                        <span class="Summary">111-131 (57.8 - 68.2%) -- 5.1% chance to 2HKO</span>
+                    </h4>
+                    <p>
+                        <span class="TPs">200</span> - the amount of TPs invested in the stat, 
+                        note that UPs are not displayed in calculations due to users preferring them to be 40 by default.
+                        <br><br>
+                        ++AtkR/++DefR -  also known as Very Smart and Very Clever respectively, 
+                        this is the indicator to what personality is being used in the Calculations (if any).
+                        <br><br>
+                        <span class="Item">Power Cuffs</span> - if the attacker is using an item that affects damage then it will be counted in the calculation.
+                        <br><br>
+                        <span class="Ability">Vengeance</span> - if an ability that impacts the attack is being used, it will be included in the calculation. 
+                        Abilities such as Combustible or Noxious Weeds require the box next to their name to be selected for it to be counted in the calculation.
+                        <br><br>
+                        <span class="Loomian">Revenine/Oxidrake</span> - the Loomian attacking and the Loomian defending, respectively.
+                        <br><br>
+                        <span class="Attack">Fire Breath</span> - the move being used, the damage calculator also checks if the Type of the Move corresponds to 
+                        the Type of the Loomian so the appropriate ATB (Attack Type Boost) can be given.
+                        <br><br>
+                        <span class="Item">Heavy Shield</span> - the item being used to defend against an attack. 
+                        Note that if the attacker has the ability sly, the item will be ignored.
+                        <br><br>
+                        <span class="Summary">111-131</span> - the range of how many health points can be deducted. 
+                        Below the calculation shows the full range of possible health points that can be deducted.
+                        <br><br>
+                        <span class="Summary">(57.8 - 68.2%)</span> - the range of how many health points can be deducted as a percentage
+                        <br><br>
+                        <span class="Summary">-- 5.1% chance to 2HKO</span> - a summary of how many hits the move will take. 
+                        Note that Moves such as Slap Down - which varies damage based on if the opposing Loomian has an item - is accounted for.
+                    </p>
+                </div>
+                <button class="panel">What is a Check?</button>
+                <div class="panel2">
+                    <p>A Loomian is considered a check if it can threaten a hit on the opposing Loomian however switching in is very risky and can cause massive health loss or even fainting. 
+                        For Example, a Brawny Vesperatu can One Hit Knockout (OHKO) a tender Falkyrie:</p>
+                    <h4>200 +AtkM Dark Essence Sharp Claws Vesperatu Slap Down vs. 64 HP / 0 -DefM Power Cuffs Falkyrie: 292-344 (169.8 - 200.0%) -- guaranteed OHKO</h4> 
+                    <p>However, Falkyrie can use Gamma Pulse to get rid of Vesperatu if it decides to swap in:</p>
+                    <h4>200 ++AtkR Power Cuffs Awakening Falkyrie Gamma Pulse vs. 80 HP / 0 DefR Vesperatu: 508-600 (306.0 - 361.4%) -- guaranteed OHKO</h4>
+                    <p>Checks can be sorted into two categories: Soft Checks and Hard Checks.</p> 
+                    <h4>
+                        <u>
+                            Soft Checks
+                        </u>
+                    </h4>
+                    <p>
+                        Soft Checks are Loomians who can only swap in a limited amount of times before fainting.
+                    </p>    For example, Revenine can be used to check Hunder but Hunder can hit it with Thunder Chomp (for neutral effectiveness) before swapping out on the next turn therefore avoiding a Fire Breath:      
+                    <h4>200 ++AtkM Power Cuffs Power Jaw Hunder Thunder Chomp vs. 72 HP / 0 -DefM Revenine: 68-81 (45.6 - 54.4%) -- 53.1% chance to 2HKO</h4> 
+                    <p>Too many swap ins from Revenine can result in Revenine fainting and possibly losing the game due to having no other Loomian to defeat Hunder.</p>
+                    <h4>
+                        <u>
+                            Hard Checks
+                        </u>
+                    </h4>
+                    <p>Loomians used as hard checks are generally able to swap into some hits and can even have recovery to help battle against whatever Loomian it is checking but one mis-play can result in losing your check.</p>
+                    <p>For example, a Very Robust Luminami can be a viable answer to an Offensive Brawny Power Jaw Tyrecks since it has high Melee Defence, has recovery through rejuvenate and it's use of Maroon can 3 Hit Knock Out Tyrecks:</p>        
+                    <h4>0 AtkR Luminami Maroon vs. 88 HP / 0 DefR Tyrecks: 72-86 (40.0 - 47.8%) -- guaranteed 3HKO </h4>      
+                    <p>However, if Luminami uses rejuvenate too many times and has not enough energy or Tyrecks increases its Melee Attack with Sharpen, Luminami would be vulnerable to chomp which can 3HKO first due to Offensive Nimble Tyreck's higher speed.</p>
+                    <h4>+1 200 +AtkM Dark Essence Power Jaw Tyrecks Chomp vs. 200 HP / 200 ++DefM Heavy Armor Luminami: 80-96 (38.6 - 46.4%) -- guaranteed 3HKO</h4> 
+                </div>
+                <button class="panel">What is a Counter?</button>
+                <div class="panel2">
+                    <p>A Loomian is considered a counter if it can reliably swap into another loomian and defeat it.</p>
+                    <p>For example, Cosmiore-Cracked is able to swap into Barblasts's attacks:</p>
+                    <h4>0 AtkR High Explosive Barblast Toxiblast vs. 184 HP / 24 DefR Cosmiore-Cracked: 56-67 (27.7 - 33.2%) -- possible 4HKO</h4> 
+                    <p>Cosmiore-Cracked would be able to set up Peace Of Mind which increases it's Ranged Defense making Toxiblast weaker and increases it's Ranged Attack allowing for Psycho Blast to hit harder.</p>
+                    <h4>200 +AtkR Cosmiore-Cracked Psycho Blast vs. 200 HP / 40 DefR Barblast: 132-156 (65.7 - 77.6%) -- guaranteed 2HKO</h4> 
+                    <p>The example above is referring to a hard counter - a Loomian, regardless what set its running, that can swap in and defeat a Loomian. Some Loomians, such as Vesperatu, are advised to run a specific set to counter Loomians like Mutagon:</p>
+                    <h4>200 +AtkM Power Cuffs Heavy Fists Mutagon Telekinetic Sweep vs. 168 HP / 128 +DefM Vesperatu: 45-53 (25.4 - 29.9%) -- possible 4HKO</h4>
+                    <h4>0 AtkM Sharp Claws Vesperatu Slap Down vs. 64 HP / 0 DefM Power Cuffs Mutagon: 102-122 (52.3 - 62.6%) -- 13.3% chance to 2HKO</h4>
+                </div>
             </div>
-            <button class="panel">What is the best set for this Loomian/The new Loomian has been released, what set should I run?</button>
-            <div class="panel2">
-                <p>Majority of Loomians can use many sets whether it be for the same purpose but an original set or 
-                    for different purposes such as Barblast having a ranged defensive variant to handle Cephalops.
-                </p> 
-                <p>There might be an objectively more popular way to run a Loomian however: 
-                    "acting like there is only one way to run something [is a] Bad mentality."
-                </p>
-                <p>When a new Loomian is released, it takes time for users to find the base stats of the Loomian, 
-                    its movepool and what Loomians it would prefer to have a matchup with. These, and much more factors, 
-                    are needed to make sets for a Loomian so don't expect ready-made sets immediately after an update releases.
-                </p>
-            <img src="../PVPImages/Diagrams/NoBestSet.jpeg" alt="No Best Set (By Draco564)">
-            </div>
-            <button class="panel">What are TPs/ UPs/ Personalities?</button>
-            <div class="panel2">
-                <h3>TPs</h3>
-                <p>
-                    TPs mean Training Points and are earned by either defeating Loomians (trainers and wild) or using Gummies.
-                </p>
-                <p>
-                    Training Points scale based on level: at level 50, 8 Training Points is equivalent to 1 total stat point and 
-                    at level 100, 4 Training Points is equivalent to 1 total stat point. 
-                    Energy is an exception as at level 50, 4 training points are needed to increase the total stat by 1 and at level 100, 4 Training Points increase the total stat by 2.
-                </p>
-                <p>
-                    The maximum amount of Training Points a Loomian can have is 500 overall but only 200 can be put into any stat. 
-                    TP yield can be increased by using the 5x TP Loomiboost which requires boost Tokens and 
-                    Protein Shake which can be earned from beating the Heavy Bag - at Gym Rats, Sepharite City - in less than 5 turns.
-                </p>
-                <p>
-                    Route 6/Rally Ranch is currently the most ideal location to earn TPs due to having specialised trainers for nearly all the stats. 
-                    Energy TPs can be earned from Tamyra located in the water of Lotusun Beach or Igneols, Skilavas and Varis found in Igneus Hollow.Teddy 
-                    (the last trainer on Route 8) offers 2 speed and 4 Melee Attack Training Points which makes him an ideal choice for experience points grinding as well as TP training.
-                </p>
-                <img alt="https://gyazo.com/e7aff5bb58cdf0a1fdf41098e5fd9a8f" src="../PVPImages/TP_Hotspots.jpg">
-                <h3>UPs</h3> 
-                <p> UPs mean Unique Points and also increase the total stat points of a Loomian. 
-                    However, Unique Points are a set value when a Loomian is captured/rallied between 0 and 40 but can be increased by 10 using shards and decreased by 10 using dark shards. 
-                    Unique Points are also scaled based on level: 
-                    <br><br> Level 50: 2 Unique Points = 1 Total Stat Point
-                    <br><br> Level 100: 1 Unique Points = 1 Total Stat Point
-                </p>
-                <h3>Personalities</h3>
-                <p>
-                    Personalities help boost the total stats of a Loomian.
-                    Wild loomians have access to pure (one) personalities or 
-                    1 negative 1 positive whereas Rallied Loomians have access to "Totemised Personalities".
-                </p> 
-                <p>
-                    These are 3 combo personalities that take the form of "[Negative] [Negative] Very [Positive]" 
-                    or "[Positive] [Positive] Very [Negative]" (See Rally Ranch).
-                </p>
-                <img src="../PVPImages/Diagrams/SmilingTotemPerso.png">
-                <img src="../PVPImages/Diagrams/ScowlingTotemPerso.png">
-                <p>
-                    These are usually preferred for PVP use due to offering more stat boosts either for one stat or increasing multiple. 
-                    This is also why event reskins of loomians aren't advised to be used in PVP however there are exceptions (see Set Making).
-                </p>    
-                <img alt="https://discord.com/channels/549360766600347658/615581619725533251/884954551327785031" src="../PVPImages/Diagrams/LLStatistics.jpeg">
-            </div>
-            <button class="panel">How do you read Damage Calculations?</button>
-            <div class="panel2">
-                <p>
-                    The Damage Calculator is a useful tool that allows people to create and test sets without needing to prepare Loomians in game. 
-                    After all, it would be a shame if you made a set in game and it turns out it doesn't work. 
-                    The format of the Damage Calculations may be confusing at first but its actually quite simple. 
-                    Lets take a look at a Revenine vs an Oxidrake:
-                </p>
-                <h4>
-                    <span class="TPs">200</span> 
-                    ++AtkR 
-                    <span class="Item">Power Cuffs</span> 
-                    <span class="Ability"> Vengeance</span>
-                    <span class="Loomian">Revenine</span>
-                    <span class="Attack"> Fire Breath</span> 
-                    vs. 
-                    <span class="TPs">200 HP / 200</span> ++DefR 
-                    <span class="Item">Heavy Shield</span> 
-                    <span class="Loomian">Oxidrake</span>
-                    <span class="Summary">111-131 (57.8 - 68.2%) -- 5.1% chance to 2HKO</span>
-                </h4>
-                <p>
-                    <span class="TPs">200</span> - the amount of TPs invested in the stat, 
-                    note that UPs are not displayed in calculations due to users preferring them to be 40 by default.
-                    <br><br>
-                    ++AtkR/++DefR -  also known as Very Smart and Very Clever respectively, 
-                    this is the indicator to what personality is being used in the Calculations (if any).
-                    <br><br>
-                    <span class="Item">Power Cuffs</span> - if the attacker is using an item that affects damage then it will be counted in the calculation.
-                    <br><br>
-                    <span class="Ability">Vengeance</span> - if an ability that impacts the attack is being used, it will be included in the calculation. 
-                    Abilities such as Combustible or Noxious Weeds require the box next to their name to be selected for it to be counted in the calculation.
-                    <br><br>
-                    <span class="Loomian">Revenine/Oxidrake</span> - the Loomian attacking and the Loomian defending, respectively.
-                    <br><br>
-                    <span class="Attack">Fire Breath</span> - the move being used, the damage calculator also checks if the Type of the Move corresponds to 
-                    the Type of the Loomian so the appropriate ATB (Attack Type Boost) can be given.
-                    <br><br>
-                    <span class="Item">Heavy Shield</span> - the item being used to defend against an attack. 
-                    Note that if the attacker has the ability sly, the item will be ignored.
-                    <br><br>
-                    <span class="Summary">111-131</span> - the range of how many health points can be deducted. 
-                    Below the calculation shows the full range of possible health points that can be deducted.
-                    <br><br>
-                    <span class="Summary">(57.8 - 68.2%)</span> - the range of how many health points can be deducted as a percentage
-                    <br><br>
-                    <span class="Summary">-- 5.1% chance to 2HKO</span> - a summary of how many hits the move will take. 
-                    Note that Moves such as Slap Down - which varies damage based on if the opposing Loomian has an item - is accounted for.
-                </p>
-            </div>
-            <button class="panel">What is a Check?</button>
-            <div class="panel2">
-                <p>A Loomian is considered a check if it can threaten a hit on the opposing Loomian however switching in is very risky and can cause massive health loss or even fainting. 
-                    For Example, a Brawny Vesperatu can One Hit Knockout (OHKO) a tender Falkyrie:</p>
-                <h4>200 +AtkM Dark Essence Sharp Claws Vesperatu Slap Down vs. 64 HP / 0 -DefM Power Cuffs Falkyrie: 292-344 (169.8 - 200.0%) -- guaranteed OHKO</h4> 
-                <p>However, Falkyrie can use Gamma Pulse to get rid of Vesperatu if it decides to swap in:</p>
-                <h4>200 ++AtkR Power Cuffs Awakening Falkyrie Gamma Pulse vs. 80 HP / 0 DefR Vesperatu: 508-600 (306.0 - 361.4%) -- guaranteed OHKO</h4>
-                <p>Checks can be sorted into two categories: Soft Checks and Hard Checks.</p> 
-                <h4>
-                    <u>
-                        Soft Checks
-                    </u>
-                </h4>
-                <p>
-                    Soft Checks are Loomians who can only swap in a limited amount of times before fainting.
-                </p>    For example, Revenine can be used to check Hunder but Hunder can hit it with Thunder Chomp (for neutral effectiveness) before swapping out on the next turn therefore avoiding a Fire Breath:      
-                <h4>200 ++AtkM Power Cuffs Power Jaw Hunder Thunder Chomp vs. 72 HP / 0 -DefM Revenine: 68-81 (45.6 - 54.4%) -- 53.1% chance to 2HKO</h4> 
-                <p>Too many swap ins from Revenine can result in Revenine fainting and possibly losing the game due to having no other Loomian to defeat Hunder.</p>
-                <h4>
-                    <u>
-                        Hard Checks
-                    </u>
-                </h4>
-                <p>Loomians used as hard checks are generally able to swap into some hits and can even have recovery to help battle against whatever Loomian it is checking but one mis-play can result in losing your check.</p>
-                <p>For example, a Very Robust Luminami can be a viable answer to an Offensive Brawny Power Jaw Tyrecks since it has high Melee Defence, has recovery through rejuvenate and it's use of Maroon can 3 Hit Knock Out Tyrecks:</p>        
-                <h4>0 AtkR Luminami Maroon vs. 88 HP / 0 DefR Tyrecks: 72-86 (40.0 - 47.8%) -- guaranteed 3HKO </h4>      
-                <p>However, if Luminami uses rejuvenate too many times and has not enough energy or Tyrecks increases its Melee Attack with Sharpen, Luminami would be vulnerable to chomp which can 3HKO first due to Offensive Nimble Tyreck's higher speed.</p>
-                <h4>+1 200 +AtkM Dark Essence Power Jaw Tyrecks Chomp vs. 200 HP / 200 ++DefM Heavy Armor Luminami: 80-96 (38.6 - 46.4%) -- guaranteed 3HKO</h4> 
-            </div>
-            <button class="panel">What is a Counter?</button>
-            <div class="panel2">
-                <p>A Loomian is considered a counter if it can reliably swap into another loomian and defeat it.</p>
-                <p>For example, Cosmiore-Cracked is able to swap into Barblasts's attacks:</p>
-                <h4>0 AtkR High Explosive Barblast Toxiblast vs. 184 HP / 24 DefR Cosmiore-Cracked: 56-67 (27.7 - 33.2%) -- possible 4HKO</h4> 
-                <p>Cosmiore-Cracked would be able to set up Peace Of Mind which increases it's Ranged Defense making Toxiblast weaker and increases it's Ranged Attack allowing for Psycho Blast to hit harder.</p>
-                <h4>200 +AtkR Cosmiore-Cracked Psycho Blast vs. 200 HP / 40 DefR Barblast: 132-156 (65.7 - 77.6%) -- guaranteed 2HKO</h4> 
-                <p>The example above is referring to a hard counter - a Loomian, regardless what set its running, that can swap in and defeat a Loomian. Some Loomians, such as Vesperatu, are advised to run a specific set to counter Loomians like Mutagon:</p>
-                <h4>200 +AtkM Power Cuffs Heavy Fists Mutagon Telekinetic Sweep vs. 168 HP / 128 +DefM Vesperatu: 45-53 (25.4 - 29.9%) -- possible 4HKO</h4>
-                <h4>0 AtkM Sharp Claws Vesperatu Slap Down vs. 64 HP / 0 DefM Power Cuffs Mutagon: 102-122 (52.3 - 62.6%) -- 13.3% chance to 2HKO</h4>
-            </div>
-            <script src="../JavaScript/Accordion.js"></script>
-            <div id="Terminology">
-                <h3>Terminology</h3>
+            <div class="Section" >
+                <h3 id="Terminology">Terminology</h3>
                 <p class="term">2v2 - refers to the pvp format where 4 people battle sending out 1 Loomian at any one time.</p>
                 <p class="term">7x40 - 40 refers to how many UPS and the 7 refers to how many stats have those amount of UPs. Variations include 6x40 which means all UP stats are 40 and 7x0 which means all UP stats are 0.</p>
                 <p class="term">Attack Type Boost (ATB) - 25% strength Increase on moves that share the same type with the Loomian. if the Loomian has Awakening, ATB changes to 50% and if the Loomian has Ace, ATB changes to 100%.</p>
@@ -222,9 +239,10 @@
                 <p class="term">Meta(game) - what is currently being used within the colosseum, especially amongst competitive players.</p>
                 <p class="term">Movepool - the moves a Loomian has access to, whether that be from level up, rally or Move Manuals.</p>
                 <p class="term">OHKO/2HKO/3HKO...  - One Hit Knock Out/Two Hit Knock Out/Three Hit Knock Out.</p>
-                
                 <p class="term">SA - Secret Ability which are rarer abilities that Loomians have. Exceptions include Harvesect Evo Line, Boonary and Swirelle.</p>
-                <h5>Usage Tierlist Definitions</h5>
+            </div>
+            <div class="Section">
+                <h3 id="UsageTerms">Usage Tierlist Definitions</h3>
                 <p class="term">Ubers - Loomians considered uncompetitive or over-centralizing to the competitive scene thus banned in OU tournaments. They can only be used in Uber Tournements and above.</p>
                 <p class="term">OU (OverUsed) - Loomians that have at least an 8.3% usage. Loomians in this tier can be used in OU tournaments and above.</p>
                 <p class="term">UUBL (UnderUsed BanList) - Loomians that have a usage lower than 8.3% however banned from UnderUsed tournaments due to being too powerful. They can be used in OU tournaments and above.</p>
@@ -232,6 +250,8 @@
                 <p class="term">NUBL (NeverUsed BanList) -  Loomians that do not have a usage however they are banned from Neverused tournaments due to being too powerful. They can be used in UU tournaments and above.</p>
                 <p class="term">NU (NeverUsed) - Loomians that have a usage lower than 8.3% in an UU Tournement. Loomians in this tier can be used in NU tournements and above.</p>
             </div>
+            <script src="../JavaScript/Accordion.js"></script>
+            <script src="../JavaScript/ContentList.js"></script>
         </main>
         <footer>
             <a href="https://www.discordapp.com/users/298479810345172994">stuntmanforlyf</a> - 
