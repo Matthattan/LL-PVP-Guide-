@@ -1,4 +1,4 @@
-.paragraph1{
+section {
     margin: auto;
     width: 1080px;
     height: auto;
@@ -24,11 +24,6 @@ tr:nth-child(even) {
 }
 
 .location {
-    margin: auto;
-    width: 1080px;
-}
-
-.location img {
     margin: auto;
     width: 1080px;
     height: auto;
@@ -66,7 +61,7 @@ h3 {
 }
 
 @media screen and (max-width: 1100px) {
-    .paragraph1 {
+    section {
         width: 780px;
     }
 
@@ -107,17 +102,12 @@ h3 {
 }
 
 @media screen and (max-width: 800px) {
-    .paragraph1 {
+    section {
         width: 580px;
         font-size: 20px;
     }
 
     .location {
-        width: 580px;
-        height: auto;
-    }
-
-    .location img {
         width: 580px;
         height: auto;
     }
@@ -152,18 +142,13 @@ h3 {
 }
 
 @media screen and (max-width: 600px) {
-    .paragraph1 { 
+    section { 
         width: 480px;
         font-size: 18px;
     }
 
     .location {
         width: 480px;
-        height: auto;
-    }
-
-    .location img {
-        width: 460px;
         height: auto;
     }
 
@@ -194,17 +179,12 @@ h3 {
 }
 
 @media screen and (max-width: 480px) {
-    .paragraph1 {
+    section {
         width: 350px;
         font-size: 16px;
     }
 
     .location {
-        width: 350px;
-        height: auto;
-    }
-
-    .location img {
         width: 350px;
         height: auto;
     }
@@ -235,17 +215,12 @@ h3 {
 }
 
 @media screen and (max-width: 360px) {
-    .paragraph1 {
+    section {
         width: 300px;
         font-size: 14px;
     }
 
     .location {
-        width: 300px;
-        height: auto;
-    }
-
-    .location img {
         width: 300px;
         height: auto;
     }

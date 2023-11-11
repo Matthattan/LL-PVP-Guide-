@@ -13,19 +13,18 @@ img {
 .panel {
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 10px;
     display: block;
     background-color: #eee;
     color: #444;
     cursor: pointer;
     padding: 18px;
-    width: 1080px;
+    width: 1020px;
     height: auto;
     border: none;
     text-align: left;
-    outline: none;
     font-family: "Russo One", sans-serif;
     font-size: 24px;
-    margin-bottom: 10px;
 }
 
 .active, .panel:hover {
@@ -36,11 +35,11 @@ img {
     margin: auto;
     background-color: white;
     display: none;
-    width: 1000px;
+    width: 1020px;
 }
 
-.Section {
-    width: 1080px;
+section {
+    width: auto;
     margin: auto;
     display: block;
     text-decoration:double;
@@ -48,10 +47,13 @@ img {
 
 .term {
     background-color: #ccc;
+    width: 1000px;
     height: auto;
+    margin: auto;
     padding: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 1080px) {
@@ -65,17 +67,19 @@ img {
 
     .panel {
         width: 780px;
+        font-size: 20px;
+        padding: 18px;
     }
 
     .panel2 {
         width: 780px;
-        height: auto;
+        font-size: 20px;
     }
 
-    .Section {
-        width: 780px;
+    .term {
+        width: 760px;
+        font-size: 20px;
     }
-
 }
 
 @media screen and (max-width: 800px) {
@@ -90,17 +94,18 @@ img {
 
     .panel {
         width: 580px;
-        font-size: 12px
+        font-size: 18px;
+        padding: 16px;
     }
 
     .panel2 {
         width: 580px;
-        font-size: 12px;
+        font-size: 18px;
     }
 
-    .Section {
-        width: 580px;
-        font-size: 12px;
+    .term {
+        width: 560px;
+        font-size: 18px;
     }
 }
 
@@ -116,37 +121,45 @@ img {
 
     .panel {
         width: 380px;
+        font-size: 16px;
+        padding: 14px;
     }
 
     .panel2 {
         width: 380px;
+        font-size: 16px;
     }
 
-    .Section {
-        width: 380px;
+    .term {
+        width: 360px;
+        font-size: 16px;
     }
 }
 
 @media screen and (max-width: 400px) {
     .Article {
-        width: 350px;
+        width: 340px;
     }
 
     img {
-        width: 350px;
+        width: 340px;
         height: auto;
     }
  
     .panel {
-        width: 350px;
+        width: 340px;
+        font-size: 14px;
+        padding: 12px;
     }
 
     .panel2 {
-        width: 350px;
+        width: 340px;
+        font-size: 14px;
     }
 
-    .Section {
-        width: 350px;
+    .term {
+        width: 320px;
+        font-size: 14px;
     }
 }
 
@@ -162,14 +175,18 @@ img {
 
     .panel {
         width: 300px;
+        font-size: 12px;
+        padding: 10px;
     }
 
     .panel2 {
         width: 300px;
+        font-size: 12px;
     }
 
-    .Section {
-        width: 300px;
+    .term {
+        width: 280px;
+        font-size: 12px;
     }
 }
 

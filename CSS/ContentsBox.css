@@ -10,7 +10,7 @@ html{
     color: black;
     cursor: pointer;
     padding: 10px;
-    width: 1080px;
+    width: 1040px;
     height: auto;
     border: none;
     text-align: left;
@@ -58,12 +58,12 @@ html{
 @media screen and (max-width: 800px) {
     .ParContent {
         width: 580px;
-        font-size: 12px
+        font-size: 18px
     }
 
     .ChildPanel {
         width: 540px;
-        font-size: 12px;
+        font-size: 18px;
     }
 }
 
@@ -71,31 +71,36 @@ html{
     .ParContent {
         width: 380px;
         padding: 8px;
+        font-size: 16px;
     }
 
     .ChildPanel {
         width: 340px;
+        font-size: 16px;
     }
 }
 
 @media screen and (max-width: 400px) {
     .ParContent {
         width: 350px;
+        font-size: 14px;
     }
 
     .ChildPanel {
         width: 320px;
+        font-size: 14px;
     }
 }
 
 @media screen and (max-width: 360px) {
     .ParContent {
         width: 300px;
+        font-size: 12px;
     }
 
     .ChildPanel {
         width: 260px;
-        font-size: 9px;
+        font-size: 12px;
     }
 }
 
