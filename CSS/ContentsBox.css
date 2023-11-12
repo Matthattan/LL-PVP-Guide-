@@ -6,7 +6,7 @@ html{
     margin: auto;
     margin-top: 20px;
     display: block;
-    background-color:  #DAF7A6;
+    background-color: #DAF7A6;
     color: black;
     cursor: pointer;
     padding: 10px;
@@ -44,7 +44,7 @@ html{
     color: royalblue;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1100px) {
     .ParContent {
         width: 780px;
     }
@@ -55,7 +55,7 @@ html{
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 820px) {
     .ParContent {
         width: 580px;
         font-size: 18px
@@ -67,11 +67,10 @@ html{
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
     .ParContent {
-        width: 380px;
-        padding: 8px;
-        font-size: 16px;
+        width: 470px;
+        font-size: 18px;
     }
 
     .ChildPanel {
@@ -80,19 +79,19 @@ html{
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .ParContent {
-        width: 350px;
+        width: 360px;
         font-size: 14px;
     }
 
     .ChildPanel {
-        width: 320px;
+        width: 310px;
         font-size: 14px;
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 380px) {
     .ParContent {
         width: 300px;
         font-size: 12px;
