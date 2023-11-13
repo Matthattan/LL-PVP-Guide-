@@ -116,7 +116,7 @@ h4 {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
     .paragraph1 {
         width: 350px;
         font-size: 16px;
