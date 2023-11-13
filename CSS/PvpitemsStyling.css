@@ -127,12 +127,12 @@ h3 {
 
 @media screen and (max-width: 620px) {
     .location {
-        width: 470px;
+        width: 380px;
         height: auto;
     }
 
     table {
-        width: 480px;
+        width: 380px;
         height: auto;
         font-size: 16px;
     }
@@ -142,13 +142,13 @@ h3 {
     }
 
     #footnote {
-        width: 480px;
+        width: 380px;
         font-size: 16px;
     }
 
     h3 {
         margin: auto;
-        width: 480px;
+        width: 380px;
         font-size: 20px;
     }
 
@@ -159,12 +159,12 @@ h3 {
 
 @media screen and (max-width: 500px) {
     .location {
-        width: 350px;
+        width: 340px;
         height: auto;
     }
 
     table {
-        width: 350px;
+        width: 340px;
         height: auto;
         font-size: 12px;
     }
@@ -174,13 +174,13 @@ h3 {
     }
 
     #footnote {
-        width: 350px;
+        width: 340px;
         font-size: 12px;
     }
 
     h3 {
         margin: auto;
-        width: 350px;
+        width: 340px;
     }
 
     th, td {

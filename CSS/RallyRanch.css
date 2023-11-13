@@ -72,7 +72,7 @@ h4 {
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 820px) {
     .paragraph1 {
         width: 580px;
         font-size: 16px;
@@ -94,7 +94,7 @@ h4 {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
     .paragraph1 {
         width: 380px;
         font-size: 16px;
