@@ -56,7 +56,7 @@ section {
     border-radius: 5px;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1100px) {
     .Article {
         width: 780px;
     }
@@ -82,7 +82,7 @@ section {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 820px) {
     .Article {
         width: 580px;
     }
@@ -109,7 +109,7 @@ section {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
     .Article {
         width: 380px;
     }
@@ -136,7 +136,7 @@ section {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .Article {
         width: 340px;
     }
@@ -163,7 +163,7 @@ section {
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 380px) {
     .Article {
         width: 300px;
     }
