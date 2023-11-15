@@ -5,6 +5,7 @@ html{
 .ParContent {
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 20px;
     display: block;
     background-color: #DAF7A6;
     color: black;
@@ -95,12 +96,12 @@ html{
 
 @media screen and (max-width: 480px) {
     .ParContent {
-        width: 320px;
+        width: 340px;
         font-size: 14px;
     }
 
     .ChildPanel {
-        width: 300px;
+        width: 320px;
         font-size: 14px;
     }
 }
