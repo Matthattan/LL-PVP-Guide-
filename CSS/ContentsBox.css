@@ -61,7 +61,6 @@ html{
 
 @media screen and (max-width: 1080px) {
     .ParContent {
-        margin: auto;
         width: 780px;
     }
 
