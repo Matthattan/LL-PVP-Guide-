@@ -1,7 +1,7 @@
 /* Style the tab */
 .tab {
     margin: auto;
-    width: 1080px;
+    width: 1020px;
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
@@ -33,7 +33,7 @@
 /* Style the tab content */
 .tabcontent {
     margin: auto;
-    width: 1040px;
+    width: 980px;
     display: none;  
     border: 1px solid black;
     border-top: none;
@@ -48,7 +48,7 @@
 }
 
 .paragraph {
-    width: 1080px;
+    width: 1020px;
     margin: auto;
     text-align: left;
     margin-bottom: 20px;
@@ -128,7 +128,7 @@ h3 {
 
 @media screen and (max-width: 600px){
     .tab {
-        width: 380px;
+        width: 360px;
     }
 
     .paragraph {
@@ -137,7 +137,7 @@ h3 {
 
     .tabcontent {
         padding: 0px;
-        width: 380px;
+        width: 360px;
     }
 
     .tab button {
@@ -183,7 +183,7 @@ h3 {
     }
 
     p {
-        width: 350px;
+        width: 340px;
         font-size: 14px;
     }
     
@@ -211,7 +211,7 @@ h3 {
     }
 
     p {
-        width: 300px;
+        width: 280px;
         font-size: 14px;
     }
     

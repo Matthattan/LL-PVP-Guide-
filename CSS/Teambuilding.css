@@ -1,11 +1,3 @@
-.paragraph1 {
-  margin: auto;
-  width: 1080px;
-  height: auto;
-  text-align: justify;
-  margin-top: 20px;
-}
-
 ul {
   margin: auto;
   margin-top: 10px;
@@ -45,10 +37,12 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: auto;
   height: auto;
 }
 
 .grid-container2 {
+  margin: auto;
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 16px;
@@ -96,12 +90,6 @@ ul {
 }
 
 @media screen and (max-width: 1080px) {
-  .paragraph1 {
-    width: 780px;
-    height: auto;
-    text-align: left;
-  }
-
   .Team {
     width: 780px;
     height: auto;
@@ -110,11 +98,11 @@ ul {
   .grid-container {
     display: block;
     grid-template-columns: auto;
+    margin: auto;
     width: 780px;
-    gap: 16px;
   }
 
-  #TEChart {
+  .TEChart {
     width: 780px;
     height: auto;
   }
@@ -149,13 +137,6 @@ ul {
 }
 
 @media screen and (max-width: 800px) {
-  .paragraph1 {
-    width: 580px;
-    height: auto;
-    text-align: left;
-    font-size: 20px;
-  }
-
   .Team {
     width: 400px;
     height: auto;
@@ -207,13 +188,6 @@ ul {
 }
 
 @media screen and (max-width: 600px) {
-  .paragraph1 {
-    width: 380px;
-    height: auto;
-    text-align: left;
-    font-size: 20px;
-  }
-
   .Team {
     width: 380px;
     height: auto;
@@ -232,7 +206,7 @@ ul {
   }
 
   .TEChart {
-    width: 380px;
+    width: 100%;
     height: auto;
   }
 
@@ -269,16 +243,9 @@ ul {
   }
 }
 
-@media screen and (max-width: 400px) {
-  .paragraph1 {
-    width: 350px;
-    height: auto;
-    text-align: left;
-    font-size: 12px;
-  }
-
+@media screen and (max-width: 480px) {
   .Team {
-    width: 320px;
+    width: 290px;
     height: auto;
   }
 
@@ -290,12 +257,12 @@ ul {
   .grid-container {
     display: block;
     grid-template-columns: auto;
-    width: 350px;
+    width: 300px;
     gap: 16px;
   }
 
   .TEChart {
-    width: 350px;
+    width: 300px;
     height: auto;
   }
 
@@ -307,39 +274,36 @@ ul {
   .grid-container2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 350px;
+    width: 300px;
     gap: 16px;
   }
 
   #Garlash {
-    height: 75px;
-    width: auto;
+    width: 80px;
+    height: auto;
   }
 
   #RadiantForecast {
-    height: 45px;
-    width: auto;
+    width: 80px;
+    height: auto;
   }
 
   #Falkyrie {
-    height: 100px;
-    width: auto;
+    width: 80px;
+    height: auto;
   }
 
   .note {
     font-size: 10px;
     text-align: left;
   }
+
+  section section ul {
+    padding-left: 10px;
+  }
 }
 
 @media screen and (max-width: 360px) {
-  .paragraph1 {
-    width: 300px;
-    height: auto;
-    text-align: left;
-    font-size: 12px;
-  }
-
   .Team {
     width: 300px;
     height: auto;

@@ -1,3 +1,59 @@
+/* Buttons for each Core Category */
+.tab {
+    margin: auto;
+    width: 1040px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/*Name for each Core/Button to show description*/
+.panel {
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    width: 1000px;
+    height: 80px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-family: "Russo One", sans-serif;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/*Description of each Core*/
+.panel2 {
+    margin: auto;
+    width: auto;
+    background-color: transparent;
+    display: none;
+    height: auto;
+}
+
+/*text element for each description*/
+p {
+    margin: auto;
+    width: 90%;
+    height: auto;
+    text-align: justify;
+}
+
+/*2x1 table for loomian images*/
+.container {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+    width: auto;
+    height: auto;
+}
+
+/*Image for each Loomian
+Total width of each image needs to be less than container*/
 img {
     margin: auto;
     position: relative;
@@ -10,63 +66,19 @@ img {
     object-fit: contain;
 }
 
-.container {
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 20px;
-    width: inherit;
-    height: auto;
-}
-
-.panel {
-    margin-top: 20px;
-    display: block;
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 1040px;
-    height: auto;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-family: "Russo One", sans-serif;
-    font-size: 24px;
-    transition: 0.4s;
-    margin-bottom: 10px;
-}
-
 .active, .panel:hover {
     background-color: #ccc;
 }
 
-.panel2 {
-    margin: auto;
-    background-color: white;
-    display: none;
-    width: 1040px;
-    height: auto;
-}
-
-/* Style the tab */
-.tab {
-    margin: auto;
-    width: 1080px;
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-}
-
-/* Style the buttons inside the tab */
+/* Button element inside core category elements */
 .tab button {
     background-color: inherit;
     float: left;
     border: 1px solid black;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
     font-size: 17px;
+    padding: 16px 16px;
     font-family: 'Russo One', sans-serif;
 }
 
@@ -88,8 +100,6 @@ img {
     display: none;  
     border: 1px solid black;
     border-top: none;
-    align-items: center;
-    padding: 20px;
     background-color: white;
 }
 
@@ -98,227 +108,194 @@ img {
     display: grid;
 }
 
-p {
-    width: inherit;
-    height: auto;
-    margin: auto;
-    text-align: left;
-}
-
-
 @media screen and (max-width: 1080px){
     .Article {
-        width: 780px;
-    }
-
-    img {
-        height: 200px;
-        width: 100%;
+        width: 760px;
     }
 
     .panel {
-        width: 680px;
-        margin: auto;
-        margin-bottom: 20px;
-    }
-
-    .panel2 {
-        width: 680px;
-        margin-bottom: 20px;
-    }
-
-    .tab {
-        width: 780px;
-    }
-
-    .tabcontent {
         width: 740px;
-    }
-
-    p {
-        width: 700px;
+        height: 60px;
         font-size: 20px;
     }
 
+    .panel2 {
+        width: auto;
+    }
+
+    #Terminology {
+        width: 760px;
+    }
+
+    .tab {
+        width: auto;
+    }
+
+    .paragraph {
+        width: 760px;
+    }
+
+    .tab button {
+        padding: 16px 16px;
+        font-size: 17px;
+    }
+
+    .tabcontent {
+        width: auto;
+    }
+
+    img {
+        height: 250px;
+        width: auto;
+    }
+
+    .container {
+        width: auto;
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 800px){
     .Article {
-        width: 580px;
-    }
-
-    img {
-        height: 200px;
-        width: 100%;
-    }
-
-    .container {
-        width: 500px;
+        width: 560px;
     }
 
     .panel {
-        width: 500px;
-        font-size: 20px;
+        width: 540px;
+        height: 60px;
+        font-size: 18px;
     }
 
     .panel2 {
-        width: 500px;
-        font-size: 12px;
+        width: auto;
     }
 
     #Terminology {
-        width: 580px;
-        font-size: 12px;
+        width: 560px;
     }
 
     .tab {
-        width: 580px;
+        width: auto;
     }
 
-    .tabcontent {
-        width: 540px;
+    .paragraph {
+        width: 360px;
     }
 
-    .panel button.active {
-        width: 250px;
-    }
-
-    p {
-        width: 500px;
-        font-size: 20px;
-    }
-    
-    img {
-        height: 150px;
+    .tab button {
         width: 100%;
     }
 
-    h3 {
-        font-size: 28px;
+    .tabcontent {
+        width: auto;
+    }
+
+    img {
+        height: 120px;
+        width: auto;
+    }
+
+    .container {
+        width: auto;
+        height: auto;
     }
 }
 
 @media screen and (max-width: 600px){
     .Article {
-        width: 380px;
+        width: 360px;
     }
 
     .panel {
         width: 340px;
-        font-size: 18px;
-        margin-top: 20px;
+        height: 60px;
+        font-size: 16px;
     }
 
     .panel2 {
-        width: 300px;
-    }
-
-    .container {
-        width: inherit;
+        width: auto;
     }
 
     #Terminology {
-        width: 380px;
+        width: 360px;
     }
 
     .tab {
-        width: 380px;
+        width: auto;
     }
 
     .paragraph {
-        width: 375px;
-    }
-
-    .tabcontent {
-        padding: 0px;
-        width: 380px;
+        width: 360px;
     }
 
     .tab button {
         width: 100%;
     }
 
-    .tab button.active {
-        border-bottom: 1px solid black;
+    .tabcontent {
+        width: auto;
     }
 
-    p {
-        width: inherit;
-        font-size: 16px;
-        margin: auto;
-    }
-    
     img {
-        height: 150px;
-        width: 100%;
+        height: 120px;
+        width: auto;
     }
 
-    h3 {
-        font-size: 20px;
+    .container {
+        width: auto;
+        height: auto;
     }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 480px){
     .Article {
-        width: 350px;
-    }
-
-    .container {
-        width: 300px;
-    }
-
-    img {
-        height: 150px;
-        width: 100%;
+        width: 360px;
     }
 
     .panel {
-        width: 310px;
-        font-size: 16px;
+        width: 340px;
+        height: 60px;
+        font-size: 14px;
     }
 
     .panel2 {
-        width: 350px;
+        width: auto;
     }
 
     #Terminology {
-        width: 350px;
+        width: 360px;
     }
 
     .tab {
-        width: 350px;
+        width: auto;
     }
 
     .paragraph {
-        width: 350px;
-    }
-
-    .tabcontent {
-        width: 350px;
+        width: 360px;
     }
 
     .tab button {
-        width: 100%;
+        width: auto;
     }
 
-    p {
-        width: 300px;
-        font-size: 14px;
+    .tabcontent {
+        width: auto;
+    }
+
+    img {
+        height: 100px;
+        width: auto;
+    }
+
+    .container {
+        width: auto;
+        height: auto;
     }
 }
 
 @media screen and (max-width: 360px){
     .Article {
         width: 300px;
-    }
-
-    .container {
-        width: 300px;
-    }
-
-    img {
-        height: 100px;
-        width: 100%;
     }
 
     .panel {
@@ -328,7 +305,7 @@ p {
     }
 
     .panel2 {
-        width: 300px;
+        width: auto;
     }
 
     #Terminology {
@@ -336,19 +313,24 @@ p {
     }
 
     .tab {
-        width: 300px;
+        width: 298px;
     }
 
     .paragraph {
         width: 300px;
     }
 
-    .tabcontent {
-        width: 300px;
+    .tab button {
+        width: auto;
     }
 
-    .tab button {
-        width: 100%;
+    .tabcontent {
+        width: 296px;
+    }
+
+    img {
+        height: 100px;
+        width: auto;
     }
 
     p {

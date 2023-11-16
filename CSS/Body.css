@@ -3,8 +3,6 @@ body {
     font-size: 28px;
     margin: 0;
     padding: 0;
-    /**background-color: rgb(22,22,22,255);
-    color: rgb(120, 128, 134);**/
 }
 
 header {
@@ -23,9 +21,25 @@ header {
 }
 
 h1 {
+    font-size: 48px;
+    text-decoration: underline;
     margin: auto;
     width: 1000px;
     text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+    text-decoration: underline;
+    margin-left: 10px;
+    text-align: center;
+}
+
+section {
+    margin: auto;
+    width: 1080px;
+    height: auto;
+    text-align: justify;
 }
 
 @media screen and (max-width: 1080px) {
@@ -36,7 +50,15 @@ h1 {
 
     h1 {
         width: 780px;
+        font-size: 40px;
+    }
+
+    h2 {
         font-size: 32px;
+    }
+
+    section {
+        width: 780px;
     }
 }
 
@@ -50,6 +72,15 @@ h1 {
         width: 580px;
         font-size: 32px;
     } 
+
+    h2 {
+        font-size: 28px;
+    }
+
+    section {
+        width: 580px;
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -58,9 +89,13 @@ h1 {
     }
 
     h1 {
-        width: 480px;
+        width: 380px;
         font-size: 28px;
-        vertical-align: auto;
+    }
+
+    section { 
+        width: 380px;
+        font-size: 18px;
     }
 }
 
@@ -72,10 +107,17 @@ h1 {
     }
 
     h1 {
-        margin: auto;
         width: 350px;
-        text-align: center;
-        font-size: 28px;
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    section {
+        width: 350px;
+        font-size: 16px;
     }
 }
 
@@ -87,9 +129,16 @@ h1 {
     }
 
     h1 {
-        margin: auto;
         width: 300px;
-        text-align: center;
-        font-size: 28px;
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    section {
+        width: 300px;
+        font-size: 14px;
     }
 }

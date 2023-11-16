@@ -38,68 +38,29 @@ tr:nth-child(even) {
     background-color: #D6EEEE;
 }
 
-h1 {
-    margin: auto;
-    width: 1080px;
-    text-align: center;
-}
-
-h4 {
-    margin-top: 60px;
-    margin-bottom: 20px;
-}
-
-@media screen and (max-width: 1100px) {
-    .paragraph1 {
-        width: 720px;
-        font-size: 24px;
-    }
-
+@media screen and (max-width: 1080px) {
     #location {
         margin: auto;
         width: 720px;
     }
     
     table {
-        width: 720px;
-    }
-
-    h1 {
-        margin: auto;
-        width: 720px;
-        text-align: center;
+        width: 780px;
     }
 }
 
 
 @media screen and (max-width: 800px) {
-    .paragraph1 {
-        width: 580px;
-        font-size: 16px;
-    }
-
     #location {
         width: 580px;
     }
 
     table {
         width: 580px;
-    }
-
-    h1 {
-        margin: auto;
-        width: 580px;
-        text-align: center;
-        font-size: 28px;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .paragraph1 {
-        width: 380px;
-        font-size: 16px;
-    }
-
     #location {
         width: 380px;
     }
@@ -108,57 +69,36 @@ h4 {
         width: 380px;
     }
 
-    h1 {
-        margin: auto;
-        width: 380px;
-        text-align: center;
-        font-size: 28px;
+    th, td {
+        font-size: 16px;
     }
 }
 
-@media screen and (max-width: 400px) {
-    .paragraph1 {
-        width: 350px;
-        font-size: 16px;
-    }
-
+@media screen and (max-width: 480px) {
     #location {
         width: 350px;
     }
 
     table {
         width: 350px;
-        font-size: 12px;
     }
 
-    h1 {
-        margin: auto;
-        width: 350px;
-        text-align: center;
-        font-size: 20px;
+    th, td {
+        font-size: 14px;
     }
 }
 
 @media screen and (max-width: 360px) {
-    .paragraph1 {
-        width: 300px;
-        font-size: 14px;
-    }
-
     #location {
         width: 300px;
     }
 
     table {
         width: 300px;
-        font-size: 12px;
     }
 
-    h1 {
-        margin: auto;
-        width: 300px;
-        text-align: center;
-        font-size: 20px;
+    th, td {
+        font-size: 12px;
     }
 }
 

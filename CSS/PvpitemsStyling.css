@@ -1,14 +1,7 @@
-.paragraph1{
-    margin: auto;
-    width: 1080px;
-    height: auto;
-    text-align: left;
-}
-
 table {
     margin: auto;
     border-collapse: collapse;
-    width: 1080px;
+    width: 1020px;
     border: 2px solid black;
     display: block;
     margin-bottom: 20px;
@@ -24,15 +17,12 @@ tr:nth-child(even) {
 }
 
 .location {
+    display: block;
     margin: auto;
-    width: 1080px;
-}
-
-.location img {
-    margin: auto;
-    width: 1080px;
+    margin-bottom: 10px;
+    width: 1016px;
     height: auto;
-    border: 3px solid #000000;
+    border: 2px black solid;
     border-radius: 5px;
 }
 
@@ -45,7 +35,7 @@ tr:nth-child(even) {
 #footnote {
     margin: auto;
     font-size: 16px;
-    width: 1080px;
+    width: 1020px;
 }
 
 .rows5 {
@@ -65,11 +55,7 @@ h3 {
     width: 1080px;
 }
 
-@media screen and (max-width: 1100px) {
-    .paragraph1 {
-        width: 780px;
-    }
-
+@media screen and (max-width: 1080px) {
     .location {
         width: 780px;
         height: auto;
@@ -84,12 +70,7 @@ h3 {
     }
 
     .location {
-        width: 780px;
-    }
-
-    .location img {
-        width: 780px;
-        height: auto;
+        width: 776px;
     }
 
     h3 {
@@ -107,19 +88,8 @@ h3 {
 }
 
 @media screen and (max-width: 800px) {
-    .paragraph1 {
-        width: 580px;
-        font-size: 20px;
-    }
-
     .location {
-        width: 580px;
-        height: auto;
-    }
-
-    .location img {
-        width: 580px;
-        height: auto;
+        width: 576px;
     }
 
     table {
@@ -142,111 +112,77 @@ h3 {
         font-size: 28px;
     }
 
-    .location {
-        width: 580px;
-    }
-
     th, td {
         font-size: 20px;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .paragraph1 { 
-        width: 480px;
-        font-size: 18px;
-    }
-
     .location {
-        width: 480px;
-        height: auto;
-    }
-
-    .location img {
-        width: 460px;
+        width: 376px;
         height: auto;
     }
 
     table {
-        width: 480px;
+        width: 380px;
         height: auto;
         font-size: 16px;
     }
 
     .sprite {
-        width: 40px;
+        width: 60px;
     }
 
     #footnote {
-        width: 480px;
+        width: 380px;
         font-size: 16px;
     }
 
     h3 {
         margin: auto;
-        width: 480px;
+        width: 380px;
         font-size: 20px;
     }
 
     th, td {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .paragraph1 {
-        width: 350px;
-        font-size: 16px;
-    }
-
     .location {
-        width: 350px;
-        height: auto;
-    }
-
-    .location img {
-        width: 350px;
+        width: 336px;
         height: auto;
     }
 
     table {
-        width: 350px;
+        width: 340px;
         height: auto;
         font-size: 12px;
     }
 
     .sprite {
-        width: 40px;
+        width: 50px;
     }
 
     #footnote {
-        width: 350px;
-        font-size: 12px;
+        width: 340px;
+        font-size: 14px;
     }
 
     h3 {
         margin: auto;
-        width: 350px;
+        width: 340px;
     }
 
     th, td {
-        font-size: 8px;
+        font-size: 12px;
     }
 }
 
 @media screen and (max-width: 360px) {
-    .paragraph1 {
-        width: 300px;
-        font-size: 14px;
-    }
-
     .location {
-        width: 300px;
-        height: auto;
-    }
-
-    .location img {
-        width: 300px;
+        width: 296px;
         height: auto;
     }
 
