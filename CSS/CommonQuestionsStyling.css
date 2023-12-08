@@ -3,7 +3,7 @@ img {
     position: relative;
     top: 10px;
     margin-bottom: 20px;
-    width: inherit;
+    width: 50%;
     height: auto;
     border: 3px solid #000000;
     border-radius: 5px;
@@ -61,10 +61,6 @@ section {
         width: 780px;
     }
 
-    img {
-        width: 780px;
-    }
-
     .panel {
         width: 780px;
         font-size: 20px;
@@ -85,11 +81,6 @@ section {
 @media screen and (max-width: 800px) {
     .Article {
         width: 580px;
-    }
-
-    img {
-        width: 580px;
-        height: auto;
     }
 
     .panel {
@@ -114,9 +105,9 @@ section {
         width: 380px;
     }
 
+    
     img {
-        width: 380px;
-        height: auto;
+        width: 80%;
     }
 
     .panel {
@@ -140,11 +131,6 @@ section {
     .Article {
         width: 340px;
     }
-
-    img {
-        width: 340px;
-        height: auto;
-    }
  
     .panel {
         width: 340px;
@@ -166,11 +152,6 @@ section {
 @media screen and (max-width: 360px) {
     .Article {
         width: 300px;
-    }
-
-    img {
-        width: 300px;
-        height: auto;
     }
 
     .panel {
