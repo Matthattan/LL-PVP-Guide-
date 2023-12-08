@@ -107,12 +107,12 @@ html{
 
 @media screen and (max-width: 360px) {
     .ParContent {
-        width: 300px;
+        width: 90%;
         font-size: 12px;
     }
 
     .ChildPanel {
-        width: 260px;
+        width: 90%;
         font-size: 12px;
     }
 }

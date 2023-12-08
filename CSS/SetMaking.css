@@ -1,3 +1,8 @@
-.Soon {
-    text-align: center;
+ul {
+    width: 80%;
+    margin: auto;
+}
+
+ul li {
+    margin-bottom: 0.5em;
 }

@@ -38,13 +38,6 @@ img {
     width: 1020px;
 }
 
-section {
-    width: auto;
-    margin: auto;
-    display: block;
-    text-decoration:double;
-}
-
 .term {
     background-color: #ccc;
     width: 1020px;
@@ -155,14 +148,14 @@ section {
     }
 
     .panel {
-        width: 300px;
+        width: 100%;
         font-size: 12px;
         padding: 10px;
     }
 
     .panel2 {
-        width: 300px;
-        font-size: 12px;
+        width: 100%;
+        font-size: 14px;
     }
 
     .term {
