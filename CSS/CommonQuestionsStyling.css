@@ -3,7 +3,7 @@ img {
     position: relative;
     top: 10px;
     margin-bottom: 20px;
-    width: inherit;
+    width: 50%;
     height: auto;
     border: 3px solid #000000;
     border-radius: 5px;
@@ -38,13 +38,6 @@ img {
     width: 1020px;
 }
 
-section {
-    width: auto;
-    margin: auto;
-    display: block;
-    text-decoration:double;
-}
-
 .term {
     background-color: #ccc;
     width: 1020px;
@@ -58,10 +51,6 @@ section {
 
 @media screen and (max-width: 1080px) {
     .Article {
-        width: 780px;
-    }
-
-    img {
         width: 780px;
     }
 
@@ -87,11 +76,6 @@ section {
         width: 580px;
     }
 
-    img {
-        width: 580px;
-        height: auto;
-    }
-
     .panel {
         width: 580px;
         font-size: 18px;
@@ -114,9 +98,9 @@ section {
         width: 380px;
     }
 
+    
     img {
-        width: 380px;
-        height: auto;
+        width: 80%;
     }
 
     .panel {
@@ -140,11 +124,6 @@ section {
     .Article {
         width: 340px;
     }
-
-    img {
-        width: 340px;
-        height: auto;
-    }
  
     .panel {
         width: 340px;
@@ -163,25 +142,20 @@ section {
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 380px) {
     .Article {
         width: 300px;
     }
 
-    img {
-        width: 300px;
-        height: auto;
-    }
-
     .panel {
-        width: 300px;
+        width: 100%;
         font-size: 12px;
         padding: 10px;
     }
 
     .panel2 {
-        width: 300px;
-        font-size: 12px;
+        width: 100%;
+        font-size: 14px;
     }
 
     .term {

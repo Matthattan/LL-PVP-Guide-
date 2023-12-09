@@ -305,7 +305,7 @@ ul {
 
 @media screen and (max-width: 360px) {
   .Team {
-    width: 300px;
+    width: 100%;
     height: auto;
   }
 
@@ -317,7 +317,7 @@ ul {
   .grid-container {
     display: block;
     grid-template-columns: auto;
-    width: 300px;
+    width: 100%;
     gap: 16px;
   }
 

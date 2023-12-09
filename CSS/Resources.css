@@ -18,7 +18,7 @@ div.gallery img {
 
 div.desc {
   padding: 15px;
-  text-align: center;
+  text-align: left;
   font-size: 20px;
   height: 120px;
 }
@@ -93,18 +93,18 @@ div.collection {
 
   div.desc {
     font-size: 12px;
-    height: 80px;
+    height: 1em;
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 380px) {
   div.collection {
-    width: 300px;
+    width: 100%;
     grid-template-columns: 1fr;
   }
 
   div.gallery {
-    width: 288px;
+    width: 280px;
   }
 
   div.gallery img {

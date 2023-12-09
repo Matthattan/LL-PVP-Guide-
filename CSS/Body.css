@@ -116,12 +116,12 @@ section {
     }
 
     section {
-        width: 350px;
+        width: 90%;
         font-size: 16px;
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 380px) {
     header {
         font-size: 20px;
         height: 100px;
@@ -139,6 +139,7 @@ section {
 
     section {
         width: 300px;
+        margin: auto;
         font-size: 14px;
     }
 }
