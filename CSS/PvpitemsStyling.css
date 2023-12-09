@@ -180,7 +180,7 @@ h3 {
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 380px) {
     .location {
         width: 296px;
         height: auto;

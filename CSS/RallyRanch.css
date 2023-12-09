@@ -10,7 +10,7 @@
     position: relative;
     top: 10px;
     display: block;
-    width: 1080px;
+    width: 90%;
     height: auto;
     border: 3px solid #000000;
     border-radius: 5px;
@@ -24,10 +24,19 @@
 }
 
 table {
+    margin: auto;
     border-collapse: collapse;
     width: 1080px;
     border: 2px solid black;
     display: block;
+}
+
+tbody {
+    width: 100%;
+}
+
+table tr {
+    width: 90%;
 }
 
 th, td {
@@ -39,11 +48,6 @@ tr:nth-child(even) {
 }
 
 @media screen and (max-width: 1080px) {
-    #location {
-        margin: auto;
-        width: 720px;
-    }
-    
     table {
         width: 780px;
     }
@@ -51,20 +55,12 @@ tr:nth-child(even) {
 
 
 @media screen and (max-width: 800px) {
-    #location {
-        width: 580px;
-    }
-
     table {
         width: 580px;
     }
 }
 
 @media screen and (max-width: 600px) {
-    #location {
-        width: 380px;
-    }
-
     table {
         width: 380px;
     }
@@ -75,12 +71,8 @@ tr:nth-child(even) {
 }
 
 @media screen and (max-width: 480px) {
-    #location {
-        width: 350px;
-    }
-
     table {
-        width: 350px;
+        width: 340px;
     }
 
     th, td {
@@ -89,9 +81,6 @@ tr:nth-child(even) {
 }
 
 @media screen and (max-width: 360px) {
-    #location {
-        width: 300px;
-    }
 
     table {
         width: 300px;
