@@ -5,13 +5,25 @@ This website addresses how to Teambuild, build pvp Loomians, understanding cores
 
 Pages:
 - Common Questions
-- Items
+    - Terminology
+- PVP Items
+    - Colosseum Marketplace
+    - Atlanthian Arcade
+    - Junk 4 Junk
+    - Events
 - Rally Ranch
+    - Rally Items
     - Rally Moves
 - Set Making
-    - Coming Soon!
+    - Offensive Set Example
+    - Defensive Set Example
 - Teambuilding
+    - Playstyles
     - Cores
+        - Defensive Cores
+        - Offensive Cores
+        - Balance Cores
+    - Roles
 - Resources
 - Credits
 
