@@ -14,88 +14,117 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="CSS/Footer.css">
 
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+
         <style>
-            .sidebar {
-                height: 100%;
-                width: 0; /* Initially hidden */
-                position: fixed;
-                top: 0;
-                left: 0;
-                background-color: #333;
-                padding-top: 20px;
-                transition: width 0.3s ease;
-            }
+        body {
+            background-color: rgb(37, 17, 109);
+            font-family: 'Russo One', sans-serif;
+        }
 
-            .sidebar.show {
-                width: 200px; /* Show sidebar */
-            }
+        .sidebar {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            top: 0;
+            left: -200px; /* Initially hidden */
+            background-color: #1d5b5f;
+            transition: left 0.3s ease;
+        }
 
-            .sidebar ul {
-                list-style-type: none;
-                padding: 0;
-            }
+        .sidebar.show {
+            left: 0; /* Show sidebar */
+        }
 
-            .sidebar ul li {
-                padding: 10px;
-            }
+        .sidebar nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
 
-            .sidebar ul li a {
-                color: black;
-                text-decoration: none;
-            }
+        .sidebar nav ul li {
+            padding: 10px;
+        }
 
-            .content {
-                padding: 20px;
-                transition: margin-left 0.3s ease; /* Smooth transition for content */
-            }
+        .sidebar nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
 
-            .content.show {
-                margin-left: 200px; /* Move content when sidebar is shown */
-            }
+        .sidebar nav ul li a:hover {
+            color: yellow;
+            font-weight: bolder;
+        }
+
+        .sidebar nav img {
+            width: 100%;
+        }
+
+        .sidebar button {
+            left: 400px;
+        }
+
+        .content {
+            padding: 20px;
+            transition: margin-left 0.3s ease; /* Smooth transition for content */
+            margin-left: 0; /* Initially aligned with the viewport */
+        }
+
+        .content.show {
+            margin-left: 200px; /* Move content when sidebar is shown */
+        }
+        
+
+
 
         </style>
     </head>
     <body>
-        <nav id="navigator">
+        <div id="app">
             <div class="sidebar" :class="{ 'show': showSidebar }">
-                <ul>
-                    <li v-for="(item, index) in menuItems" :key="index" @hover="hovertag(item)">
-                        <a :href="item.url" :style="{ color: item.textColor }" >{{ item.label }}</a>
-                    </li>
-                </ul>
+                <nav>
+                    <a href="https://www.roblox.com/games/306964494/Loomian-Legacy">
+                        <img src="https://tiermaker.com/images/templates/loomian-legacy-osts-1572992/15729921647733889.png">
+                    </a>    
+                    <ul>
+                        <li v-for="(item, index) in menuItems" :key="index">
+                            <a :href="item.url">{{ item.label }}</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </nav>
             <div class="content" :class="{ 'show': showSidebar }">
-                <button @click="toggleSidebar">{{sidebarText}}</button>
-                <h1>Content Goes Here</h1>
-                <p>This is the main content area</p>
-            </div>
+                <button @click="toggleSidebar">{{ sidebarText }}</button>
 
+            </div>
+            <h1>Content Goes Here</h1>
+            <p>This is the main content area</p>
+        </div>
     
-        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
         <script>
             new Vue({
-                el: '#navigator',
+                el: '#app',
                 data: {
                     showSidebar: false,
-                    sidebarText: '>', // Initial text
+                    sidebarText: '>',
                     menuItems: [
-                    { label: 'Home', url: '#' },
-                    { label: 'About', url: '#' },
-                    { label: 'Services', url: '#' },
-                    { label: 'Contact', url: '#' }
-                ]
+                        { label: 'Home', url: '#' },
+                        { label: 'Common Questions', url: '#' },
+                        { label: 'Set Making', url: '#' },
+                        { label: 'Contact', url: '#' },
+                        { label: 'Credts', url: '#'}
+                    ]
                 },
                 methods: {
                     toggleSidebar() {
                         this.showSidebar = !this.showSidebar;
                         this.sidebarText = this.showSidebar ? '<' : '>';
                     },
-                    hovertag(item){
-                        item.textColor = "red"
+                    highlightText(item) {
+                        item.color = "red"
                     }
                 }
             });
-        </script>   
+        </script>
     </body>
 </html>
