@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Loomian Legacy PVP | Index Page</title>
+        <title>Loomian Legacy PVP | Common Questions</title>
         
         <meta name="author" content="Matthattan">
-        <meta name="title" content="Loomian Legacy PVP - Index Page">
+        <meta name="title" content="Loomian Legacy PVP - Common Page">
         <meta name="description" content="Introductory page">
         <meta name="keywords" content="Loomian Legacy, PVP, Loomian Legacy PVP, Matthattan, stuntmanforlyf, Roblox">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,61 +12,90 @@
        
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo+One">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="CSS/Body.css">
-        <link rel="stylesheet" href="CSS/Navigation.css">
         <link rel="stylesheet" href="CSS/Footer.css">
-        <script src="JavaScript/NavBar.js"></script>
 
-        <link rel="stylesheet" href="CSS/IndexMainContent.css">
+        <style>
+            .sidebar {
+                height: 100%;
+                width: 0; /* Initially hidden */
+                position: fixed;
+                top: 0;
+                left: 0;
+                background-color: #333;
+                padding-top: 20px;
+                transition: width 0.3s ease;
+            }
+
+            .sidebar.show {
+                width: 200px; /* Show sidebar */
+            }
+
+            .sidebar ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            .sidebar ul li {
+                padding: 10px;
+            }
+
+            .sidebar ul li a {
+                color: black;
+                text-decoration: none;
+            }
+
+            .content {
+                padding: 20px;
+                transition: margin-left 0.3s ease; /* Smooth transition for content */
+            }
+
+            .content.show {
+                margin-left: 200px; /* Move content when sidebar is shown */
+            }
+
+        </style>
     </head>
     <body>
-        <header>Beginner Loomian Legacy PVP Guide</header>
-        <nav class="topnav" id="myTopnav">
-            <a href="index.html" class="active">Home</a>
-            <a href="Subpages/CommonQuestions.html">Common Questions</a>
-            <a href="Subpages/PvpItems.html">PVP Items</a>
-            <a href="Subpages/RallyRanch.html">Rally Ranch</a>
-            <a href="Subpages/SetMaking.html">Set Making</a>
-            <a href="Subpages/Teambuilding.html">Teambuilding</a>
-            <a href="Subpages/Resources.html">Resources</a>
-            <a href="Subpages/Credits.html">Credits</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()" title="responsive">
-              <i class="fa fa-bars"></i>
-            </a>
-        </nav>
-        <main>
-            <h1>Welcome to the unofficial beginner's guide to PVP!</h1>
-            <!--Welcome Section-->
-            <section>
-                <p>
-                    The Aim of this website is to aid players stepping into Loomian Legacy's Competitive Scene. 
-                    This website addresses how to Teambuild, build pvp Loomians, 
-                    understanding cores and the different facilities (both ingame and online) that can help in your journey.
-                </p>
-                <img src="PVPImages/Locations/BattleColosseum.jpeg" alt="BattleColosseum">
-                <p>
-                    This is an unofficial guide not endorsed by the Loomian Legacy developers but rather created by the community. 
-                    We strive for information on this website to be correct and up to date; 
-                    if there is any incomplete or incorrect information feel free to let us know.
-                </p>
-            </section>
-            <!--Quick Links-->
-            <section>
-                <h1>Quick Links</h1>
+        <nav id="navigator">
+            <div class="sidebar" :class="{ 'show': showSidebar }">
                 <ul>
-                    <li>
-                        <a href="Subpages/RallyMoves.html">Rally Moves</a>
-                    </li>
-                    <li>
-                        <a href="Subpages/Cores.html">Cores</a>
+                    <li v-for="(item, index) in menuItems" :key="index" @hover="hovertag(item)">
+                        <a :href="item.url" :style="{ color: item.textColor }" >{{ item.label }}</a>
                     </li>
                 </ul>
-            </section>
-        </main>     
-        <footer>
-            <a href="https://www.discordapp.com/users/298479810345172994">stuntmanforlyf</a> - 
-            <a href="https://twitter.com/stuntmanforlyf"> @stuntmanforlyf</a> - 
-            <a href="https://github.com/Matthattan/LL-PVP-Guide-">Link to Repository</a>
-        </footer>
+            </div>
+        </nav>
+            <div class="content" :class="{ 'show': showSidebar }">
+                <button @click="toggleSidebar">{{sidebarText}}</button>
+                <h1>Content Goes Here</h1>
+                <p>This is the main content area</p>
+            </div>
+
+    
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+        <script>
+            new Vue({
+                el: '#navigator',
+                data: {
+                    showSidebar: false,
+                    sidebarText: '>', // Initial text
+                    menuItems: [
+                    { label: 'Home', url: '#' },
+                    { label: 'About', url: '#' },
+                    { label: 'Services', url: '#' },
+                    { label: 'Contact', url: '#' }
+                ]
+                },
+                methods: {
+                    toggleSidebar() {
+                        this.showSidebar = !this.showSidebar;
+                        this.sidebarText = this.showSidebar ? '<' : '>';
+                    },
+                    hovertag(item){
+                        item.textColor = "red"
+                    }
+                }
+            });
+        </script>   
     </body>
 </html>
