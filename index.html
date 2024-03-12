@@ -19,7 +19,7 @@
 
         <style>
         body {
-   background-color: rgb(37, 17, 109);
+        background-color: rgb(37, 17, 109);
             font-family: 'Russo One', sans-serif;
         }
 
@@ -81,6 +81,38 @@
             background-color: white;
         }
 
+        p {
+            margin: auto;
+            width: 60%;
+        }
+
+        h1 {
+            margin: auto;
+            width: 60%;
+        }
+
+        main {
+            background-color: aqua;
+        }
+
+        #header {
+            background-color: #f1f1f1; /* Grey background */
+            padding: 50px 10px; /* Some padding */
+            color: black;
+            text-align: center; /* Centered text */
+            font-weight: bold;
+            position: fixed; /* Fixed position - sit on top of the page */
+            top: 0;
+            width: 100%; /* Full width */
+            transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
+        }
+
+        #HeaderImg {
+            width: 100%;
+            height: auto;
+            
+        }
+
         </style>
     </head>
     <body>
@@ -97,17 +129,61 @@
                     </ul>
                 </nav>
             </div>
+
             <div class="content" :class="{ 'show': showSidebar }">
                 <button @click="toggleSidebar" id="sidebarButton">{{ sidebarText }}</button>
-    
             </div>
-            <h1>{{ paragraph.text1 }}</h1>
-            <p>{{paragraph.text2}}</p>
+
+            <header id="header">
+                <img id="HeaderImg" src="PVPImages/HeadingImages/BattleColosseum.webp">
+                <h1>{{ paragraph.text1 }}</h1>
+                <p>{{paragraph.text2}}</p>
+            </header>
+
+            <main>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+            </main>
         </div>
-    
         <script>
+            // When the user scrolls down 50px from the top of the document, resize the header's font size
+            window.onscroll = function() {scrollFunction()};
 
+            function scrollFunction() {
+                const Header = document.getElementById("header")
 
+                if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                    Header.style.fontSize = "18px";
+
+                } else {
+                    Header.style.fontSize = "28px";
+
+                }
+            } 
             new Vue({
                 el: '#app',
                 data: {
