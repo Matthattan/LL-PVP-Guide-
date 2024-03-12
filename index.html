@@ -19,8 +19,10 @@
 
         <style>
         body {
-        background-color: rgb(37, 17, 109);
+            background-color: rgb(37, 17, 109);
             font-family: 'Russo One', sans-serif;
+            margin: 0;
+            padding: 0;
         }
 
         .sidebar {
@@ -32,6 +34,7 @@
             background-color: #154447;  
             /*background-color: rgb(139, 122, 25);*/
             transition: left 0.3s ease;
+            z-index: 2; /* Set a higher z-index value */
         }
 
         .sidebar.show {
@@ -69,6 +72,9 @@
             padding: 20px;
             transition: margin-left 0.3s ease; /* Smooth transition for content */
             margin-left: 0; /* Initially aligned with the viewport */
+            position: fixed;
+            z-index: 2;
+
         }
 
         .content.show {
@@ -84,6 +90,8 @@
         p {
             margin: auto;
             width: 60%;
+            margin-bottom: 2000px;
+            top: 3rem;
         }
 
         h1 {
@@ -93,6 +101,9 @@
 
         main {
             background-color: aqua;
+            position: relative;
+            top: 30rem;
+
         }
 
         #header {
@@ -104,19 +115,27 @@
             position: fixed; /* Fixed position - sit on top of the page */
             top: 0;
             width: 100%; /* Full width */
-            transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
-        }
-
-        #HeaderImg {
-            width: 100%;
-            height: auto;
-            
+            height: 56rem;
+            transition: 0.5s; /* Add a transition effect (when scrolling - and font size is decreased) */
+            background-image: url('PVPImages/HeadingImages/BattleColosseum.webp'); 
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin: auto;
+            line-height: 3rem;
+            z-index: 1; /* Set a lower z-index value */
         }
 
         </style>
     </head>
     <body>
         <div id="app">
+            <header id="header">
+                <h1> Loomian Legacy PVP Website: {{ Headings.Index }}</h1>
+            </header>
+
+            
+
             <div class="sidebar" :class="{ 'show': showSidebar }">
                 <nav>
                     <a href="https://www.roblox.com/games/306964494/Loomian-Legacy">
@@ -126,6 +145,8 @@
                         <li v-for="(item, index) in menuItems" :key="index">
                             <a @contextmenu.prevent="changeText" :href="item.url">{{ item.label }}</a>
                         </li>
+                        <hr style="width: 90%;">
+                        This is just a fan page!
                     </ul>
                 </nav>
             </div>
@@ -134,39 +155,13 @@
                 <button @click="toggleSidebar" id="sidebarButton">{{ sidebarText }}</button>
             </div>
 
-            <header id="header">
-                <img id="HeaderImg" src="PVPImages/HeadingImages/BattleColosseum.webp">
-                <h1>{{ paragraph.text1 }}</h1>
-                <p>{{paragraph.text2}}</p>
-            </header>
-
             <main>
-
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-
             </main>
         </div>
         <script>
@@ -175,13 +170,14 @@
 
             function scrollFunction() {
                 const Header = document.getElementById("header")
+                const Main = document.getElementsByClassName("main")
 
                 if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
                     Header.style.fontSize = "18px";
-
+                    Header.style.height = "3rem"
                 } else {
                     Header.style.fontSize = "28px";
-
+                    Header.style.height = "56rem"
                 }
             } 
             new Vue({
@@ -196,9 +192,9 @@
                         { label: 'Contact', url: '#' },
                         { label: 'Credts', url: '#'}
                     ],
-                    paragraph: {
-                        text1: "Welcome to the Home Page!",
-                        text2: "Home stuff happens here"
+                    Headings: {
+                        Index: "Home Page",
+                        Items: "Items Page"
                     }
                 },
                 methods: {
