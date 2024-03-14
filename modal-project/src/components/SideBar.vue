@@ -1,6 +1,6 @@
 <template>
     <div class="content" :class="{ 'show': showSidebar }">
-        <button @click="toggleSidebar" id="sidebarButton">{{ sidebarText }}</button>
+        <button type="button" @click="toggleSidebar" id="sidebarButton" style="background-image: url('../assets/ArrowRight.png')"></button>
     </div>
     <div class="sidebar" :class="{ 'show': showSidebar }">
         <nav>
@@ -24,31 +24,31 @@ export default {
     data () {
         return {
             showSidebar: false,
-            sidebarText: '>',
             menuItems: [
                 { label: 'Home', url: '#' },
                 { label: 'Common Questions', url: '#' },
                 { label: 'Set Making', url: '#' },
                 { label: 'Contact', url: '#' },
-                { label: 'Credts', url: '#'}
-            ]
-            }
-        },
-        methods: {
-            toggleSidebar() {
-                this.showSidebar = !this.showSidebar;
-                this.sidebarText = this.showSidebar ? '<' : '>';
-            },
-            highlightText(item) {
-                item.color = "red";
-            },
-            changeText() {
-                this.innerHTML = "Hello"
-            }
+                { label: 'Credits', url: '#'}
+            ]            
         }
+        },
+    methods: {
+        toggleSidebar() {
+            this.showSidebar = !this.showSidebar;
+            // this. = this.showSidebar ? 'url("../assets/ArrowLeft")' : 'url("../assets/ArrowRight")';
+        },
+        highlightText(item) {
+            item.color = "red";
+        },
+        changeText() {
+            this.innerHTML = "Hello"
+        }
+    }
     }
 </script>
 <style scoped>
+
         .sidebar {
             height: 100%;
             width: 20%;
@@ -97,7 +97,7 @@ export default {
             transition: margin-left 0.7s ease; /* Smooth transition for content */
             margin-left: 0; /* Initially aligned with the viewport */
             position: fixed;
-            top: 2rem;
+            top: 1rem;
             z-index: 2;
         }
 
@@ -106,10 +106,16 @@ export default {
         }
 
         #sidebarButton {
-            border: 3px solid black;
-            border-radius: 50%;
-            background-color: white;
+            background-image: none;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-color: red;
+            background-size: contain;
+            border: none;
+            height: 4rem;
+            width: 4rem;
         }
+
         
         hr {
             width: 90%;

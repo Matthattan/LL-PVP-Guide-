@@ -1,6 +1,6 @@
 <template>
     <header :style="headerStyle">
-      <h1>Loomian Legacy PVP Website: {{ headings.Index }}</h1>
+      <h1>Loomian Legacy PVP Website: <br> {{ headings.Index }}</h1>
     </header>
   </template>
   
@@ -28,7 +28,6 @@
           width: '100%',
           height: this.scrolled ? '100px' : '56rem',
           transition: '0.5s',
-          backgroundImage: 'url("../assets/BattleColosseum.png")',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center',
           backgroundSize: 'cover',
@@ -55,6 +54,7 @@
   <style scoped>
   header {
     transition: 0.5s;
+    background-image: url("../assets/BattleColosseum.png");
   }
   </style>
   
