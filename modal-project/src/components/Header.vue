@@ -2,11 +2,11 @@
     <header :style="headerStyle">
       <h1>Loomian Legacy PVP Website: <br> {{ headings.Index }}</h1>
     </header>
-  </template>
+</template>
   
   <script>
   export default {
-    name: 'NewTemplate',
+    name: 'ImageHeader',
     data() {
       return {
         headings: {

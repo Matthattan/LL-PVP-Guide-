@@ -1,22 +1,26 @@
 <template>
+  <ImageHeader/>
   <SideBar/>
+  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import SideBar from './components/SideBar.vue'
+import SideBar from './components/SideBar.vue';
+import ImageHeader from './components/Header.vue';
 
 export default {
   name: 'App', 
   components: {
+    ImageHeader,
     SideBar
+    
   },
     
 }
 </script>
 
-<style>
-#app {
+<style scoped>
+* {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

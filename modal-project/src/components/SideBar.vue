@@ -21,7 +21,7 @@
 <script>
 export default {
     name: 'SideBar',
-    data () {
+    data() {
         return {
             showSidebar: false,
             menuItems: [

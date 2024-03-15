@@ -1,6 +1,4 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import Header from './NotApp.vue'
+import { createApp } from 'vue';
+import App from './App.vue';
 
-createApp(App).mount('#app')
-createApp(Header).mount('#header')
+createApp(App).mount('#app');
