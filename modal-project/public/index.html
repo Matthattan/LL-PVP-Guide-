@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo+One">
+    <script src="../src/main.js"></script>
 
     <title><%= htmlWebpackPlugin.options.title %></title>
     <style>
@@ -18,7 +19,7 @@
       * {
             font-family: 'Russo One', sans-serif;
 
-        }
+      }
 
       main {
         width: 60%;
@@ -26,15 +27,12 @@
         margin-top: 40rem;
         margin-bottom: 1000px;
       }
-
-      
     </style>
   </head>
   <body>
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <div id="header"></div>
     <div id="app"></div>
     <main>
     <h1 style="text-align: center;">
