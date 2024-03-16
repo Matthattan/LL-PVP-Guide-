@@ -1,7 +1,9 @@
 <template>
-  <ImageHeader/>
-  <SideBar/>
-  
+  <div>
+    <ImageHeader/>
+    <SideBar/>
+    <!-- Your main content here -->
+  </div>
 </template>
 
 <script>
@@ -13,9 +15,7 @@ export default {
   components: {
     ImageHeader,
     SideBar
-    
-  },
-    
+  }
 }
 </script>
 

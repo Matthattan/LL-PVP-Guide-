@@ -1,7 +1,5 @@
 <template>
-    <div class="content" :class="{ 'show': showSidebar }">
-        <button type="button" @click="toggleSidebar" id="sidebarButton" style="background-image: url('../assets/ArrowRight.png')"></button>
-    </div>
+    <button type="button" @click="toggleSidebar" id="sidebarButton" class="content" :class="{ 'show': showSidebar}"></button>
     <div class="sidebar" :class="{ 'show': showSidebar }">
         <nav>
             <a href="https://www.roblox.com/games/306964494/Loomian-Legacy">
@@ -19,6 +17,7 @@
     
 </template>
 <script>
+
 export default {
     name: 'SideBar',
     data() {
@@ -30,20 +29,18 @@ export default {
                 { label: 'Set Making', url: '#' },
                 { label: 'Contact', url: '#' },
                 { label: 'Credits', url: '#'}
-            ]            
+            ],
+            sidebarButtons: [
+                '../assets/ArrowRight.png',
+                '../assets/ArrowLeft.png'
+            ]   
         }
         },
     methods: {
         toggleSidebar() {
             this.showSidebar = !this.showSidebar;
-            // this. = this.showSidebar ? 'url("../assets/ArrowLeft")' : 'url("../assets/ArrowRight")';
+
         },
-        highlightText(item) {
-            item.color = "red";
-        },
-        changeText() {
-            this.innerHTML = "Hello"
-        }
     }
     }
 </script>
@@ -88,34 +85,32 @@ export default {
             width: 100%;
         }
 
-        .sidebar button {
-            left: 200px;
-        }
-
-        .content {
+        #sidebarButton {
+            left: 20px;
             padding: 20px;
             transition: margin-left 0.7s ease; /* Smooth transition for content */
             margin-left: 0; /* Initially aligned with the viewport */
             position: fixed;
             top: 1rem;
             z-index: 2;
+            background-image: url('../assets/ArrowRight.png');
         }
 
-        .content.show {
+        #sidebarButton.show {
             margin-left: 20%; /* Move content when sidebar is shown */
+            background-image: url('../assets/ArrowLeft.png');
+
         }
 
         #sidebarButton {
-            background-image: none;
             background-repeat: no-repeat;
             background-position: 50% 50%;
-            background-color: red;
+            background-color: transparent;
             background-size: contain;
             border: none;
             height: 4rem;
             width: 4rem;
         }
-
         
         hr {
             width: 90%;
