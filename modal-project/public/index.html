@@ -31,7 +31,15 @@
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <div id="app"></div>
+    <div id="header">
+      <image-header :image-url="`${imageUrl}`"></image-header>
+    </div>
+    <div id="sidebar">
+
+    </div>
+    <!--<div id="app">
+      <header-component image-url="https://i.redd.it/716jkewjd8f31.jpg"></header-component>
+    </div> -->
     <main>
     <h1 style="text-align: center;">
       Welcome to the unofficial guide to Loomian Legacy PVP!

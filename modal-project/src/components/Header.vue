@@ -1,5 +1,5 @@
 <template>
-  <header :style="headerStyle">
+  <header :style="{ ...headerStyle, backgroundImage: `url(${imageUrl})` }">
     <h1>Loomian Legacy PVP Website: <br> {{ headings.Index }}</h1>
   </header>
 </template>
@@ -7,6 +7,9 @@
 <script>
 export default {
   name: 'ImageHeader',
+  props: {
+    imageUrl: String
+  },
   data() {
     return {
       headings: {
@@ -14,6 +17,7 @@ export default {
         Items: "Items Page"
       },
       scrolled: false,
+
     };
   },
   computed: {
@@ -28,7 +32,6 @@ export default {
         width: '100%',
         height: this.scrolled ? '100px' : '56rem',
         transition: '0.5s',
-
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
