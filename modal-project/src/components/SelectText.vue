@@ -1,7 +1,6 @@
 <template>
-  <div>
+  <div class="text-line">
     <span v-for="(word, index) in sentenceArray" :key="index" @click="toggleHighlight(index)">
-      <span v-if="index > 0">&nbsp;</span> <!-- Add space before each word except the first one -->
       <span :class="{ 'highlighted': isHighlighted(index) }">{{ word }}</span>
     </span>
     <p v-if="highlightedCategory !== null">{{ getCategoryDescription(highlightedCategory) }}</p>
@@ -13,21 +12,21 @@ export default {
   name: 'TextLine',
   data() {
     return {
-      sentence: "+1 200 +AtkM Plant Essence Awakening Tahtab Timber Thrash vs. 200 HP / 0 DefM Enchanted Coat Jellusa through Near Enchantment: 193-228 (94.1 - 111.2%) -- guaranteed OHKO after 1 layer of barbs",
+      sentence: "+1 200 +AtkM Plant Essence Awakening Tahtab Timber Thrash vs. 200 HP / 0 DefM Enchanted Coat Jellusa: 193-228 (94.1 - 111.2%) -- guaranteed OHKO after 1 layer of barbs",
       sentenceArray: [],
       wordCategories: {
         statStage: ['+1'], // Stat stage category
-        trainingPoints: ['200', 'HP', '0'], // Training points category
-        personality: ['+AtkM', 'DefM'], // Personality category
+        trainingPoints: ['200', '/', '0'], // Training points category
+        personality: ['+AtkM', 'DefM', 'HP'], // Personality category
         item: ['Plant', 'Essence'], // Item category
         ability: ['Awakening', 'Enchanted', 'Coat'], // Ability category
-        loomian: ['Tahtab', 'Jellusa'], // Loomian category
+        loomian: ['Tahtab', 'Jellusa:'], // Loomian category
         move: ['Timber', 'Thrash'], // Move category
         healthPoints: ['193-228'], // Health points category
         healthPercentage: ['(94.1', "-", '111.2%)'], // Health percentage category
         summary: ['--', 'guaranteed', 'OHKO'], // Summary category
         extraInfo: ['after', '1', 'layer', 'of', 'barbs'], // Extra information category
-        trash: ['vs.', '/']
+        trash: ['vs.']
       },
       highlightedCategory: null
     };
@@ -64,27 +63,27 @@ export default {
       // Get the description for the specified category
       switch (category) {
         case 'statStage':
-          return 'refers to any increase/decrease in stats. Maxmimum is +6 while the minimum is -6.';
+          return 'Refers to any increase/decrease in Stats. The Maxmimum is +6 while the Minimum is -6.';
         case 'trainingPoints':
-          return 'refers to the Training Points of the Loomians.';
+          return 'Refers to the Training Points of the Loomians.';
         case 'personality':
-          return 'refers to the personality. "+" is a 10% increase, "++" is a 20% increase, "-" is a 10% decrease and "--" is a 20% decrease.';
+          return 'Refers to the Stats and any Personalities that affects the Calculation. "+" is a 10% increase, "++" is a 20% increase, "-" is a 10% decrease and "--" is a 20% decrease.';
         case 'item':
-          return 'refers to the item. This is included if it affects the damage output of the move or the damage taken by the move.'
+          return 'Refers to the Item. This is included if it affects the damage output of the move or the damage taken by the move.'
         case 'ability':
-          return 'refers to the ability being used. These are only included if they affect the damage output.';
+          return 'Refers to the ability being used. These are only included if they affect the damage output.';
         case 'loomian':
-          return 'The Loomians used in the calculation.';
+          return 'The Loomians used in the Calculation. It will always show the Attacker before the Defender.';
         case 'move':
-          return 'the move being used to attack.';
+          return 'The Move being used to attack the Opponent.';
         case 'healthPoints':
-          return 'the range of health that is deducted in the attack presented as points.';
+          return 'The Range of health that is deducted in the attack presented as points.';
         case 'healthPercentage':
-          return 'the range of health deducted in the attack presented as a percentage.';
+          return 'The range of health deducted in the attack presented as a percentage.';
         case 'summary':
-          return 'quick summary of many attacks are needed to knock out the opponent. Anything less than 5 hits is treated as negligible.';
+          return 'A Quick summary of many attacks are needed to knock out the opponent. Anything less than 5 hits is treated as negligible.';
         case 'extraInfo':
-          return 'if any extra obstacles are placed on the field that increase the damage output such as barbs, they are included after the summary.';
+          return 'If any extra obstacles are placed on the field that increase the damage output such as barbs, they are included after the summary.';
         default:
           return '';
       }
@@ -94,6 +93,13 @@ export default {
 </script>
 
 <style scoped>
+.text-line {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(60% / 5), 1fr)); /* Adjust the column widths */
+  grid-gap: 5px; /* Adjust the space between words */
+}
+
 .highlighted {
   font-weight: bold;
   cursor: pointer;
@@ -102,5 +108,9 @@ export default {
 
 span {
   color: inherit; /* Ensure all text is non-highlighted by default */
+}
+
+* {
+  width: 60%;
 }
 </style>
