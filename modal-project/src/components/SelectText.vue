@@ -1,11 +1,13 @@
 <template>
-  <div class="text-line">
-    <span v-for="(word, index) in sentenceArray" :key="index" @click="toggleHighlight(index)">
-      <span :class="{ 'highlighted': isHighlighted(index) }">{{ word }}</span>
+  <span v-for="(word, index) in sentenceArray" :key="index">
+    <span v-if="index > 0">&nbsp;</span> <!-- Add space before each word except the first one -->
+    <span>
+      <span :class="{ 'highlighted': isHighlighted(index) }" @click="toggleHighlight(index)">{{ word }}</span>
     </span>
-    <p v-if="highlightedCategory !== null">{{ getCategoryDescription(highlightedCategory) }}</p>
-  </div>
+  </span>
+  <p v-if="highlightedCategory !== null">{{ getCategoryDescription(highlightedCategory) }}</p>
 </template>
+
 
 <script>
 export default {
@@ -93,13 +95,6 @@ export default {
 </script>
 
 <style scoped>
-.text-line {
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(calc(60% / 5), 1fr)); /* Adjust the column widths */
-  grid-gap: 5px; /* Adjust the space between words */
-}
-
 .highlighted {
   font-weight: bold;
   cursor: pointer;
@@ -112,5 +107,6 @@ span {
 
 * {
   width: 60%;
+  margin: auto;
 }
 </style>
