@@ -2,16 +2,28 @@
   <div>
     <div v-for="(question, index) in questions" :key="index" class="container">
       <button @click="toggleAnswer(index)" class="question">{{ question.question }}</button>
-      <div class="answer" v-if="activeQuestion === index"> {{ question.answer }}
-        <img v-if="question.image" :src="question.image" :alt="question.imageAlt">
+      <div class="answer" v-if="activeQuestion === index"> 
+        <!-- Render SelectText component if the answer is 'SelectText', otherwise render the answer text -->
+        <template v-if="question.answer === 'SelectText'">
+          <SelectText />
+        </template>
+        <template v-else>
+          {{ question.answer }}
+          <img v-if="question.image" :src="question.image" :alt="question.imageAlt">
+        </template>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import SelectText from './SelectText.vue';
+
 export default {
   name: "Questions",
+  components: {
+    SelectText
+  },
   data() {
     return {
       questions: [
@@ -102,12 +114,7 @@ This is usually attributed to defensive loomians who possess major bulk and can 
         },
         {
           question: `How do you read Damage Calculations?`,
-          answer: 
-`Damage Calculations are extremely useful for understanding how a Loomian performs in a matchup, whether that be offensively or defensively. These statements are actually quite simple to read and can be applied to many other damaged-based games.
-
-<hover action which describes each section>
-
-for a indepth explanation and examples, please see I_eaturface's video documenting its use.`
+          answer: `SelectText`
         }
       ],
       activeQuestion: null

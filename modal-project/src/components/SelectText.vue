@@ -1,10 +1,10 @@
 <template>
   <span v-for="(word, index) in sentenceArray" :key="index">
     <span v-if="index > 0">&nbsp;</span> <!-- Add space before each word except the first one -->
-    <span>
-      <span :class="{ 'highlighted': isHighlighted(index) }" @click="toggleHighlight(index)">{{ word }}</span>
-    </span>
+    <span :class="{ 'highlighted': isHighlighted(index) }" @click="toggleHighlight(index)">{{ word }}</span>
   </span>
+  <br>
+  <br>
   <p v-if="highlightedCategory !== null">{{ getCategoryDescription(highlightedCategory) }}</p>
 </template>
 
@@ -93,7 +93,6 @@ export default {
   }
 };
 </script>
-
 <style scoped>
 .highlighted {
   font-weight: bold;
@@ -103,10 +102,5 @@ export default {
 
 span {
   color: inherit; /* Ensure all text is non-highlighted by default */
-}
-
-* {
-  width: 60%;
-  margin: auto;
 }
 </style>
