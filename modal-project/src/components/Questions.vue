@@ -4,12 +4,16 @@
       <button @click="toggleAnswer(index)" class="question">{{ question.question }}</button>
       <div class="answer" v-if="activeQuestion === index"> 
         <!-- Render SelectText component if the answer is 'SelectText', otherwise render the answer text -->
+        <template v-if="question.question==''"></template>
         <template v-if="question.answer === 'SelectText'">
-          <SelectText />
+          <SelectText/>
+        </template>
+        <template v-else-if="question.question === 'What is the Best Loomian for PVP?'">
+          <a href="https://discord.com/channels/549360766600347658/615582246170001409/1170024900459774062" target="_blank">{{ question.answer }}</a>
         </template>
         <template v-else>
           {{ question.answer }}
-          <img v-if="question.image" :src="question.image" :alt="question.imageAlt">
+          <img v-if="question.image" :src="`@/assets/${question.image}`" :alt="question.imageAlt">
         </template>
       </div>
     </div>
@@ -30,16 +34,16 @@ export default {
         {
           question: `What is a PVP Loomian?`,
           answer: `
-A PVP Loomian is characterized by the 'Set' it runs to battle against other real players. This includes - but is not limited to - Training Points, Moves, Abilities and Items.`
+A PVP Loomian is characterized by the 'Set' it runs to battle against other real players. This includes - but is not limited to - Training Points, Moves, Abilities and Items.`,
         },
         {
           question: `What is the Best Loomian for PVP?`,
           answer: 
 `There is no such thing as the Best Loomian. Many Loomians prove to be more viable than others but generally they all have their strengths and weaknesses. 
 
-Here is a link to a Viability and Usage list.`,
-          image: `../assets/logo.png`,
-          imageAlt: `Battle Colosseum`
+Click here for a link to a Viability and Usage list.`,
+          image: `logo.png`,
+          imageAlt: `There is no Best Loomian`
         },
         {
           question: `What are Training Points?`,
@@ -80,6 +84,7 @@ A Loomian with a Secret Ability will have a purple dot with the title secret. Lo
 `Personalities act as multipliers on a Loomians total stats by increasing or decreasing it by 10% or 20%.
 
 In the wild, Loomians are only subject to two personalities (one positive, one negative) or one personality (either negative or positive including no stat boost). 
+
 However, Rallying a Loomian gives access to 3 Personalities (two positive, one negative or one positive, two negative) via Rally Totems.`
         },
         {
@@ -88,13 +93,13 @@ However, Rallying a Loomian gives access to 3 Personalities (two positive, one n
 `This recently added mechanic enables some Fully Evolved Loomians to undertake a new form, potentially change its typing, gain a different ability, unlock a powerful one-time move and see a change in base stats.
 
 Soul Bursting is available when a Loomian is holding its corresponding Burst Crystal and no other Loomian in the team has used it's Soul Burst. 
-Soul Burst is first obtainable after beating the Altanthian City Battle Theatre and explore the Lost City in Aranatta Trench.`
+
+Soul Crystals can be unlocked after beating the Altanthian City Battle Theatre and exploring the Lost City in Aranatta Trench.`
         },
         {
           question: `How does Priority work?`,
           answer: 
 `Priority refers to the order of Moves when Loomians battle. Usually, when Loomians use moves of the same priority, it depends on who has the faster speed which will decide which Loomian goes first (it becomes 50/50 if the speed stats are the same) however Moves like Dodge (+2 priority) or Quick Pounce (+1 priority) will always go first because of the nature of the move. 
-The previous principle applies if another Loomian uses a move of the same priority. 
 
 Contrarily, Moves like Driving Force (-6 Priority) or Return to Sender (-1 Priority) are forced to run after normal moves are used.
 
@@ -103,7 +108,7 @@ In the case of Bane of Haste, where the order of Loomians moves goes from slowes
         {
           question: `What is a Check?`,
           answer: 
-`A Loomian is considered a check if it can threat a Knock Out on the opposing Loomian. However, this does not mean it can swap into said Loomian and can actually lose the matchup. A check can either if soft - where the chance of a Knock Out is slim to none - or hard - where a knockout is always guaranteed.`
+`A Loomian is considered a check if it can threat a Knock Out on the opposing Loomian. However, this does not mean it can swap into said Loomian and can actually lose the matchup. A check can be either soft - where the chance of a Knock Out is slim to none - or hard - where a knockout is always guaranteed.`
         },
         {
           question: `What is a Counter?`,
@@ -113,8 +118,10 @@ In the case of Bane of Haste, where the order of Loomians moves goes from slowes
 This is usually attributed to defensive loomians who possess major bulk and can sustain themselves with reliable recovery. Counters can be hard - where the opponent can deal little to no damage - or soft - where gradual damage can eventually lead to a counter being vulnerable.`,
         },
         {
-          question: `How do you read Damage Calculations?`,
-          answer: `SelectText`
+          question: `How do you Read Damage Calculations?`,
+          answer:
+          
+          `SelectText`
         }
       ],
       activeQuestion: null
@@ -132,6 +139,11 @@ This is usually attributed to defensive loomians who possess major bulk and can 
 </script>
 
 <style scoped>
+
+a {
+  text-decoration: none !important;
+  color: black;
+}
 
 .container {
   width: 100%;
@@ -154,13 +166,9 @@ This is usually attributed to defensive loomians who possess major bulk and can 
   width: 100%;
 }
 
-pre {
-  margin-top: 10px;
-  width: 60%;
-}
-
 .answer {
   white-space: pre-wrap;
+  margin-bottom: 1rem;
 }
 
 img {

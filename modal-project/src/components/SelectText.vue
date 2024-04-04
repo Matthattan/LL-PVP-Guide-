@@ -1,11 +1,20 @@
 <template>
   <p id="Calculation">
-  <span v-for="(word, index) in sentenceArray" :key="index"
-  :class="{ 'highlighted': isHighlighted(index) }" @click="toggleHighlight(index)">
+    The <a href="https://saucesoy.github.io/Damage-Calculator/" target="_blank">Damage Calculator</a> is an excellent informative tool that allows users 
+    - not necessarily just for PVP - understand how different Loomians interact with eachother in battle. 
+    It can be overwhelming, at first, to use its various functions but thanks to i_eaturface, <a href="https://www.youtube.com/watch?v=-9KCrlcM0bs" target="_blank">this video</a> 
+    can help ease you into navigating through the calculator and its various functions.
+    <br><br>
+    Feel free to interact with the text below for a brief understanding.
+    <br><br>
+  <span v-for="(word, index) in sentenceArray" 
+  :key="index"
+  :class="{ 'highlighted': isHighlighted(index) }"
+  @click="toggleHighlight(index)">
     {{ word }}
     <span v-if="index > 0">&nbsp;</span> <!-- Add space before each word except the first one -->
   </span>
-</p>
+  </p>
   <br>
   <p v-if="highlightedCategory !== null">{{ getCategoryDescription(highlightedCategory) }}</p>
 </template>
@@ -95,6 +104,14 @@ export default {
 };
 </script>
 <style scoped>
+a {
+  color: black;
+}
+
+* {
+  font-size: 20px;
+}
+
 .highlighted {
   font-weight: bold;
   cursor: pointer;
