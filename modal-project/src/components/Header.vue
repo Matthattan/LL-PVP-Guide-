@@ -57,4 +57,8 @@ export default {
   
 <style scoped>
 
+header {
+  height: 1rem
+}
+
 </style>
