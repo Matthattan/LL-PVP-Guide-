@@ -10,11 +10,12 @@
         </template>
         <template v-else-if="question.question === 'What is the Best Loomian for PVP?'">
           <a href="https://discord.com/channels/549360766600347658/615582246170001409/1170024900459774062" target="_blank">{{ question.answer }}</a>
+          <img src="../assets/NoBestSet.jpeg">
         </template>
         <template v-else>
           {{ question.answer }}
-          <img v-if="question.image" :src="`@/assets/${question.image}`" :alt="question.imageAlt">
         </template>
+        <img v-if="question.image" :src="question.image" :alt="question.imageAlt">
       </div>
     </div>
   </div>
@@ -42,8 +43,6 @@ A PVP Loomian is characterized by the 'Set' it runs to battle against other real
 `There is no such thing as the Best Loomian. Many Loomians prove to be more viable than others but generally they all have their strengths and weaknesses. 
 
 Click here for a link to a Viability and Usage list.`,
-          image: `logo.png`,
-          imageAlt: `There is no Best Loomian`
         },
         {
           question: `What are Training Points?`,
@@ -172,8 +171,6 @@ a {
 }
 
 img {
-  max-width: 100%;
-  height: auto;
-  margin-top: 10px;
+  margin: auto;
 }
 </style>
