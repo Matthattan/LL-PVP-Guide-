@@ -127,7 +127,9 @@ This is usually attributed to defensive loomians who possess major bulk and can 
         },
         {
           question: `How do you Read Damage Calculations?`,
-          answer: `SelectText`
+          answer:
+          
+          `SelectText`
         }
       ],
       activeQuestion: null
@@ -178,7 +180,6 @@ a {
 }
 
 img {
-  width: 100%;
   display: block;
   margin: auto;
   border-radius: 25px;
