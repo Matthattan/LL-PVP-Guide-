@@ -7,7 +7,7 @@
             </a>    
             <ul>
                 <li v-for="(item, index) in menuItems" :key="index">
-                    <a @contextmenu.prevent="changeText" :href="item.url">{{ item.label }}</a>
+                    <router-link :to="item.url">{{ item.label }}</router-link>
                 </li>
                 <hr style="width: 90%;">
             </ul>
@@ -15,7 +15,9 @@
     </div>
     
 </template>
+
 <script>
+import { routerLink } from 'vue-router'
 
 export default {
     name: 'SideBar',
@@ -23,27 +25,26 @@ export default {
         return {
             showSidebar: false,
             menuItems: [
-                { label: 'Home', url: '#' },
-                { label: 'Common Questions', url: '#' },
-                { label: 'Set Making', url: '#' },
-                { label: 'Resources', url: '#'},
-                { label: 'Credits', url: '#'},
-
+                { label: 'Home', url: '/' },
+                { label: 'Common Questions', url: '/commonquestions' },
+                { label: 'Set Making', url: '/setmaking' },
+                { label: 'Resources', url: '/resources'},
+                { label: 'Credits', url: '/credits'},
             ],
             sidebarButtons: [
                 '../assets/ArrowRight.png',
                 '../assets/ArrowLeft.png'
             ]   
         }
-        },
+    },
     methods: {
         toggleSidebar() {
             this.showSidebar = !this.showSidebar;
-
         },
     }
-    }
+}
 </script>
+
 <style scoped>
 
         .sidebar {
