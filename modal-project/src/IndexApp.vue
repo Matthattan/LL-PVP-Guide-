@@ -16,7 +16,7 @@ export default {
   },
   data() {
     return {
-      imageUrl: require("@/assets/BattleColosseum.png"),
+      imageUrl: require("@/assets/images/headers/BattleColosseum.png"),
       pageName: "Home Page"
     }
   }

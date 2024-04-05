@@ -10,7 +10,6 @@
                     <a @contextmenu.prevent="changeText" :href="item.url">{{ item.label }}</a>
                 </li>
                 <hr style="width: 90%;">
-                This is just a fan page!
             </ul>
         </nav>
     </div>
@@ -27,8 +26,9 @@ export default {
                 { label: 'Home', url: '#' },
                 { label: 'Common Questions', url: '#' },
                 { label: 'Set Making', url: '#' },
-                { label: 'Contact', url: '#' },
-                { label: 'Credits', url: '#'}
+                { label: 'Resources', url: '#'},
+                { label: 'Credits', url: '#'},
+
             ],
             sidebarButtons: [
                 '../assets/ArrowRight.png',
@@ -93,12 +93,12 @@ export default {
             position: fixed;
             top: 1rem;
             z-index: 2;
-            background-image: url('../assets/ArrowRight.png');
+            background-image: url('../assets/images/sidebar/ArrowRight.png');
         }
 
         #sidebarButton.show {
             margin-left: 20%; /* Move content when sidebar is shown */
-            background-image: url('../assets/ArrowLeft.png');
+            background-image: url('../assets/images/sidebar/ArrowLeft.png');
 
         }
 

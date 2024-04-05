@@ -2,7 +2,7 @@
   <p id="Calculation">
     The <a href="https://saucesoy.github.io/Damage-Calculator/" target="_blank">Damage Calculator</a> is an excellent informative tool that allows users 
     - not necessarily just for PVP - understand how different Loomians interact with eachother in battle. 
-    It can be overwhelming, at first, to use its various functions but thanks to i_eaturface, <a href="https://www.youtube.com/watch?v=-9KCrlcM0bs" target="_blank">this video</a> 
+    It can be overwhelming at first to use its various functions but thanks to i_eaturface, <a href="https://www.youtube.com/watch?v=-9KCrlcM0bs" target="_blank">this video</a> 
     can help ease you into navigating through the calculator and its various functions.
     <br><br>
     Feel free to interact with the text below for a brief understanding.
