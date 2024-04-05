@@ -10,11 +10,11 @@
         </template>
         <template v-else-if="question.question === 'What is the Best Loomian for PVP?'">
           <a href="https://discord.com/channels/549360766600347658/615582246170001409/1170024900459774062" target="_blank">{{ question.answer }}</a>
-          <img src="../assets/NoBestSet.jpeg">
         </template>
         <template v-else>
           {{ question.answer }}
         </template>
+        <br>
         <img v-if="question.image" :src="question.image" :alt="question.imageAlt">
       </div>
     </div>
@@ -43,6 +43,8 @@ A PVP Loomian is characterized by the 'Set' it runs to battle against other real
 `There is no such thing as the Best Loomian. Many Loomians prove to be more viable than others but generally they all have their strengths and weaknesses. 
 
 Click here for a link to a Viability and Usage list.`,
+        image: require('../assets/images/commonQuestions/NoBestSet.jpeg'),
+        imageAlt: "There is no Best Loomian"
         },
         {
           question: `What are Training Points?`,
@@ -53,7 +55,9 @@ In total, Loomians can have 500 Training Points but all stats only allow a maxim
 
 TPs can be earned by using Gummies, which offer 10 Points per use; Battling Trainers, whose Loomians will drop certain points and Battling wild Loomians, who will also drop TPs. Many multipliers are available to boost the amount of TPs earned from Loomians either in NPC battles or the wild. This Includes the Protein Shake, 2x Training Points Gamepass and the 5x Training Points Loomiboost.
 
-TPs can be redistributed on the statistics page of a Loomian either in 1s or 10s. Previously, TP Resets could be purchased in order to remove Training Points however this item has now been retired. `
+TPs can be redistributed on the statistics page of a Loomian either in 1s or 10s. Previously, TP Resets could be purchased in order to remove Training Points however this item has now been retired. `,
+          image: require('../assets/images/commonQuestions/tpDemo.gif'),
+          imageAlt: 'Training Points Demonstration'
         },
         {
           question: `What are Unique Points?`,
@@ -66,7 +70,8 @@ A Special Symbol is displayed which corresponds to the range of UPs a Loomian's 
 
 Though UPs are generated randomly for Wild Loomians. Many types of Loomians can have maximised UP stats including: Roaming Loomians, Cosmiore, Nymaurae, Petrolith Loomians and Acting Strangely Loomians found in weather. 
 
-The use of Rallying can help pass down UP values. For more information, see Rally Feeds.`
+The use of Rallying can help pass down UP values. For more information, see Rally Feeds.`,
+          image: require('../assets/images/commonQuestions/upStats.png')
         },
         {
           question: `What is a Secret Ability?`,
@@ -75,7 +80,9 @@ The use of Rallying can help pass down UP values. For more information, see Rall
 
 In the wild, The Rally Charm enables Secret Ability encounters at 1/256. However in Rally Ranch, it starts off at 1/256 without the charm and can increase to 1/32 with a Secret Ability Leader and the Charm. To find out more about Secret Ability Odds, Check the Ability Odds Calculator.
 
-A Loomian with a Secret Ability will have a purple dot with the title secret. Loomians cannot lose their Secret Ability status but the ability itself may change when it evolves.`
+A Loomian with a Secret Ability will have a purple dot labelled 'secret'. Loomians cannot lose their Secret Ability status but the ability itself may change when it evolves.`,
+          image: require('../assets/images/commonQuestions/saEvo.png'),
+          imageAlt: 'Secret Ability Evolution'
         },
         {
           question: `What are Loomian Personalities?`,
@@ -84,7 +91,9 @@ A Loomian with a Secret Ability will have a purple dot with the title secret. Lo
 
 In the wild, Loomians are only subject to two personalities (one positive, one negative) or one personality (either negative or positive including no stat boost). 
 
-However, Rallying a Loomian gives access to 3 Personalities (two positive, one negative or one positive, two negative) via Rally Totems.`
+However, Rallying a Loomian gives access to 3 Personalities (two positive, one negative or one positive, two negative) via Rally Totems.`,
+          image: require('../assets/images/commonQuestions/personalityStats.png'),
+          imageAlt: 'Personalities from SerXia'
         },
         {
           question: `What is Soul Burst?`,
@@ -171,6 +180,8 @@ a {
 }
 
 img {
+  display: block;
   margin: auto;
+  border-radius: 25px;
 }
 </style>
