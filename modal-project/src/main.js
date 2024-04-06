@@ -1,15 +1,18 @@
-import { createApp} from 'vue';
-import App from './IndexApp.vue';
-import Header from './components/Header.vue'
-import SideBar from './components/SideBar.vue';
-import TextLine from './components/SelectText.vue'
-import Questions from './components/Questions.vue'
-import router from '../router'; // Import your router configuration
+import { createApp } from 'vue';
+import { createMemoryHistory, createRouter } from 'vue-router'
 
+import Router from 'vue-router'
+import QuestionsApp from './QuestionsApp.vue';
+import IndexApp from './IndexApp.vue';
 
-createApp(App).use(router).mount('#app');
-createApp(TextLine).mount('#text')
-createApp(Questions).mount('#questions')
+const routes = [
+  { path: '/', component: IndexApp },
+  { path: '/CommonQuestions', component: QuestionsApp },
+]
 
-//createApp(Header).mount('#header');
-//createApp(SideBar).mount('#sidebar')
+const router = createRouter({
+  history: createMemoryHistory(),
+  routes,
+})
+
+createApp(IndexApp).use(router).mount('#app');
