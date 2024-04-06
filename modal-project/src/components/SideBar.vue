@@ -25,7 +25,7 @@ export default {
         return {
             showSidebar: false,
             menuItems: [
-                { label: 'Home', url: '#' },
+                { label: 'Home', url: '/' },
                 { label: 'Common Questions', url: '/CommonQuestions' },
                 { label: 'Set Making', url: '/SetMaking' },
                 { label: 'Resources', url: '/Resources'},
@@ -45,6 +45,13 @@ export default {
 }
 </script>
 <style scoped>
+        * {
+            font-family: 'Russo One', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            color: black;
+
+        }
 
         .sidebar {
             height: 100%;
