@@ -147,6 +147,12 @@ This is usually attributed to defensive loomians who possess major bulk and can 
 </script>
 
 <style scoped>
+* {
+  font-family: 'Russo One', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: black;
+}
 
 a {
   text-decoration: none !important;
