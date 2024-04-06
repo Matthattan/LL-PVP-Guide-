@@ -7,42 +7,44 @@
             </a>    
             <ul>
                 <li v-for="(item, index) in menuItems" :key="index">
-                    <a @contextmenu.prevent="changeText" :href="item.url">{{ item.label }}</a>
+                    <!-- Use RouterLink instead of anchor tag -->
+                    <router-link :to="item.url">{{ item.label }}</router-link>
                 </li>
                 <hr style="width: 90%;">
             </ul>
         </nav>
     </div>
-    
 </template>
 <script>
+import { RouterLink } from 'vue-router'; // Import RouterLink from Vue Router
 
 export default {
     name: 'SideBar',
+    components: {
+        RouterLink // Register RouterLink as a component
+    },
     data() {
         return {
             showSidebar: false,
             menuItems: [
                 { label: 'Home', url: '#' },
-                { label: 'Common Questions', url: '#' },
+                { label: 'Common Questions', url: '/commonquestions.html' },
                 { label: 'Set Making', url: '#' },
                 { label: 'Resources', url: '#'},
                 { label: 'Credits', url: '#'},
-
             ],
             sidebarButtons: [
                 '../assets/ArrowRight.png',
                 '../assets/ArrowLeft.png'
             ]   
         }
-        },
+    },
     methods: {
         toggleSidebar() {
             this.showSidebar = !this.showSidebar;
-
         },
     }
-    }
+}
 </script>
 <style scoped>
 
