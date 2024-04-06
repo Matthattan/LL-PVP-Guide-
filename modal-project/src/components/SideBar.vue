@@ -16,22 +16,20 @@
     </div>
 </template>
 <script>
-import { RouterLink } from 'vue-router'; // Import RouterLink from Vue Router
+import { RouterLink } from 'vue-router';
+
 
 export default {
     name: 'SideBar',
-    components: {
-        RouterLink // Register RouterLink as a component
-    },
     data() {
         return {
             showSidebar: false,
             menuItems: [
                 { label: 'Home', url: '#' },
-                { label: 'Common Questions', url: '/commonquestions.html' },
-                { label: 'Set Making', url: '#' },
-                { label: 'Resources', url: '#'},
-                { label: 'Credits', url: '#'},
+                { label: 'Common Questions', url: '/CommonQuestions' },
+                { label: 'Set Making', url: '/SetMaking' },
+                { label: 'Resources', url: '/Resources'},
+                { label: 'Credits', url: '/Credits'},
             ],
             sidebarButtons: [
                 '../assets/ArrowRight.png',
