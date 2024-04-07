@@ -9,6 +9,7 @@
                 <li v-for="(item, index) in menuItems" :key="index">
                     <!-- Use RouterLink instead of anchor tag -->
                     <router-link :to="item.url">{{ item.label }}</router-link>
+                    <router-view/>
                 </li>
                 <hr style="width: 90%;">
             </ul>
@@ -17,7 +18,6 @@
 </template>
 <script>
 import { RouterLink } from 'vue-router';
-
 
 export default {
     name: 'SideBar',

@@ -1,5 +1,5 @@
 <template>
-    <ImageHeader :imageUrl="imageUrl" :pageName="'Common Questions'"/>
+    <ImageHeader :imageUrl="imageUrl" pageName="Common Questions"/>
     <SideBar/>
     <!-- Your main content here -->
     <main>
@@ -12,12 +12,9 @@
       <br>
       If any question you have is not listed here, feel free to ask members in the community; they're more than happy to ask, so long as you're respectful. You can also suggest the question be answered here!
     </p>
-    
-      
       <Questions/>
     </main>
   </template>
-  
   <script>
   import SideBar from './SideBar.vue';
   import ImageHeader from './Header.vue';
@@ -32,8 +29,7 @@
     },
     data() {
       return {
-        imageUrl: require("@/assets/images/headers/BattleColosseum.png"),
-        pageName: "Home Page"
+        imageUrl: require("@/assets/images/headers/InsideColosseum.jpg"),
       }
     }
   }

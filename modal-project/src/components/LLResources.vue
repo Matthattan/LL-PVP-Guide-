@@ -1,0 +1,131 @@
+<template>
+    <div class="collection">
+        <div v-for="(resource, index) in test" :key="index">
+            <div class="gallery" >
+                <a target="_blank" :href="resource.link">
+                    <div class="image" :alt="resource.imageAlt" :style="{ backgroundImage: 'url(' + resource.image + ')' }">
+                    </div>
+                    <div class="caption">
+                        <p class="desc">{{ resource.name }} by {{ resource.creator }}</p>
+                    </div>
+                </a>
+            </div>    
+        </div>
+    </div>        
+</template>
+<script>
+export default {
+  name: 'LLResources',
+  data() {
+      return {
+          test: [
+              {
+                name: "How to get PERFECT UP Loomians!", 
+                creator: "JamiyJamie", 
+                link: "https://www.youtube.com/watch?v=O3604XXmAHU", 
+                image: "https://i3.ytimg.com/vi/O3604XXmAHU/maxresdefault.jpg", 
+                imageAlt: "How to get PERFECT UP Loomians!"
+              },
+              {
+                name: "Loomian Legacy Beginner's Guide", 
+                creator: "i_eaturface", 
+                link: "https://youtube.com/playlist?list=PLyh6L-B-sEcYSvkPm7tKb1C3EZ__OZple&feature=shares", 
+                image: "https://i3.ytimg.com/vi/jbQn9tQMBhc/maxresdefault.jpg", 
+                imageAlt: "Loomian Legacy Beginner's Guide"
+              },
+              {
+                name: "Damage Calculator",
+                creator: "SauceSoy & i_eaturface",
+                link: "https://saucesoy.github.io/Damage-Calculator/",
+                image: "https://i3.ytimg.com/vi/-9KCrlcM0bs/maxresdefault.jpg",
+                imageAlt: "Damage Calculator"
+              },
+              {
+                name: "Loomian Legacy Unofficial Wikia",
+                creator: "Fandom",
+                link: "https://loomian-legacy.fandom.com/wiki/Loomian_Legacy_Wiki",
+                image: "https://cdn.discordapp.com/attachments/540729144061853738/977931639088898069/unknown.png?ex=662519cf&is=6612a4cf&hm=7c1b1ab902bd2b86146ef9433a6b2ee516e28548d43f0c0f898534ff81d24a74&",
+                imageAlt: "Loomian Legacy Unofficial Wikia"
+              },
+              {
+                name: "Coverage Calculator",
+                creator: "Mathwel17",
+                link: "https://scratch.mit.edu/projects/575159978/",
+                image: require("@/assets/images/resourceThumbnails/CoverageCalculator.png"),
+                imageAlt: "Coverage Calculator",
+              },
+              {
+                name: "Loomian Legacy Teambuilder",
+                creator: "BadGlowingDiamond",
+                link: "https://www.roblox.com/games/7224086316/Loomian-Legacy-Teambuilder-beta",
+                image: "https://t7.rbxcdn.com/06d7a653d11cde3c346163ecf5ac4509",
+                imageAlt: "Loomian Legacy Teambuilder",
+
+              },
+              {
+                name: "Free Sets Damage Calculator Set Data",
+                creator: "Vholtninja",
+                link: "https://docs.google.com/document/d/1pOIbtxnH89QiqAy5DKexT8bJbu8Y4cpj3swHs9vftcQ",
+                image: "https://www.gstatic.com/images/branding/product/1x/docs_2020q4_48dp.png",
+                imageAlt: "Free Sets Damage Calculator Set Data",
+
+              }
+          ]
+      }
+  }
+}
+</script>
+
+<style scoped>
+.image {
+    height: 200px;
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+div.gallery {
+    margin: auto;
+    margin: 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+    width: 320px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+    background-color: #ccc;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: left;
+    font-size: 20px;
+    height: 120px;
+}
+
+.gallery a {
+    text-decoration: none;
+    color: black;
+}
+
+div.collection {
+    margin: auto;
+    width: 1020px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 2px black solid;
+    border-radius: 5px;
+}
+
+.gallery img {
+    width: 600px;
+    height: 400px;
+}
+</style>
