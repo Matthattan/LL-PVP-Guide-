@@ -34,8 +34,8 @@ export default {
       questions: [
         {
           question: `What is a PVP Loomian?`,
-          answer: `
-A PVP Loomian is characterized by the 'Set' it runs to battle against other real players. This includes - but is not limited to - Training Points, Moves, Abilities and Items.`,
+          answer: 
+`A PVP Loomian is characterized by the 'Set' it runs to battle against other real players. This includes - but is not limited to - Training Points, Moves, Abilities and Items.`,
         },
         {
           question: `What is the Best Loomian for PVP?`,
@@ -102,7 +102,9 @@ However, Rallying a Loomian gives access to 3 Personalities (two positive, one n
 
 Soul Bursting is available when a Loomian is holding its corresponding Burst Crystal and no other Loomian in the team has used it's Soul Burst. 
 
-Soul Crystals can be unlocked after beating the Altanthian City Battle Theatre and exploring the Lost City in Aranatta Trench.`
+Soul Crystals can be unlocked after beating the Altanthian City Battle Theatre and exploring the Lost City in Aranatta Trench.`,
+        image: require('../assets/images/commonQuestions/SBLoomian.gif'),
+        imageAlt: 'Soul Burst Loomian'
         },
         {
           question: `How does Priority work?`,
@@ -189,5 +191,7 @@ img {
   display: block;
   margin: auto;
   border-radius: 25px;
+
+  width: 60%;
 }
 </style>

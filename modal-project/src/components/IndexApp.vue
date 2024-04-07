@@ -1,5 +1,5 @@
 <template>
-  <ImageHeader :imageUrl="imageUrl" :pageName="pageName"/>
+  <ImageHeader :imageUrl="imageUrl" pageName="Home Page"/>
   <SideBar/>
   <main>
     <h1 style="text-align: center;">
@@ -23,7 +23,6 @@ export default {
   data() {
     return {
       imageUrl: require("@/assets/images/headers/BattleColosseum.png"),
-      pageName: "Home Page"
     }
   }
 }
