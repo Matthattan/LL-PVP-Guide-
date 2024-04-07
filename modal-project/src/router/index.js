@@ -1,21 +1,21 @@
 import { createMemoryHistory, createRouter } from 'vue-router'
 
-import IndexApp from '../components/IndexApp.vue';
-import QuestionsApp from '../components/QuestionsApp.vue';
-import ResourcesApp from '../components/ResourcesApp.vue';
+import AppIndex from '../components/AppIndex.vue';
+import AppQuestions from '../components/AppQuestions.vue';
+import AppResources from '../components/AppResources.vue';
 
 const routes = [
     { path: '/', 
     name: 'Home',
-    component: IndexApp,
+    component: AppIndex,
     },
     { path: '/CommonQuestions', 
     name: 'Questions',
-    component: QuestionsApp 
+    component: AppQuestions 
     },
     { path: '/Resources', 
     name: 'Resources',
-    component: ResourcesApp 
+    component: AppResources 
     },
   ]
   

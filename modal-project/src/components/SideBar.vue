@@ -12,6 +12,11 @@
                     <router-view/>
                 </li>
                 <hr style="width: 90%;">
+                <li>
+                    <p>
+                        <a href="#">Repository</a>
+                    </p>
+                </li>
             </ul>
         </nav>
     </div>
@@ -84,7 +89,7 @@ export default {
         }
 
         .sidebar nav ul li a:hover {
-            color: yellow;
+            color: #eba621;
             font-weight: bolder;
         }
 

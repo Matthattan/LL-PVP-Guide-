@@ -33,9 +33,7 @@ export default {
   font-family: 'Russo One', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: black;
-  margin-top: 60px;
 }
 
 main {
