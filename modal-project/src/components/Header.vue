@@ -31,7 +31,7 @@ export default {
         top: 0,
         width: '100%',
         height: this.scrolled ? '100px' : '56rem',
-        transition: '0.5s',
+        transition: '0.4s',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
@@ -58,7 +58,9 @@ export default {
 <style scoped>
 
 header {
-  height: 1rem
+  height: 1rem;
+  position: sticky;
+  top: 0;
 }
 
 </style>
