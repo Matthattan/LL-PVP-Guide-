@@ -49,7 +49,7 @@ export default {
   },
   methods: {
     handleScroll() {
-      this.scrolled = window.scrollY > 5;
+      this.scrolled = window.scrollY > 10;
     }
   }
 };

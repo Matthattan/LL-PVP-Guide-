@@ -11,11 +11,11 @@
                     <router-link :to="item.url">{{ item.label }}</router-link>
                     <router-view/>
                 </li>
+            </ul>
                 <hr style="width: 90%;">
-                <li>
-                    <p>
-                        <a href="#">Repository</a>
-                    </p>
+            <ul>
+                <li v-for="(item, index) in footer" :key="index">
+                    <a :href="item.url">{{ item.label }}</a>
                 </li>
             </ul>
         </nav>
@@ -29,6 +29,10 @@ export default {
     data() {
         return {
             showSidebar: false,
+            sidebarButtons: [
+                '../assets/ArrowRight.png',
+                '../assets/ArrowLeft.png'
+            ],
             menuItems: [
                 { label: 'Home', url: '/' },
                 { label: 'Common Questions', url: '/CommonQuestions' },
@@ -36,10 +40,11 @@ export default {
                 { label: 'Resources', url: '/Resources'},
                 { label: 'Credits', url: '/Credits'},
             ],
-            sidebarButtons: [
-                '../assets/ArrowRight.png',
-                '../assets/ArrowLeft.png'
-            ]   
+            footer: [
+                { label: 'Repository', url: '#'},
+                { label: 'Discord Server', url: '#'},
+                { label: 'Discord Profile', url: '#'}
+            ]
         }
     },
     methods: {
@@ -55,7 +60,6 @@ export default {
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             color: black;
-
         }
 
         .sidebar {
@@ -65,7 +69,6 @@ export default {
             top: 0;
             left: -100%; /* Initially hidden */
             background-color: #154447;  
-            /*background-color: rgb(139, 122, 25);*/
             transition: left 0.5s ease;
             z-index: 2; /* Set a higher z-index value */
         }
@@ -97,6 +100,11 @@ export default {
             width: 100%;
         }
 
+        hr {
+            width: 90%;
+        }
+
+
         #sidebarButton {
             left: 20px;
             padding: 20px;
@@ -106,15 +114,6 @@ export default {
             top: 1rem;
             z-index: 2;
             background-image: url('../assets/images/sidebar/ArrowRight.png');
-        }
-
-        #sidebarButton.show {
-            margin-left: 20%; /* Move content when sidebar is shown */
-            background-image: url('../assets/images/sidebar/ArrowLeft.png');
-
-        }
-
-        #sidebarButton {
             background-repeat: no-repeat;
             background-position: 50% 50%;
             background-color: transparent;
@@ -123,9 +122,10 @@ export default {
             height: 4rem;
             width: 4rem;
         }
-        
-        hr {
-            width: 90%;
-        }
 
+        #sidebarButton.show {
+            margin-left: 20%; /* Move content when sidebar is shown */
+            background-image: url('../assets/images/sidebar/ArrowLeft.png');
+
+        }
 </style>
