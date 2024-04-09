@@ -38,7 +38,6 @@ main {
 font-size: 20px;
 width: 60%;
 margin: auto;
-margin-top: 600px;
 margin-bottom: 200px;
 }
 
