@@ -1,5 +1,5 @@
 <template>
-  <header :style="{ ...headerStyle, backgroundImage: `url(${imageUrl})` }">
+  <header :class="{ 'sticky': isSticky}" :style="{backgroundImage: `url(${imageUrl})`}" ref="header">
     <h1>Loomian Legacy PVP Website: <br> {{ pageName }}</h1>
   </header>
 </template>
@@ -13,35 +13,12 @@ export default {
   },
   data() {
     return {
-      headings: {
-        Index: "Home Page",
-        Items: "Items Page"
-      },
-      scrolled: false,
+      isSticky: false,
+      headerOffsetTop: null
     };
   },
-  computed: {
-    headerStyle() {
-      return {
-        padding: this.scrolled ? '10px' : '50px 10px',
-        color: this.scrolled ? 'black' : 'white',
-        textAlign: 'center',
-        fontWeight: 'bold',
-        position: 'fixed',
-        top: 0,
-        width: '100%',
-        height: this.scrolled ? '100px' : '56rem',
-        transition: '0.4s',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        margin: 'auto',
-        lineHeight: this.scrolled ? '2rem' : '3rem',
-        zIndex: 1,
-      };
-    }
-  },
   mounted() {
+    this.headerOffsetTop = this.$refs.header.offsetTop;    
     window.addEventListener('scroll', this.handleScroll);
   },
   destroyed() {
@@ -49,18 +26,43 @@ export default {
   },
   methods: {
     handleScroll() {
-      this.scrolled = window.scrollY > 10;
+      // Check if the window scroll position is greater than header offset top
+      if (window.scrollY > this.headerOffsetTop) {
+        this.isSticky = true;
+      } else {
+        this.isSticky = false;
+      }
     }
   }
 };
 </script>
-  
 <style scoped>
 
+h1 {
+  margin: auto;
+}
+
 header {
-  height: 1rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  height: 100%;
   position: sticky;
   top: 0;
+  transition: 0.2s;
+  padding: 325px 10px;
+  background-color: aqua;
+  font-size: 30px;
+}
+
+.sticky {
+  font-size: 18px;
+  padding: 10px 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 5rem;
 }
 
 </style>

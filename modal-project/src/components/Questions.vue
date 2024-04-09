@@ -36,7 +36,9 @@ export default {
           question: `What is a PVP Loomian?`,
           answer: 
 `A PVP Loomian is characterized by the 'Set' it runs to battle against other real players. This includes - but is not limited to - Training Points, Moves, Abilities and Items.`,
-        },
+          image: require('../assets/images/commonQuestions/FalkyrieSet.png'),
+          imageAlt: "Falkyrie Set"
+},
         {
           question: `What is the Best Loomian for PVP?`,
           answer: 
@@ -71,7 +73,8 @@ A Special Symbol is displayed which corresponds to the range of UPs a Loomian's 
 Though UPs are generated randomly for Wild Loomians. Many types of Loomians can have maximised UP stats including: Roaming Loomians, Cosmiore, Nymaurae, Petrolith Loomians and Acting Strangely Loomians found in weather. 
 
 The use of Rallying can help pass down UP values. For more information, see Rally Feeds.`,
-          image: require('../assets/images/commonQuestions/upStats.png')
+          image: require('../assets/images/commonQuestions/upStats.png'),
+          imageAlt: 'UP Stats'
         },
         {
           question: `What is a Secret Ability?`,
@@ -130,7 +133,6 @@ This is usually attributed to defensive loomians who possess major bulk and can 
         {
           question: `How do you Read Damage Calculations?`,
           answer:
-          
           `SelectText`
         }
       ],
