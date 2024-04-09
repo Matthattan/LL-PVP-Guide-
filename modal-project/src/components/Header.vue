@@ -1,7 +1,10 @@
 <template>
-  <header :class="{ 'sticky': isSticky}" :style="{backgroundImage: `url(${imageUrl})`}" ref="header">
-    <h1>Loomian Legacy PVP Website: <br> {{ pageName }}</h1>
+  <header class="top-container" :style="{backgroundImage: `url(${imageUrl})`}">
+    <h1>{{ pageName }}</h1>
   </header>
+  <div :class="{ 'sticky': isSticky}" id="myHeader" ref="header">
+    <h2> Loomian Legacy PVP Website: </h2>
+  </div>
 </template>
   
 <script>
@@ -13,12 +16,12 @@ export default {
   },
   data() {
     return {
-      isSticky: false,
-      headerOffsetTop: null
+      sticky: 0,
+      isSticky: false
     };
   },
   mounted() {
-    this.headerOffsetTop = this.$refs.header.offsetTop;    
+    this.sticky = this.$refs.header.offsetTop;
     window.addEventListener('scroll', this.handleScroll);
   },
   destroyed() {
@@ -26,8 +29,7 @@ export default {
   },
   methods: {
     handleScroll() {
-      // Check if the window scroll position is greater than header offset top
-      if (window.scrollY > this.headerOffsetTop) {
+      if (window.pageYOffset > this.sticky) {
         this.isSticky = true;
       } else {
         this.isSticky = false;
@@ -37,6 +39,16 @@ export default {
 };
 </script>
 <style scoped>
+
+* {
+  font-family: 'Russo One';
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
 
 h1 {
   margin: auto;
@@ -52,17 +64,21 @@ header {
   top: 0;
   transition: 0.2s;
   padding: 325px 10px;
-  background-color: aqua;
   font-size: 30px;
 }
 
+#myHeader {
+  text-align: center;
+}
+
 .sticky {
-  font-size: 18px;
-  padding: 10px 10px;
   position: fixed;
   top: 0;
   width: 100%;
-  height: 5rem;
+}
+
+.sticky + .content {
+  padding-top: 102px;
 }
 
 </style>
