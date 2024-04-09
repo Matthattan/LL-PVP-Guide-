@@ -1,6 +1,6 @@
 <template>
     <table class="collection">
-        <div class="gallery" v-for="(resource, index) in test" :key="index">
+        <div class="gallery" v-for="(resource, index) in resources" :key="index">
             <a target="_blank" :href="resource.link">
                 <div class="image" :alt="resource.imageAlt" :style="{ backgroundImage: 'url(' + resource.image + ')' }"></div>
                 <div class="caption">
@@ -15,7 +15,7 @@ export default {
     name: 'LLResources',
     data() {
         return {
-            test: [
+            resources: [
                 {
                     name: "How to get PERFECT UP Loomians!", 
                     creator: "JamiyJamie", 
@@ -111,6 +111,8 @@ div.gallery {
     background-color: white;
     width: auto;
 
+    border-radius: 25px;
+
     text-align: center; 
     vertical-align: middle;
 }
@@ -150,5 +152,10 @@ table {
 .gallery img {
     width: max-content;
     height: 400px;
+}
+
+.image {
+    border-radius: 25px 25px 0px 0px;
+
 }
 </style>

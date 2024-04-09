@@ -1,10 +1,8 @@
 <template>
-  <header class="top-container" :style="{backgroundImage: `url(${imageUrl})`}">
-    <h1>{{ pageName }}</h1>
+  <header class="top-container" :style="{backgroundImage: `url(${imageUrl})`}" @scroll="handleScroll">
+    <h1>Loomian Legacy PVP Website</h1>
   </header>
-  <div :class="{ 'sticky': isSticky}" id="myHeader" ref="header">
-    <h2> Loomian Legacy PVP Website: </h2>
-  </div>
+    <h2 class="sticky" >{{ pageName }}</h2>
 </template>
   
 <script>
@@ -14,25 +12,19 @@ export default {
     imageUrl: String,
     pageName: String
   },
-  data() {
-    return {
-      sticky: 0,
-      isSticky: false
-    };
-  },
+  data() {},
   mounted() {
-    this.sticky = this.$refs.header.offsetTop;
     window.addEventListener('scroll', this.handleScroll);
   },
-  destroyed() {
+  beforeDestroy() {
     window.removeEventListener('scroll', this.handleScroll);
   },
   methods: {
     handleScroll() {
-      if (window.pageYOffset > this.sticky) {
-        this.isSticky = true;
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        this
       } else {
-        this.isSticky = false;
+        this
       }
     }
   }
@@ -59,26 +51,20 @@ header {
   background-position: center;
   background-size: cover;
   text-align: center;
-  height: 100%;
-  position: sticky;
-  top: 0;
+  height: 100vh;
   transition: 0.2s;
-  padding: 325px 10px;
   font-size: 30px;
 }
 
-#myHeader {
-  text-align: center;
-}
-
 .sticky {
-  position: fixed;
+  background-color: #004691; 
+  text-align: center;
+  position: sticky;
   top: 0;
   width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 102px;
+  padding: 20px 0;
+  margin: auto;
+  margin-bottom: 20px;
 }
 
 </style>
