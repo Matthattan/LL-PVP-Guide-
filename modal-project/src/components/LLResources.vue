@@ -95,7 +95,6 @@ export default {
     }
 }
 </script>
-
 <style scoped>
 .image {
     height: 200px;
@@ -104,30 +103,24 @@ export default {
     background-repeat: no-repeat;
 }
 
-div.gallery {
-    margin: auto;
-    margin: 5px;
+.gallery {
+    margin: 5px auto;
     border: 1px solid #ccc;
     background-color: white;
     width: auto;
-
+    height: max-content;
     border-radius: 25px;
-
     text-align: center; 
     vertical-align: middle;
+    max-width: 370px;
 }
 
-div.gallery:hover {
+.gallery:hover {
     border: 1px solid #777;
     background-color: #ccc;
 }
 
-div.gallery img {
-    width: 100%;
-    height: auto;
-}
-
-div.desc {
+.desc {
     padding: 15px;
     text-align: left;
     font-size: 20px;
@@ -156,6 +149,5 @@ table {
 
 .image {
     border-radius: 25px 25px 0px 0px;
-
 }
 </style>
