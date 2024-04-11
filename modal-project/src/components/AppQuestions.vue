@@ -17,6 +17,11 @@
             When speaking with other players in the PVP Community, you may hear terms that sound familiar or are completely foreign. This list attempts to explain different terms you may hear and what they mean.
         </p>
         <Terminology/>
+        <h1 id="UsageTiers">Usage Tiers</h1>
+        <p>
+            Usage Lists are an excellent medium for understanding the current meta, whats popular and what what isn't being used. Usage lists are divided into different tiers which can have various cut-off points depending on the usage collector.
+        </p>
+        <UsageTerms/>
     </main>
 </template>
 <script>
@@ -25,6 +30,7 @@ import ImageHeader from './Header.vue';
 import Questions from './Questions.vue';
 import Terminology from './Terminology.vue';
 import ContentList from './ContentList.vue';
+import UsageTerms from './UsageTerms.vue';
 
 export default {
 name: 'App', 
@@ -33,7 +39,8 @@ components: {
     SideBar,
     ContentList,
     Questions,
-    Terminology
+    Terminology,
+    UsageTerms,
 },
 data() {
     return {
@@ -46,6 +53,10 @@ data() {
             {
                 id: 'Terminology',
                 title: 'Terminology',
+            },
+            {
+                id: 'UsageTiers',
+                title: 'Usage Tiers',
             },
             // Add more sections as needed
         ]
