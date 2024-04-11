@@ -36,6 +36,8 @@ export default {
             menuItems: [
                 { label: 'Home', url: '/' },
                 { label: 'Common Questions', url: '/CommonQuestions' },
+                { label: 'Rally Ranch', url: '/RallyRanch' },
+                { label: 'Set Making', url: '/SetMaking' },
                 { label: 'Teambuilding', url: '/Teambuilding' },
                 { label: 'Resources', url: '/Resources'},
                 { label: 'Credits', url: '/Credits'},
