@@ -1,5 +1,6 @@
 <template>
   <div>
+    Click to reveal answers!
     <div v-for="(question, index) in questions" :key="index" class="container">
       <button @click="toggleAnswer(index)" class="question">{{ question.question }}</button>
       <div class="answer" v-if="activeQuestion === index"> 
@@ -194,6 +195,6 @@ img {
   margin: auto;
   border-radius: 25px;
 
-  width: 60%;
+  width: 100%;
 }
 </style>

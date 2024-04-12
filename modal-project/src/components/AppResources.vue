@@ -20,7 +20,7 @@ export default {
   },
   data() {
     return {
-      imageUrl: require("@/assets/images/headers/InsideColosseum.jpg"),
+      imageUrl: require("@/assets/images/headers/FerrixMansion.png"),
     }
   }
 }
