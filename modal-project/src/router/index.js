@@ -3,6 +3,7 @@ import { createMemoryHistory, createRouter } from 'vue-router'
 import AppIndex from '../components/AppIndex.vue';
 import AppQuestions from '../components/AppQuestions.vue';
 import AppResources from '../components/AppResources.vue';
+import AppRally from '../components/AppRally.vue';
 
 const routes = [
     { path: '/', 
@@ -16,6 +17,10 @@ const routes = [
     { path: '/Resources', 
     name: 'Resources',
     component: AppResources 
+    },
+    { path: '/RallyRanch', 
+    name: 'RallyRanch',
+    component: AppRally 
     },
   ]
   
