@@ -58,7 +58,6 @@ data() {
                 id: 'UsageTiers',
                 title: 'Usage Tiers',
             },
-            // Add more sections as needed
         ]
     }
 }
