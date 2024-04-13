@@ -34,7 +34,7 @@
 import SideBar from './SideBar.vue';
 import ImageHeader from './Header.vue';
 import ContentList from './ContentList.vue';
-import Tabs from './Tabs2.vue';
+import Tabs from './Tabs.vue';
 
 export default {
 name: 'App', 
