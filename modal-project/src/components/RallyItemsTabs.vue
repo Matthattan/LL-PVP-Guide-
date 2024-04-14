@@ -12,6 +12,7 @@
          :key="index" 
          :id="rallyItem.Name"
          :style="{ display: rallyItem.Name === 'Rally Toys' ? 'block' : 'none' }">
+         <h2>{{ rallyItem.Name }}</h2>
         <table>
             <tr>
                 <th>Image</th>
@@ -41,25 +42,25 @@
                         Name: "Rally Toys",
                         Items: [
                             {
-                                Image: "",
+                                Image: require("@/assets/images/rallyRanch/rallyItems/rallyToys/Rubber_Toy.webp"),
                                 Name: "Rubber Toy",
                                 Description: "Rally Loomians that share a personality trait with the Rally Leader or Assistant.",
                                 ObtMethod: "Trainer Mastery level 4"
                             },
                             {
-                                Image: "",
+                                Image: require("@/assets/images/rallyRanch/rallyItems/rallyToys/Bouncy_Ball.webp"),
                                 Name: "Bouncy Ball",
                                 Description: "Rally Loomians that share a positive personality trait with the Rally Leader.",
                                 ObtMethod: "Trainer Mastery level 6"
                             },
                             {
-                                Image: "",
+                                Image: require("@/assets/images/rallyRanch/rallyItems/rallyToys/Puzzle_Cube.webp"),
                                 Name: "Puzzle Cube",
                                 Description: "Rally Loomians that share a positive personality trait with the Rally Assistant.",
                                 ObtMethod: "Trainer Mastery level 19"
                             },
                             {
-                                Image: "",
+                                Image: require("@/assets/images/rallyRanch/rallyItems/rallyToys/Yo-yo.webp"),
                                 Name: "Yo-yo",
                                 Description: "Rally Loomians that have the exact same personality as the Rally Leader.",
                                 ObtMethod: "Trainer Mastery level 39"
@@ -67,34 +68,34 @@
                         ]
                     },
                     {
-                        Name: "Rally Feed",
+                        Name: "Rally Feeds",
                         Items: [
                             {
-                                Image: "",
+                                Image: require("@/assets/images/rallyRanch/rallyItems/rallyFeed/Stromberry.webp"),
                                 Name: "Stromberry",
                                 Description: "Rally Loomians that share at least one Unique Point with each Rallying Loomian.",
                                 ObtMethod: "Default"
                             },
                             {
-                                Image: "",
+                                Image: require("@/assets/images/rallyRanch/rallyItems/rallyFeed/Blumelon.webp"),
                                 Name: "Blumelon",
                                 Description: "Rally Loomians that share at least two Unique Points with each Rallying Loomian.",
                                 ObtMethod: "Trainer Mastery level 12"
                             },
                             {
-                                Image: "",
+                                Image: require("@/assets/images/rallyRanch/rallyItems/rallyFeed/Tutifruit.webp"),
                                 Name: "Tutifruit",
                                 Description: "Rally Loomians that share at least three Unique Points with each Rallying Loomian.",
                                 ObtMethod: "Trainer Mastery level 22"
                             },
                             {
-                                Image: "",
+                                Image: require("@/assets/images/rallyRanch/rallyItems/rallyFeed/Wonderbean.webp"),
                                 Name: "Wonderbean",
                                 Description: "Rally Loomians that share at least four Unique Points with the Rally Leader.",
                                 ObtMethod: "Trainer Mastery level 32"
                             },
                             {
-                                Image: "",
+                                Image: require("@/assets/images/rallyRanch/rallyItems/rallyFeed/Jewelfruit.webp"),
                                 Name: "Jewelfruit",
                                 Description: "Rally Loomians that share three to five perfect Unique Points with any of the Rallying Loomians.",
                                 ObtMethod: "Trainer Mastery level 78"
@@ -102,16 +103,16 @@
                         ]
                     },
                     {
-                        Name: "Rally Totem",
+                        Name: "Rally Totems",
                         Items: [
                             {
-                                Image: "",
+                                Image: require("@/assets/images/rallyRanch/rallyItems/rallyTotems/Smiling_Totem.webp"),
                                 Name: "Smiling Totem",
                                 Description: "Rally Loomians with two positive personality traits and one strong negative trait.",
                                 ObtMethod: "Trainer Mastery level 24"
                             },
                             {
-                                Image: "",
+                                Image: require("@/assets/images/rallyRanch/rallyItems/rallyTotems/Scowling_Totem.webp"),
                                 Name: "Scowling Totem",
                                 Description: "Rally Loomians with a strong positive personality trait and two negative traits.",
                                 ObtMethod: "Trainer Mastery level 26"
@@ -142,7 +143,7 @@
     .boxRallyItem {
         display: grid;
         margin-top: 20px;
-        background-color: aqua;
+        background-color: #0057b4;
         border-radius: 25px;
         min-width: 800px;
 
@@ -168,5 +169,34 @@
         margin: auto;
         width: 60%;
         border-radius: 25px;
+    }
+
+    td, th {
+        border: 1px solid #000000;
+        text-align: left;
+        padding: 8px;
+    }
+
+    button {
+        font-family: 'Russo One', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color: black;
+
+        background-color: rgb(236, 236, 236);
+        border-radius: 25px;
+        border: none;
+        outline: none;
+        padding: 10px;
+        transition: 0.3s;
+    }
+
+    button :hover {
+        background-color: rgb(148, 147, 147);
+        border-radius: 25px;
+        border: none;
+        outline: none;
+        padding: 10px;
+        transition: 0.3s;
     }
 </style>

@@ -12,6 +12,7 @@
         v-for="(Rally, Index) in Items" 
         :key="Index" 
         :id="Rally.Name">
+            <h2>{{ Rally.Name }}</h2>
             <div v-for="(Text, Index) in Rally.Description" :key="Index">
                 <template v-if="isImagePath(Text)">
                     <img :src="Text">
@@ -91,7 +92,7 @@
 <style>
     .box {
         margin-top: 20px;
-        background-color: aqua;
+        background-color: #0057b4;
         border-radius: 25px;
     }
 
