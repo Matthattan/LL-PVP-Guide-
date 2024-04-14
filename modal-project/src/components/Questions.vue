@@ -194,7 +194,6 @@ img {
   display: block;
   margin: auto;
   border-radius: 25px;
-
-  width: 100%;
+  width: 60%;
 }
 </style>

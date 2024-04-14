@@ -4,6 +4,7 @@ import AppIndex from '../components/AppIndex.vue';
 import AppQuestions from '../components/AppQuestions.vue';
 import AppResources from '../components/AppResources.vue';
 import AppRally from '../components/AppRally.vue';
+import AppTeambuilding from '../components/AppTeambuilding.vue';
 
 const routes = [
     { path: '/', 
@@ -21,6 +22,10 @@ const routes = [
     { path: '/RallyRanch', 
     name: 'RallyRanch',
     component: AppRally 
+    },
+    { path: '/Teambuilding', 
+    name: 'Teambuilding',
+    component: AppTeambuilding 
     },
   ]
   
