@@ -72,7 +72,7 @@ export default {
             left: -100%; /* Initially hidden */
             background-color: #154447;  
             transition: left 0.5s ease;
-            z-index: 2; /* Set a higher z-index value */
+            z-index: 3; /* Set a higher z-index value */
         }
 
         .sidebar.show {
@@ -106,7 +106,6 @@ export default {
             width: 90%;
         }
 
-
         #sidebarButton {
             left: 20px;
             padding: 20px;
@@ -114,7 +113,7 @@ export default {
             margin-left: 0; /* Initially aligned with the viewport */
             position: fixed;
             top: 1rem;
-            z-index: 2;
+            z-index: 1;
             background-image: url('../assets/images/sidebar/ArrowRight.png');
             background-repeat: no-repeat;
             background-position: 50% 50%;

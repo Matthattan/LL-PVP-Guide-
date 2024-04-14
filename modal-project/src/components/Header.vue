@@ -12,7 +12,6 @@ export default {
     imageUrl: String,
     pageName: String
   },
-  data() {},
   mounted() {
     window.addEventListener('scroll', this.handleScroll);
   },
