@@ -39,7 +39,7 @@ export default {
         padding: 10px 5px 5px 10px;
         min-height: 100px;
         position: fixed;
-        top: 20rem;
+        bottom: 20px;
         left: -100%; /* Initially hidden */
         transition: left 0.5s ease;
         z-index: 2;
