@@ -21,20 +21,22 @@
             As hinted at previously, there are several items used to change what stats a Rallied Loomian appears with. 
             There are 3 categories of items, each with different uses in different contexts:
         </p>
+        <RallyItemsTabs/>
         <h1 id="RallyMoves">Rally Moves</h1>
         <p>
             Many Loomians have access to additional moves through rallying (known as Rally Moves) which may be recommended to run. 
             Giving these moves to your Loomians can give a big advantage in battle so it’s worth learning the different techniques of teaching Rally Moves to your Loomians. 
             There are 3 main ways to use Rally Ranch to put a move on a Loomian: 
         </p>
-        <Tabs :items="tabsData"/>
+        <RallyMovesTabs/>
     </main>
 </template>
 <script>
 import SideBar from './SideBar.vue';
 import ImageHeader from './Header.vue';
 import ContentList from './ContentList.vue';
-import Tabs from './Tabs.vue';
+import RallyItemsTabs from './RallyItemsTabs.vue';
+import RallyMovesTabs from './RallyMovesTabs.vue';
 
 export default {
 name: 'App', 
@@ -42,7 +44,8 @@ components: {
     ImageHeader,
     SideBar,
     ContentList,
-    Tabs,
+    RallyItemsTabs,
+    RallyMovesTabs,
 },
 data() {
     return {
