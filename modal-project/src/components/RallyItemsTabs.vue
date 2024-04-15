@@ -37,8 +37,7 @@
         name: 'RallyItemsTab',
         data() {
             return {
-                RallyItems: [
-                    {
+                RallyItems: [{
                     Name: "Rally Toys",
                     Items: [
                         {
@@ -64,8 +63,8 @@
                             Name: "Yo-yo",
                             Description: "Rally Loomians that have the exact same personality as the Rally Leader.",
                             ObtMethod: "Trainer Mastery level 39"
-                        },
-                    ]},
+                        }]
+                    },
                     {
                     Name: "Rally Feeds",
                     Items: [

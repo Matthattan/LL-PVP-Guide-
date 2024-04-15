@@ -16,11 +16,8 @@
         <h2>Playstyle</h2>
         <p>A Playstyle - colloquially known as a Team Archetype, is the general strategy when using a team. Some Play Styles that you may see in the competitive scene include:
         </p>
-        <ul>
-            <li v-for="(item, index) in playstyles" :key="index">
-                <strong>{{ item.name }}</strong> - {{ item.desc }}
-            </li>
-        </ul>
+        <Playstyles/>
+        
         <h2>Cores</h2>
         <p>A Core is when 2 or More Loomians that support each other well, are combined. 
             In other words, they have good synergy with each other whether that be offensively, defensively or both. 
@@ -48,13 +45,15 @@
     import SideBar from './SideBar.vue';
     import ImageHeader from './Header.vue';
     import ContentList from './ContentList.vue';
+    import Playstyles from './Playstyles.vue';
 
     export default {
         name: "App",
         components: {
             ImageHeader,
             SideBar,
-            ContentList
+            ContentList,
+            Playstyles
         },
         data() {
             return {
@@ -73,35 +72,6 @@
                         {id: `Roles`, title: `Roles`},
                     ],
                 }],
-                playstyles: [{
-                    name: "Stall",
-                    desc: `You compose a team with as much defensive synergy as possible to mitigate as much damage as possible while you slowly chip down your enemy.
-                    Although, you throw in an offensive loomian to break any walls they have or to clean up low HP Loomians at the end.`
-                    },
-                    {
-                    name: "Semi-Stall",
-                    desc: `You compose a team with as much defensive synergy as possible to mitigate as much damage as possible while you slowly chip down your enemy. Although, you throw in an offensive loomian to break any walls they have or to clean up low HP Loomians at the end.`
-                    },
-                    {
-                    name: "Fake-Stall",
-                    desc: `Though the team consists of usually defensive-oriented Loomians, they secret possessive offensive utility to surprise opponents who expected a different, more conservative, strategy.`
-                    },
-                    {
-                    name: "Balance",
-                    desc: `You compose a team with defensive synergy in mind for all Loomians. However some are purely for offensive pressure and others are purely for defensive utility and yet others are a mix of both.`
-                    },
-                    {
-                    name: "Bulky Offense",
-                    desc: `You compose a team with defensive synergy in mind for all Loomians. Your Loomians for offensive pressure can take some hits and usually have natural bulk looms meaning they can absorb hits and cover weak spots.`,
-                    },
-                    {
-                    name: "Offense",
-                    desc: `You compose a team with defensive synergy in mind but more so in terms of types. You want to almost always have offensive pressure but with bulky things to swap in and take hits. These bulky things should also be able to put offensive pressure on the opponent.`
-                    },
-                    {
-                    name: "Hyper Offense",
-                    desc: `You compose a team with defensive synergy only in terms of types. You always want to have offensive pressure on your opponent.`
-                    }],
                 roles : [{
                     name: "Wallbreaker",
                     desc: `A Loomian in which can deal heavy damage to the opponent’s Defensive Loomians. Most commonly, a Loomian that attacks the opponent’s weaker defense is used for the initial damage output however using a set-up move like Brawn Boost or Magnify can also aid wallbreaking.`
