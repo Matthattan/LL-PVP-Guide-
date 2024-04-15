@@ -13,9 +13,6 @@
         <h1>How should I build a Team?</h1>
         <p>First, you should understand some concepts in team building that can make choosing Loomians and understanding when to use certain Loomians easier to comprehend:
         </p>
-        <h2>Playstyle</h2>
-        <p>A Playstyle - colloquially known as a Team Archetype, is the general strategy when using a team. Some Play Styles that you may see in the competitive scene include:
-        </p>
         <Playstyles/>
         
         <h2>Cores</h2>
