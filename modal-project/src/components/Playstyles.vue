@@ -1,6 +1,6 @@
 
 <template>
-    <h2>Playstyle</h2>
+    <h2 id="Playstyle">Playstyle</h2>
     <p>A Playstyle - colloquially known as a Team Archetype, is the general strategy when using a team. Some Play Styles that you may see in the competitive scene include:
     </p>
     <template v-for="(playstyle, index) in Playstyles" :key="index">

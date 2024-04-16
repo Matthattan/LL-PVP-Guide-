@@ -136,12 +136,9 @@
 </script>
 <style>
     .boxRallyItem {
-        display: grid;
         margin-top: 20px;
         background-color: #0057b4;
         border-radius: 25px;
-        min-width: 800px;
-
     }
 
     .selectionRallyItem {

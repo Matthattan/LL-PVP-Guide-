@@ -1,5 +1,5 @@
 <template>
-    <h2>Roles</h2>
+    <h2 id="Roles">Roles</h2>
     <p>A Role is the function that a Loomian plays in a team. 
         Roles can be offensive or defensive in nature and many Loomians may switch what role they serve based on the set they run. 
         Furthermore, a Loomian may serve as multiple roles however this isn’t always the case due to Limited Moves and TPs.
@@ -77,7 +77,7 @@
                     loomian: [
                         {imageAlt: "Luminami", image: require("@/assets/images/teambuilding/sprites/Luminami-menu.webp")},
                         {imageAlt: "Ikazune", image: require("@/assets/images/teambuilding/sprites/Ikazune-menu.webp")},
-                        {imageAlt: "Jellusa", image: require("@/assets/images/teambuilding/sprites/Jellusa-menu.webp")}
+                        {imageAlt: "Lantorch", image: require("@/assets/images/teambuilding/sprites/Lantorch-menu.webp")}
                     ]},
                     {
                     name: "Barter Users",

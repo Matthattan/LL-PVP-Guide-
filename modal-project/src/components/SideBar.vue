@@ -43,9 +43,9 @@ export default {
                 { label: 'Credits', url: '/Credits'},
             ],
             footer: [
-                { label: 'Repository', url: '#'},
-                { label: 'Discord Server', url: '#'},
-                { label: 'Discord Profile', url: '#'}
+                { label: 'Repository', url: 'https://github.com/Matthattan/LL-PVP-Guide-'},
+                { label: 'Discord Server', url: 'https://discord.gg/loomian-legacy'},
+                { label: 'Discord Profile', url: 'https://twitter.com/stuntmanforlyf'}
             ]
         }
     },

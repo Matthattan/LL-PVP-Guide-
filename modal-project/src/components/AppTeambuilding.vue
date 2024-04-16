@@ -14,7 +14,7 @@
         <p>First, you should understand some concepts in team building that can make choosing Loomians and understanding when to use certain Loomians easier to comprehend:
         </p>
         <Playstyles/>
-        <h2>Cores</h2>
+        <h2 id="Cores">Cores</h2>
         <p>A Core is when 2 or More Loomians that support each other well, are combined. 
             In other words, they have good synergy with each other whether that be offensively, defensively or both. 
             Cores are great for starting off the creation of a team because it saves time by focusing on several Loomians, 
