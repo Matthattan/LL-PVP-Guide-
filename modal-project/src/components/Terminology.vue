@@ -1,4 +1,8 @@
 <template>
+    <h1 id="Terminology">Terminology</h1>
+    <p>When speaking with other players in the PVP Community, you may hear terms that sound familiar or are completely foreign. 
+        This list attempts to explain different terms you may hear and what they mean.
+    </p>
     <div v-for="(Term, index) in Terms" :key="index" class="container">
         {{Term.Term}} - {{ Term.Explanation }}
     </div>

@@ -12,15 +12,7 @@
             If any question you have is not listed here, feel free to ask members in the community; they're more than happy to ask, so long as you're respectful. You can also suggest the question be answered here!
         </p>
         <Questions/>
-        <h1 id="Terminology">Terminology</h1>
-        <p>
-            When speaking with other players in the PVP Community, you may hear terms that sound familiar or are completely foreign. This list attempts to explain different terms you may hear and what they mean.
-        </p>
         <Terminology/>
-        <h1 id="UsageTiers">Usage Tiers</h1>
-        <p>
-            Usage Lists are an excellent medium for understanding the current meta, whats popular and what what isn't being used. Usage lists are divided into different tiers which can have various cut-off points depending on the usage collector.
-        </p>
         <UsageTerms/>
     </main>
 </template>

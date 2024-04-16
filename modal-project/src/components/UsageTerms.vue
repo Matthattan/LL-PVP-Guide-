@@ -1,4 +1,8 @@
 <template>
+    <h1 id="UsageTiers">Usage Tiers</h1>
+    <p>Usage Lists are an excellent medium for understanding the current meta, whats popular and what what isn't being used. 
+        Usage lists are divided into different tiers which can have various cut-off points depending on the usage collector.
+    </p>
     <div v-for="(Term, index) in Terms" :key="index" class="container">
         {{Term.Term}} - {{ Term.Explanation }}
     </div>

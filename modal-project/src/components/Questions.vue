@@ -3,7 +3,7 @@
     Click to reveal answers!
     <div v-for="(question, index) in questions" :key="index" class="container">
       <button @click="toggleAnswer(index)" class="question">{{ question.question }}</button>
-      <div class="answer" v-if="activeQuestion === index"> 
+      <div class="answer" v-if="question.showAnswer"> 
         <!-- Render SelectText component if the answer is 'SelectText', otherwise render the answer text -->
         <template v-if="question.question==''"></template>
         <template v-if="question.answer === 'SelectText'">
@@ -136,17 +136,14 @@ This is usually attributed to defensive loomians who possess major bulk and can 
           answer:
           `SelectText`
         }
-      ],
-      activeQuestion: null
+      ]
     };
   },
   methods: {
     toggleAnswer(index) {
-      this.activeQuestion = (this.activeQuestion === index) ? null : index;
+      this.questions[index].showAnswer = !this.questions[index].showAnswer;
     },
-    replaceWithBr() {
-      return this.haiku.replace(" ", "<br />")
-    }
+
   }
 };
 </script>
