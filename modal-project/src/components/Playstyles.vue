@@ -1,20 +1,21 @@
 
 <template>
     <h2>Playstyle</h2>
-        <p>A Playstyle - colloquially known as a Team Archetype, is the general strategy when using a team. Some Play Styles that you may see in the competitive scene include:
-        </p>
-    <ul>
-        <li v-for="(playstyle, index) in Playstyles" :key="index">
-            <strong>{{ playstyle.name }}</strong> - {{ playstyle.desc }}
+    <p>A Playstyle - colloquially known as a Team Archetype, is the general strategy when using a team. Some Play Styles that you may see in the competitive scene include:
+    </p>
+    <template v-for="(playstyle, index) in Playstyles" :key="index">
+        <button @click="toggleAnswer(index)">{{ playstyle.name }}</button>
+        <div class="answer" v-if="playstyle.showDescription">
+            {{ playstyle.desc }}
             <table>
-                <tr>
-                    <td v-for="loomian in playstyle.team"> 
-                        <img :alt="loomian.imageAlt" :src="loomian.image">
-                    </td>
-                </tr>
+                    <tr>
+                        <td v-for="loomian in playstyle.team"> 
+                            <img :alt="loomian.imageAlt" :src="loomian.image">
+                        </td>
+                    </tr>
             </table>
-        </li>
-    </ul>
+        </div>
+    </template>
 </template>
 <script>
     export default {
@@ -108,24 +109,47 @@
                     ]}
                 ]
             }
-        }
+        },
+        methods: {
+            toggleAnswer(index) {
+                // Toggle the showDescription property of the clicked playstyle
+                this.Playstyles[index].showDescription = !this.Playstyles[index].showDescription;
+            }
+        },
     }
 </script>
 <style scoped>
 
     table {
         margin: auto;
+        border: 1px solid #000000;
+        background-color: #0057b4;
+        margin-bottom: 1rem;
+
     }
 
     td {
         width: auto;
         padding: 0;
+        background-color: rgb(68, 127, 196);
 
     }
 
     td img {
         width: 5rem;
+    }
 
-
+    button {
+        width: 100%;
+        background-color: #004691;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: auto;
+        margin-bottom: 10px;
+        font-size: 18px;
+        text-align: left;
     }
 </style>

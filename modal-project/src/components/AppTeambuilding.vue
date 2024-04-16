@@ -14,7 +14,6 @@
         <p>First, you should understand some concepts in team building that can make choosing Loomians and understanding when to use certain Loomians easier to comprehend:
         </p>
         <Playstyles/>
-        
         <h2>Cores</h2>
         <p>A Core is when 2 or More Loomians that support each other well, are combined. 
             In other words, they have good synergy with each other whether that be offensively, defensively or both. 
@@ -25,17 +24,7 @@
             and Insane Coverage and Damage Output credited to Magamadire-Eruptudon. 
             This toxic mix of Loomians that do well for their roles resulted in a change of Baffle’s effect, 
         </p>
-        <h2>Roles</h2>
-        <p>A Role is the function that a Loomian plays in a team. 
-            Roles can be offensive or defensive in nature and many Loomians may switch what role they serve based on the set they run. 
-            Furthermore, a Loomian may serve as multiple roles however this isn’t always the case due to Limited Moves and TPs.
-        </p>
-        <ul>
-            <li v-for="(item, index) in roles" :key="index">
-                <strong>{{ item.name }}</strong> - {{ item.desc }}
-            </li>
-        </ul>
-
+        <Roles/>
     </main>
 </template>
 <script>
@@ -43,6 +32,7 @@
     import ImageHeader from './Header.vue';
     import ContentList from './ContentList.vue';
     import Playstyles from './Playstyles.vue';
+    import Roles from './Roles.vue';
 
     export default {
         name: "App",
@@ -50,7 +40,8 @@
             ImageHeader,
             SideBar,
             ContentList,
-            Playstyles
+            Playstyles,
+            Roles
         },
         data() {
             return {
@@ -62,7 +53,7 @@
                 },
                 {
                     id: 'How',
-                    title: 'How should I Build a Team??',
+                    title: 'How should I Build a Team?',
                     subitems: [
                         {id: `Playstyle`, title: `Playstyle`},
                         {id: `Cores`, title: `Cores`},
@@ -71,7 +62,12 @@
                 }],
                 roles : [{
                     name: "Wallbreaker",
-                    desc: `A Loomian in which can deal heavy damage to the opponent’s Defensive Loomians. Most commonly, a Loomian that attacks the opponent’s weaker defense is used for the initial damage output however using a set-up move like Brawn Boost or Magnify can also aid wallbreaking.`
+                    desc: `A Loomian in which can deal heavy damage to the opponent’s Defensive Loomians. Most commonly, a Loomian that attacks the opponent’s weaker defense is used for the initial damage output however using a set-up move like Brawn Boost or Magnify can also aid wallbreaking.`,
+                    loomian: [
+                        {imageAlt: "Obsidrugon", image: require("@/assets/images/teambuilding/sprites/Obsidrugon-menu.webp")},
+                        {imageAlt: "Eleguana", image: require("@/assets/images/teambuilding/sprites/Eleguana-menu.webp")},
+                        {imageAlt: "Stratusoar", image: require("@/assets/images/teambuilding/sprites/Stratusoar-menu.webp")}
+                    ],
                     },
                     {
                     name: "Cleaner",
