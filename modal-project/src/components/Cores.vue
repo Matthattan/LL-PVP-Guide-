@@ -66,8 +66,8 @@
                         Shawchi can comfortably use Pyrokinesis without concern for the likes of Searknight or Eleguana as Halvantic can hit them for SE using its STAB and almost-STAB Gnarly Gash. 
                         Given these two are quite slow, frail Loomians, Boots can quicken Halvantic while speed control/pivots help both get onto the field to cause chaos.`,
                         Loomians: [
-                            {imageAlt: "Halvantic", image: "Halvantic"},
-                            {imageAlt: "Shawchi", image: "Shawchi"},
+                            {imageAlt: "Halvantic", image: require("@/assets/images/teambuilding/models/Halvantic-model.webp")},
+                            {imageAlt: "Shawchi", image: require("@/assets/images/teambuilding/models/Shawchi-model.webp")},
                         ]},
                         {
                         Name: "FalkSoul (Falkyrie + Ursoul)",
@@ -75,8 +75,8 @@
                         Falkyrie is able to set up Radiant Forecast and then swap (or rather pivot) into Ursoul to apply pressure as no Loomian can swap in without taking at least a neutral hit. 
                         Ursoul is also able to hit ranged tanks that would usually come in on Falkyrie as its high Matk is quite threatening especially when many are weak to the likes of Slap Down or Pep Jab/Quick Punch.`,
                         Loomians: [
-                            {imageAlt: "Falkyrie", image: "Falkyrie"},
-                            {imageAlt: "Ursoul", image: "Ursoul"},
+                            {imageAlt: "Falkyrie", image: require("@/assets/images/teambuilding/models/Falkyrie-model.webp")},
+                            {imageAlt: "Ursoul", image: require("@/assets/images/teambuilding/models/Ursoul-model.webp")},
                         ]},
                         {
                         Name: "ProtoBrat (Protogon + Umbrat)",
@@ -85,8 +85,8 @@
                         Umbrat has far from a good MAtk stat by todays standard but the boost from Overshadow as well as Chase Down's swap out bonus has allowed it to shine back into the light once more. 
                         Similar to FalkSoul, this core appreciates hazards for that extra damage as well as speed control/pivot for safe manoeuvring. `,
                         Loomians: [
-                            {imageAlt: "Protogon", image: "Protogon"},
-                            {imageAlt: "Umbrat", image: "Umbrat"},
+                            {imageAlt: "Protogon", image: require("@/assets/images/teambuilding/models/Protogon-model.webp")},
+                            {imageAlt: "Umbrat", image: require("@/assets/images/teambuilding/models/Umbrat-model.webp")},
                         ]},
                         {
                         Name: "NeverKnight (Nevermare + Searknight)",
@@ -94,8 +94,8 @@
                         Searknight is commonly recognised as a solid answer to Nevermare so naturally pairing it up with its counterpart helps expand attack coverage. 
                         An answer to opposing Searknights and Chartikis are appreciated. `,
                         Loomians: [
-                            {imageAlt: "Nevermare", image: "Nevermare"},
-                            {imageAlt: "Searknight", image: "Searknight"},
+                            {imageAlt: "Nevermare", image: require("@/assets/images/teambuilding/models/Nevermare-model.webp")},
+                            {imageAlt: "Searknight", image: require("@/assets/images/teambuilding/models/Searknight-model.webp")},
                         ]},
                         {
                         Name: "KaniTooth (Kanibo + Joltooth)",
@@ -104,8 +104,8 @@
                         This can help break down answers to both Loomians allowing for solid progression. 
                         Pivot support, Speed Control and Barbs to further break down Loomians is appreciated.`,
                         Loomians: [
-                            {imageAlt: "Kanibo", image: "Kanibo"},
-                            {imageAlt: "Joltooth", image: "Joltooth"},
+                            {imageAlt: "Kanibo", image: require("@/assets/images/teambuilding/models/Kanibo-model.webp")},
+                            {imageAlt: "Joltooth", image: require("@/assets/images/teambuilding/models/Joltooth-model.webp")},
                         ]},
                         {
                         Name: "ZueBadger (Zuelong + Barbadger)",
@@ -113,16 +113,16 @@
                         As a bonus, Dauntless (which gives a +1 MAtk if the opponent has an SE move) makes it easier to break common Zuelong answers like Pyrolen or Sedimars. 
                         Barbs plus Slow Pivot support helps make the most of this core. `,
                         Loomians: [
-                            {imageAlt: "Zuelong", image: "Zuelong"},
-                            {imageAlt: "Barbadger", image: "Barbadger"},
+                            {imageAlt: "Zuelong", image: require("@/assets/images/teambuilding/models/Zuelong-model.webp")},
+                            {imageAlt: "Barbadger", image: require("@/assets/images/teambuilding/models/Barbadger-model.webp")},
                         ]},
                         {
                         Name: "DeluGlyph (Deludrix + Pharoglyph)",
                         Description: `Deludrix does what Deludrix does and abuses its absurd collage of coverage by taking on Gargolem-D and Stratusoar while (Idiosyncratic) Pharoglyph can break Venolen, Taoshinu and Icigool. 
                         A defensive pivot is much appreciated to get either Offensive Loomian into the field and start their chaos.`,
                         Loomians: [
-                            {imageAlt: "Deludrix", image: "Deludrix"},
-                            {imageAlt: "Pharoglpyh", image: "Pharoglpyh"},
+                            {imageAlt: "Deludrix", image: require("@/assets/images/teambuilding/models/Deludrix-model.webp")},
+                            {imageAlt: "Pharoglpyh", image: require("@/assets/images/teambuilding/models/Pharoglyph-model.webp")},
                         ]},
                         {
                         Name: "AceMiore (Wresolen + Cosmiore-Unleashed)",
@@ -131,8 +131,8 @@
                         Wresolen can also break down defensive answers to Cosmiore before dropping out in order to make Cos-U's job a lot easier. 
                         This core offers very limited answers however some people may pair up Cosmiore-Unleashed with another Loomian. `,
                         Loomians: [
-                            {imageAlt: "Deludrix", image: "Deludrix"},
-                            {imageAlt: "Pharoglpyh", image: "Pharoglpyh"},
+                            {imageAlt: "Wresolen", image: require("@/assets/images/teambuilding/models/Wresolen-M-model.webp")},
+                            {imageAlt: "Cosmiore-Unleahed", image: require("@/assets/images/teambuilding/models/Cosmiore-Unleashed-green-model.PNG.webp")},
                         ]},
                         {
                         Name: "SpeciMiore (Meditoad + Cosmiore-Unleashed)",
@@ -140,8 +140,8 @@
                         Once passed onto Cos-U, Stratusoar, Tyrecks and Tiklipse do NOT want to pick a fight with it. 
                         Giving Cosmiore Boots to abuse the single move it has helps with speed control while Meditoad can carry Mega Punch for those who resist its Psycho Blast. `,
                         Loomians: [
-                            {imageAlt: "Meditoad", image: "Meditoad"},
-                            {imageAlt: "Cosmiore-Unleashed", image: "Cosmiore-Unleashed"},
+                            {imageAlt: "Meditoad", image: require("@/assets/images/teambuilding/models/Meditoad-model.webp")},
+                            {imageAlt: "Cosmiore-Unleashed", image: require("@/assets/images/teambuilding/models/Cosmiore-Unleashed-green-model.PNG.webp")},
                         ]},
                         {
                         Name: "BunnArine (Bunnecki + Samarine)",
@@ -151,8 +151,8 @@
                         From there, Bunnecki can set up and start attacking. 
                         An answer to toxic types is appreciated as well a pivot to get either Loomian in. `,
                         Loomians: [
-                            {imageAlt: "Bunnecki", image: "Bunnecki"},
-                            {imageAlt: "Samarine", image: "Samarine"},
+                            {imageAlt: "Bunnecki", image: require("@/assets/images/teambuilding/models/Bunnecki-model.webp")},
+                            {imageAlt: "Samarine", image: require("@/assets/images/teambuilding/models/Samarine-model.webp")},
                         ]},
                     ]},
                     {
@@ -166,8 +166,8 @@
                         From there, Falkyrie can come in and start setting up and breaking down Loomians. 
                         Ursnac also has access to Slap Down to hit plant types that would usually answer Falkyrie such as Mawamurk.`,
                         Loomians: [
-                            {imageAlt: "Falkyrie", image: "Falkyrie"},
-                            {imageAlt: "Ursnac", image: "Ursnac"},
+                            {imageAlt: "Falkyrie", image: require("@/assets/images/teambuilding/models/Falkyrie-model.webp")},
+                            {imageAlt: "Ursnac", image: require("@/assets/images/teambuilding/models/Ursnac-model.webp")},
                         ]},
                         {
                         Name: "WresoTao (Wresolen + Taoshinu)",
@@ -175,8 +175,8 @@
                         Once setted up, This Loomian can pass on its somewhat concerning Matk stat to a more fearful utiliser: Wresolen. 
                         A reliable answer to mind types is preferred as well as Cosmiore can be inserted to make use of Ace once Wresolen has done its job. `,
                         Loomians: [
-                            {imageAlt: "Wresolen", image: "Wresolen"},
-                            {imageAlt: "Taoshinu", image: "Taoshinu"},
+                            {imageAlt: "Wresolen", image: require("@/assets/images/teambuilding/models/Wresolen-M-model.webp")},
+                            {imageAlt: "Taoshinu", image: require("@/assets/images/teambuilding/models/Taoshinu-model.webp")},
                         ]},
                         {
                         Name: "BoarNami (Boarrok + Luminami)",
@@ -185,8 +185,8 @@
                         This variation pairs Luminami up with Boarrok so it can collect a +1 Matk and start rampaging. 
                         Answers to Wintrix, Deludrix, Kanibo and many other SE Loomians are appreciated.`,
                         Loomians: [
-                            {imageAlt: "Boarrok", image: "Boarrok"},
-                            {imageAlt: "Luminami", image: "Luminami"},
+                            {imageAlt: "Boarrok", image: require("@/assets/images/teambuilding/models/Boarrok-model.webp")},
+                            {imageAlt: "Luminami", image: require("@/assets/images/teambuilding/models/Luminami-model.webp")},
                         ]},
                         {
                         Name: "StratuNecki (Stratusoar + Bunnecki)",
@@ -194,8 +194,8 @@
                         Stratusoar helps bait out electric type loomians to dish out electric type attacks making it easier for bunnecki to enter the field and start its rampage. 
                         Stratusoar also offers hazard removal with gust which can clear the likes of icicle traps allowing bunnecki to swap in chip-free. `,
                         Loomians: [
-                            {imageAlt: "Stratusoar", image: "Stratusoar"},
-                            {imageAlt: "Bunnecki", image: "Bunnecki"},
+                            {imageAlt: "Stratusoar", image: require("@/assets/images/teambuilding/models/Stratusoar-model.webp")},
+                            {imageAlt: "Bunnecki", image: require("@/assets/images/teambuilding/models/Bunnecki-model.webp")},
                         ]},
                         {
                         Name: "NymErupt (Nymaurae + Eruptidon)",
@@ -204,8 +204,8 @@
                         From there, it can start wallbreaking and swap into Nymaurae once Loomians are within KO range. 
                         As a plus, Eruptidon can melts icicle traps which Nymaurae is weak to. `,
                         Loomians: [
-                            {imageAlt: "Nymaurae", image: "Nymaurae"},
-                            {imageAlt: "Eruptidon", image: "Eruptidon"},
+                            {imageAlt: "Nymaurae", image: require("@/assets/images/teambuilding/models/Nymaurae-model.webp")},
+                            {imageAlt: "Eruptidon", image: require("@/assets/images/teambuilding/models/Eruptidon-model.webp")},
                         ]},
                         {
                         Name: "TahMiore (Tahtab + Cosmiore-Cracked)",
@@ -213,8 +213,8 @@
                         Tahtab can also make use of barter to cripple either's answers. 
                         Hazards, Hazard Removal and a Harvesect answer is highly advised.`,
                         Loomians: [
-                            {imageAlt: "Tahtab", image: "Tahtab"},
-                            {imageAlt: "Cosmiore-Cracked", image: "Cosmiore-Cracked"},
+                            {imageAlt: "Tahtab", image: require("@/assets/images/teambuilding/models/Tahtab-model.webp")},
+                            {imageAlt: "Cosmiore-Cracked", image: require("@/assets/images/teambuilding/models/Cosmiore-Cracked-green-model.webp")},
                         ]},
                         {
                         Name: "CharoSoul (Charonyx + Ursoul)",
@@ -222,8 +222,8 @@
                         That being said, it provides good synergy with Ursoul by shutting down the likes of Obsidrugon or Phagenaut. 
                         Ursoul can also help out Charonyx by hitting metal types for Super Effective. `,
                         Loomians: [
-                            {imageAlt: "Charonyx", image: "Charonyx"},
-                            {imageAlt: "Ursoul", image: "Ursoul"},
+                            {imageAlt: "Charonyx", image: require("@/assets/images/teambuilding/models/Charonyx-model.webp")},
+                            {imageAlt: "Ursoul", image: require("@/assets/images/teambuilding/models/Ursoul-model.webp")},
                         ]},
                         {
                         Name: "DreggoTiki (Dreggodyne + Chartiki)",
@@ -231,8 +231,8 @@
                         With Wabalisc being one of the few that can stand up to it (with the ability Ignorant), Chartiki provides great cover for the ice thief. 
                         Additionally, Dreggodyne provides defensive utility against the likes of Vesperatu and Ursoul - two common users of dark type moves. `,
                         Loomians: [
-                            {imageAlt: "Dreggodyne", image: "Dreggodyne"},
-                            {imageAlt: "Chartiki", image: "Chartiki"},
+                            {imageAlt: "Dreggodyne", image: require("@/assets/images/teambuilding/models/Dreggodyne-model.webp")},
+                            {imageAlt: "Chartiki", image: require("@/assets/images/teambuilding/models/Chartiki-model.webp")},
                         ]},
                     ]},
                     {
@@ -244,9 +244,9 @@
                         Pyrolen offers a good answer for meta ranged attackers and provides hazard removal through Burn-Up while Luminami is staple when it comes to Melee Defensive Loomians. 
                         As a plus, decent offensive pressure is emitted from the three. `,
                         Loomians: [
-                            {imageAlt: "Pyrolen", image: "Pyrolen"},
-                            {imageAlt: "Luminami", image: "Luminami"},
-                            {imageAlt: "Icigool", image: "Icigool"}
+                            {imageAlt: "Pyrolen", image: require("@/assets/images/teambuilding/models/Pyrolen-M-model.webp")},
+                            {imageAlt: "Luminami", image: require("@/assets/images/teambuilding/models/Luminami-model.webp")},
+                            {imageAlt: "Icigool", image: require("@/assets/images/teambuilding/models/Icigool-Blue-model.webp")}
                         ]},
                         {
                         Name: "OxiNami (Oxidrake + Luminami)",
@@ -255,8 +255,8 @@
                         A barbs setter or offensive Loomian works well with this core. 
                         The addition of Swolder and Meditoad to the core can help provide speed control via tase/webbing, slap down, poison as well as (poison) barbs removal.  `,
                         Loomians: [
-                            {imageAlt: "Oxidrake", image: "Oxidrake"},
-                            {imageAlt: "Luminami", image: "Luminami"},
+                            {imageAlt: "Oxidrake", image: require("@/assets/images/teambuilding/models/Oxidrake-model.webp")},
+                            {imageAlt: "Luminami", image: require("@/assets/images/teambuilding/models/Luminami-model.webp")},
                         ]},
                         {
                         Name: "TundroBlast (Tundrolen + Barblast)",
@@ -264,8 +264,8 @@
                         For example, Wresolen - who can break through tundrolen - can be dealt easily with barblast and Joltooth - which is SE against Barblast - can be stopped by Tundrolen. 
                         As you might have guessed, Ranged Attackers do invalidate this core especially Gummy Fiscarna who is immune to highly explosive Barblast. `,
                         Loomians: [
-                            {imageAlt: "Tundrolen", image: "Tundrolen"},
-                            {imageAlt: "Barblast", image: "Barblast"},
+                            {imageAlt: "Tundrolen", image: require("@/assets/images/teambuilding/models/Tundrolen-M-model.webp")},
+                            {imageAlt: "Barblast", image: require("@/assets/images/teambuilding/models/Barblast-model.webp")},
                         ]},
                         {
                         Name: "WabaGargD (Wabalisc + Gargolem-Defense)",
@@ -274,8 +274,8 @@
                         Gargolem Defense also has access to Mudslide (for hazard removal) and Slap Down to disable a Loomians capability. 
                         Adding a Late-Game Sweeper helps clear the field faster as well as adding pressure through speed. `,
                         Loomians: [
-                            {imageAlt: "Wabalisc", image: "Wabalisc"},
-                            {imageAlt: "Gargolem-Defense", image: "Gargolem-Defense"},
+                            {imageAlt: "Wabalisc", image: require("@/assets/images/teambuilding/models/Barblast-model.webp")},
+                            {imageAlt: "Gargolem-Defense", image: require("@/assets/images/teambuilding/models/Gargolem-Defense-model.webp")},
                         ]},
                         {
                         Name: "ObsiPyro (Obsidrugon + Pyrolen)",
@@ -283,8 +283,8 @@
                         Obsidrugon can take on a more offensive presence with Drudge whilst Pyrolen has utility such as speed control and Peace of Mind to exert its own offensive pressure. 
                         An answer for Luminami, Gargolem-D and various attackers - that utilise weaknesses on lower defences - are appreciated. `,
                         Loomians: [
-                            {imageAlt: "Obsidrugon", image: "Obsidrugon"},
-                            {imageAlt: "Pyrolen", image: "Pyrolen"},
+                            {imageAlt: "Obsidrugon", image: require("@/assets/images/teambuilding/models/Obsidrugon-model.webp")},
+                            {imageAlt: "Pyrolen", image: require("@/assets/images/teambuilding/models/Pyrolen-M-model.webp")},
                         ]},
                         {
                         Name: "LumiFernix (Luminami + Infernix)",
@@ -292,8 +292,8 @@
                         This allows for safe exchanging knowing your main core has gotten some of their health back. 
                         Luminami provides pivot support as always while Infernix can provide speed control, hazard removal or deal crazy damage back with Return to Sender. `,
                         Loomians: [
-                            {imageAlt: "Luminami", image: "Luminami"},
-                            {imageAlt: "Infernix", image: "Infernix"},
+                            {imageAlt: "Luminami", image: require("@/assets/images/teambuilding/models/Luminami-model.webp")},
+                            {imageAlt: "Infernix", image: require("@/assets/images/teambuilding/models/Infernix-model.webp")},
                         ]},
                         {
                         Name: "ObsiRecks (Obsidrugon + Tyrecks)",
@@ -302,8 +302,8 @@
                         It also has the Melee Bulk to answer some Melee Attackers, that Obsidrugon may be unable to, such as Halvantic. 
                         Some Loomians like Ikazune, Luminami, Whippledriff (generally Ranged Attackers that hit Tyrecks for SE) can break through this core so add to it accordingly. `,
                         Loomians: [
-                            {imageAlt: "Obsidrugon", image: "Obsidrugon"},
-                            {imageAlt: "Tyrecks", image: "Tyrecks"},
+                            {imageAlt: "Obsidrugon", image: require("@/assets/images/teambuilding/models/Obsidrugon-model.webp")},
+                            {imageAlt: "Tyrecks", image: require("@/assets/images/teambuilding/models/Tyrecks-model.webp")},
                         ]},
 
                     ]},
