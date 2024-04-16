@@ -125,7 +125,6 @@
         border: 1px solid #000000;
         background-color: #0057b4;
         margin-bottom: 1rem;
-
     }
 
     td {
@@ -136,7 +135,7 @@
     }
 
     td img {
-        width: 5rem;
+        width: 8rem;
     }
 
     button {
