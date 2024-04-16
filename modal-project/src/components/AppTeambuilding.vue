@@ -14,16 +14,7 @@
         <p>First, you should understand some concepts in team building that can make choosing Loomians and understanding when to use certain Loomians easier to comprehend:
         </p>
         <Playstyles/>
-        <h2 id="Cores">Cores</h2>
-        <p>A Core is when 2 or More Loomians that support each other well, are combined. 
-            In other words, they have good synergy with each other whether that be offensively, defensively or both. 
-            Cores are great for starting off the creation of a team because it saves time by focusing on several Loomians, 
-            allows you to closely analyze how Loomians work with each other and can save time by looking at pre-existing cores. 
-        </p>
-        <p>For example, Magamadire-Eruptidon and Ursnac have proven to be such a threatening core due to the speed control and defensive utility offered by Ursnac 
-            and Insane Coverage and Damage Output credited to Magamadire-Eruptudon. 
-            This toxic mix of Loomians that do well for their roles resulted in a change of Baffle’s effect, 
-        </p>
+        <Cores/>
         <Roles/>
     </main>
 </template>
@@ -32,6 +23,7 @@
     import ImageHeader from './Header.vue';
     import ContentList from './ContentList.vue';
     import Playstyles from './Playstyles.vue';
+    import Cores from './Cores.vue';
     import Roles from './Roles.vue';
 
     export default {
@@ -41,6 +33,7 @@
             SideBar,
             ContentList,
             Playstyles,
+            Cores,
             Roles
         },
         data() {

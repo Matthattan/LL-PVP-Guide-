@@ -27,9 +27,9 @@
                     name: "Wall",
                     desc: `A Loomian whose purpose is to halt the progress of the opponent. Usually by being very bulky and utilizing type interactions to take as little damage as possible and chip down the opponent. They can also make opportunities to continue or create momentum through some kind of utility.`,
                     loomian: [
-                        {imageAlt: "Tundrolen", image: require("@/assets/images/teambuilding/sprites/Tundrolen-menu.webp")},
+                        {imageAlt: "Luminami", image: require("@/assets/images/teambuilding/sprites/Luminami-menu.webp")},
                         {imageAlt: "Phagenaut", image: require("@/assets/images/teambuilding/sprites/Phagenaut-menu.webp")},
-                        {imageAlt: "Clionae", image: require("@/assets/images/teambuilding/sprites/Clionae-menu.webp")}
+                        {imageAlt: "Sedimars", image: require("@/assets/images/teambuilding/sprites/Sedimars-menu.webp")}
                     ]},
                     {
                     name: "Tank",
@@ -44,23 +44,23 @@
                     desc: `A Loomian in which can deal heavy damage to the opponent’s Defensive Loomians. Most commonly, a Loomian that attacks the opponent’s weaker defense is used for the initial damage output however using a set-up move like Brawn Boost or Magnify can also aid wallbreaking.`,
                     loomian: [
                         {imageAlt: "Colossotrops", image: require("@/assets/images/teambuilding/sprites/Colossotrops-menu.webp")},
-                        {imageAlt: "Falkyrie", image: require("@/assets/images/teambuilding/sprites/Falkyrie-menu.webp")},
+                        {imageAlt: "Dakuda", image: require("@/assets/images/teambuilding/sprites/Dakuda-menu.webp")},
                         {imageAlt: "Magmadire-Eruptidon", image: require("@/assets/images/teambuilding/sprites/Eruptidon-Magmadire-menu.webp")}
                     ]},
                     {
                     name: "Cleaner",
                     desc: `A Loomian whose main job is to KO Loomians by picking off Loomians with lower HP at late stages of the game. They can also have access to Set-Up moves to hit harder however this isn't a necessity.`,
                     loomian: [
-                        {imageAlt: "Tahtab", image: require("@/assets/images/teambuilding/sprites/Tahtab-menu.webp")},
+                        {imageAlt: "Nevermare", image: require("@/assets/images/teambuilding/sprites/Nevermare-menu.webp")},
                         {imageAlt: "Zuelong", image: require("@/assets/images/teambuilding/sprites/Zuelong-menu.webp")},
-                        {imageAlt: "Overcharged-Dakuda", image: require("@/assets/images/teambuilding/sprites/Dakuda-Overcharged-menu.webp")}
+                        {imageAlt: "Deludrix", image: require("@/assets/images/teambuilding/sprites/Deludrix-menu.webp")}
                     ]},
                     {
                     name: "Set-Up Sweeper",
                     desc: `A Loomian who functions best after they've set up and can deal heavy amounts of damage to the opposing team. Being fast to avoid being revenge-killed is also recommended.`,
                     loomian: [
-                        {imageAlt: "Deludrix", image: require("@/assets/images/teambuilding/sprites/Deludrix-menu.webp")},
-                        {imageAlt: "Nevermare", image: require("@/assets/images/teambuilding/sprites/Nevermare-menu.webp")},
+                        {imageAlt: "Teridescent", image: require("@/assets/images/teambuilding/sprites/Teridescent-menu.webp")},
+                        {imageAlt: "Samarine", image: require("@/assets/images/teambuilding/sprites/Samarine-menu.webp")},
                         {imageAlt: "Jetwing-Stratusoar", image: require("@/assets/images/teambuilding/sprites/Stratusoar-Jetwing-menu.webp")}
                     ]},
                     {
@@ -69,13 +69,13 @@
                     loomian: [
                         {imageAlt: "Imperior", image: require("@/assets/images/teambuilding/sprites/Imperior-menu.webp")},
                         {imageAlt: "Revenine", image: require("@/assets/images/teambuilding/sprites/Revenine-menu.webp")},
-                        {imageAlt: "Hunder", image: require("@/assets/images/teambuilding/sprites/Hunder-menu.webp")}
+                        {imageAlt: "Tahtab", image: require("@/assets/images/teambuilding/sprites/Tahtab-menu.webp")}
                     ]},
                     {
                     name: "Pivot",
                     desc: `Loomians that use moves that allow the player to switch Loomians during turns which helps maintain momentum. Offensive Pivots usually swap out before the opponents makes a move in order to get a Defensive Loomian in whereas a Defensive Pivot tries to be as slow as possible in order to be hit before swapping out, enabling a defensively weak Loomian to swap in damage-free.`,
                     loomian: [
-                        {imageAlt: "Luminami", image: require("@/assets/images/teambuilding/sprites/Luminami-menu.webp")},
+                        {imageAlt: "Ursnac", image: require("@/assets/images/teambuilding/sprites/Ursnac-menu.webp")},
                         {imageAlt: "Ikazune", image: require("@/assets/images/teambuilding/sprites/Ikazune-menu.webp")},
                         {imageAlt: "Lantorch", image: require("@/assets/images/teambuilding/sprites/Lantorch-menu.webp")}
                     ]},
