@@ -8,11 +8,11 @@
         <div class="answer" v-if="playstyle.showDescription">
             {{ playstyle.desc }}
             <table>
-                    <tr>
-                        <td v-for="loomian in playstyle.team"> 
-                            <img :alt="loomian.imageAlt" :src="loomian.image">
-                        </td>
-                    </tr>
+                <tr>
+                    <td v-for="loomian in playstyle.team"> 
+                        <img :alt="loomian.imageAlt" :src="loomian.image">
+                    </td>
+                </tr>
             </table>
         </div>
     </template>
@@ -119,7 +119,6 @@
     }
 </script>
 <style scoped>
-
     table {
         margin: auto;
         border: 1px solid #000000;
