@@ -1,5 +1,4 @@
 <template>
-    <button type="button" @click="toggleSidebar" id="sidebarButton" class="content" :class="{ 'show': showSidebar}"></button>
     <div class="sidebar" :class="{ 'show': showSidebar }">
         <nav>
             <a href="https://www.roblox.com/games/306964494/Loomian-Legacy">
@@ -15,10 +14,11 @@
                 <hr style="width: 90%;">
             <ul>
                 <li v-for="(item, index) in footer" :key="index">
-                    <a :href="item.url">{{ item.label }}</a>
+                    <a :href="item.url" target="_blank">{{ item.label }}</a>
                 </li>
             </ul>
         </nav>
+        <button type="button" @click="toggleSidebar" id="sidebarButton" class="content" :class="{ 'show': showSidebar}"></button>
     </div>
 </template>
 <script>
@@ -57,76 +57,82 @@ export default {
 }
 </script>
 <style scoped>
-        * {
-            font-family: 'Russo One', sans-serif;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            color: black;
-        }
+    * {
+        font-family: 'Russo One', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color: black;
+    }
 
-        .sidebar {
-            height: 100%;
-            width: 20%;
-            position: fixed;
-            top: 0;
-            left: -100%; /* Initially hidden */
-            background-color: #154447;  
-            transition: left 0.5s ease;
-            z-index: 3; /* Set a higher z-index value */
-        }
+    .sidebar {
+        height: 100%;
+        max-width: 400px;
+        width: 20%;
+        min-width: 240px;            
+        position: fixed;
+        top: 0;
+        left: -100%; /* Initially hidden */
+        background-color: #154447;  
+        transition: left 0.5s ease;
+        z-index: 3; /* Set a higher z-index value */
+    }
 
-        .sidebar.show {
-            left: 0; /* Show sidebar */
-        }
+    .sidebar.show {
+        left: 0; /* Show sidebar */
+    }
 
-        .sidebar nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
+    .sidebar nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
 
-        .sidebar nav ul li {
-            padding: 10px;
-        }
+    .sidebar nav ul li {
+        padding: 10px;
+    }
 
-        .sidebar nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
+    .sidebar nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
 
-        .sidebar nav ul li a:hover {
-            color: #eba621;
-            font-weight: bolder;
-        }
+    .sidebar nav ul li a:hover {
+        color: #eba621;
+        font-weight: bolder;
+    }
 
-        .sidebar nav img {
-            width: 100%;
-        }
+    .sidebar nav img {
+        width: 100%;
+    }
 
-        hr {
-            width: 90%;
-        }
+    hr {
+        width: 90%;
+    }
 
-        #sidebarButton {
-            left: 20px;
-            padding: 20px;
-            transition: margin-left 0.7s ease; /* Smooth transition for content */
-            margin-left: 0; /* Initially aligned with the viewport */
-            position: fixed;
-            top: 1rem;
-            z-index: 1;
-            background-image: url('../assets/images/sidebar/ArrowRight.png');
-            background-repeat: no-repeat;
-            background-position: 50% 50%;
-            background-color: transparent;
-            background-size: contain;
-            border: none;
-            height: 4rem;
-            width: 4rem;
-        }
+    #sidebarButton {
+        left: 20px;
+        padding: 20px;
+        transition: right 0.7s ease; /* Smooth transition for content */
+        margin-left: 0; /* Initially aligned with the viewport */
+        position: fixed;
+        top: 1rem;
+        z-index: 1;
+        background-image: url('../assets/images/sidebar/ArrowRight.png');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-color: transparent;
+        background-size: contain;
+        border: none;
+        height: 4rem;
+        width: 4rem;
+    }
 
+    #sidebarButton.show {
+        background-image: url('../assets/images/sidebar/ArrowLeft.png');
+    }
+
+    @media screen and (max-width: 300px) {
         #sidebarButton.show {
-            margin-left: 20%; /* Move content when sidebar is shown */
-            background-image: url('../assets/images/sidebar/ArrowLeft.png');
-
+            
         }
+    }
 </style>

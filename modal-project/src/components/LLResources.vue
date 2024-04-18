@@ -1,5 +1,5 @@
 <template>
-    <table class="collection">
+    <table>
         <div class="gallery" v-for="(resource, index) in resources" :key="index">
             <a target="_blank" :href="resource.link">
                 <div class="image" :alt="resource.imageAlt" :style="{ backgroundImage: 'url(' + resource.image + ')' }"></div>
@@ -96,15 +96,19 @@ export default {
 }
 </script>
 <style scoped>
-.image {
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+
+table {
+    margin: auto;
+    width: max-content;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 2px black solid;
+    border-radius: 5px;
 }
 
 .gallery {
-    margin: 5px auto;
+    margin: 5px 10px;
     border: 1px solid #ccc;
     background-color: white;
     width: auto;
@@ -120,34 +124,41 @@ export default {
     background-color: #ccc;
 }
 
-.desc {
-    padding: 15px;
-    text-align: left;
-    font-size: 20px;
-    height: 120px;
-}
-
 .gallery a {
     text-decoration: none;
     color: black;
 }
 
-table {
-    margin: auto;
-    width: auto;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    border: 2px black solid;
-    border-radius: 5px;
-}
-
-.gallery img {
-    width: max-content;
-    height: 400px;
-}
-
 .image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 25px 25px 0px 0px;
+
 }
+
+.desc {
+    padding: 15px;
+    text-align: left;
+    font-size: 20px;
+    height: 5rem;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 800px) {
+        table {
+            grid-template-columns: 1fr 1fr;
+        }
+}
+
+@media screen and (max-width: 500px) {
+        table {
+            margin: auto;
+            display: block;
+            grid-template-columns: 1fr;
+        }
+}
+
+
 </style>

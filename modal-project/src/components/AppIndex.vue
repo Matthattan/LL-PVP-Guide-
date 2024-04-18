@@ -42,4 +42,10 @@ main {
   margin-bottom: 200px;
 }
 
+@media screen and (max-width: 300px){
+  h1 {
+    font-size: 18px;
+  }
+}
+
 </style>
