@@ -31,39 +31,45 @@ export default {
 </script>
 <style scoped>
 
-* {
-  font-family: 'Russo One';
-}
+  * {
+    font-family: 'Russo One';
+  }
 
-.top-container {
-  background-color: #f1f1f1;
-  padding: 30px;
-  text-align: center;
-}
+  .top-container {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+  }
 
-h1 {
-  margin: auto;
-}
+  h1 {
+    margin: auto;
+  }
 
-header {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-  height: 100vh;
-  transition: 0.2s;
-  font-size: 30px;
-}
+  header {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+    transition: 0.2s;
+    font-size: 30px;
+  }
 
-.sticky {
-  background-color: #004691; 
-  text-align: center;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  padding: 20px 0;
-  margin: auto;
-  margin-bottom: 20px;
-}
+  .sticky {
+    background-color: #004691; 
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 20px 0;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 300px){
+    h1 {
+      font-size: 30px;
+    }
+  }
 
 </style>

@@ -356,7 +356,7 @@
 
     .description {
         display: block;
-        padding: 50px;
+        padding: 10px 50px 50px 50px;
     }
 
     img {
@@ -374,12 +374,13 @@
     }
 
     td {
+        min-width: 100px;
         width: auto;
         padding: 0;
     }
 
     td img {
-        width: 8rem;
+        height: 30%;
     }
 
     .coreButton {
