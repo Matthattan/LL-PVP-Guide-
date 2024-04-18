@@ -23,7 +23,7 @@
                 The standard for competitive battles is level 50, 
                 this means 8 Training Points (or 4 if they’re in Energy) and 2 Unique Points are equal to 1 total stat point. 
             </li>
-            <li>Try not to force a Loomian to take on multiple roles. 
+            <li>Try not to force a Loomian to take on multiple roles. Though it's important that your team gets the utility it needs to perform well,
                 You may end up stretching its entire arsenal utilities so thin that it can’t perform any of its roles well. 
                 Instead, try to focus on a singular role. 
             </li>
@@ -44,15 +44,14 @@
                 By using sets in actual battles, it can prove more useful or, if not, show what can be improved. 
             </li>
         </ul>
-        <RallyMovesTabs/>
-
+        <SetExamples/>
     </main>
 </template>
 <script>
 import SideBar from './SideBar.vue';
 import ImageHeader from './Header.vue';
 import ContentList from './ContentList.vue';
-import RallyMovesTabs from './RallyMovesTabs.vue';
+import SetExamples from './SetExamples.vue';
 
 export default {
     name: 'App',
@@ -60,7 +59,7 @@ export default {
         ImageHeader,
         SideBar,
         ContentList,
-        RallyMovesTabs
+        SetExamples
     },
     data() {
         return {
