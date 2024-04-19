@@ -1,4 +1,10 @@
 <template>
+    <h1 id="RallyMoves">Rally Moves</h1>
+    <p>
+        Many Loomians have access to additional moves through rallying (known as Rally Moves) which may be recommended to run. 
+        Giving these moves to your Loomians can give a big advantage in battle so it’s worth learning the different techniques of teaching Rally Moves to your Loomians. 
+        There are 3 main ways to use Rally Ranch to put a move on a Loomian: 
+    </p>
     <div class="box">
         <div class="selection">
             <button v-for="(Rally, Index) in Items" 
@@ -8,7 +14,7 @@
         </button>
         </div>
         <div class="description"
-        :style="{ display: Rally.Name === 'Normal Rally' ? 'block' : 'none' }"
+        :style="{ display: Rally.Name === Items[0].Name ? 'block' : 'none' }"
         v-for="(Rally, Index) in Items" 
         :key="Index" 
         :id="Rally.Name">

@@ -55,23 +55,3 @@ data() {
 }
 }
 </script>
-<style scoped>
-    * {
-        font-family: 'Russo One', sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        color: black;
-    }
-
-    h1 {
-        text-align: center;
-    }
-
-    main {
-        font-size: 20px;
-        width: 60%;
-        margin: auto;
-        margin-bottom: 200px;
-    }
-</style>
-  

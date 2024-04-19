@@ -70,15 +70,8 @@ export default {
         };
     }
 };
-</script>
-  
+</script> 
 <style scoped>
-    * {
-        font-family: 'Russo One', sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        color: black;
-    }
 
     .container {
         background-color: #004691;

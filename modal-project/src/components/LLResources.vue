@@ -135,7 +135,6 @@ table {
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 25px 25px 0px 0px;
-
 }
 
 .desc {
@@ -147,18 +146,16 @@ table {
 }
 
 @media screen and (max-width: 800px) {
-        table {
-            grid-template-columns: 1fr 1fr;
-        }
+    table {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media screen and (max-width: 500px) {
-        table {
-            margin: auto;
-            display: block;
-            grid-template-columns: 1fr;
-        }
+    table {
+        margin: auto;
+        display: block;
+        grid-template-columns: 1fr;
+    }
 }
-
-
 </style>
