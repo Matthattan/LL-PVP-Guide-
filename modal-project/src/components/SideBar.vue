@@ -57,13 +57,6 @@ export default {
 }
 </script>
 <style scoped>
-    * {
-        font-family: 'Russo One', sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        color: black;
-    }
-
     .sidebar {
         height: 100%;
         max-width: 400px;

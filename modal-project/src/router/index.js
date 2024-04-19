@@ -6,6 +6,7 @@ import AppResources from '../components/AppResources.vue';
 import AppRally from '../components/AppRally.vue';
 import AppTeambuilding from '../components/AppTeambuilding.vue';
 import AppSetMaking from '../components/AppSetMaking.vue';
+import AppCredits from '@/components/AppCredits.vue';
 
 const routes = [
     { path: '/', 
@@ -31,6 +32,10 @@ const routes = [
     { path: '/SetMaking', 
     name: 'SetMaking',
     component: AppSetMaking
+    },
+    { path: '/Credits', 
+    name: 'Credits',
+    component: AppCredits
     },
   ]
   

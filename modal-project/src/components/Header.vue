@@ -31,18 +31,10 @@ export default {
 </script>
 <style scoped>
 
-  * {
-    font-family: 'Russo One';
-  }
-
   .top-container {
     background-color: #f1f1f1;
     padding: 30px;
     text-align: center;
-  }
-
-  h1 {
-    margin: auto;
   }
 
   header {
@@ -64,12 +56,6 @@ export default {
     padding: 20px 0;
     margin: auto;
     margin-bottom: 20px;
-  }
-
-  @media screen and (max-width: 300px){
-    h1 {
-      font-size: 30px;
-    }
   }
 
 </style>
