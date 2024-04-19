@@ -54,11 +54,6 @@ export default {
         left: 20px;
     }
 
-    * {
-        text-decoration: none;
-        color: black;
-    }
-
     #contentlistButton {
         left: 20px;
         padding: 20px;

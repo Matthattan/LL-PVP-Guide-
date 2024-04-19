@@ -22,7 +22,7 @@
         <!--Sections for each Core Type-->
         <div class="description" 
         v-for="(coreType, Index) in CoreTypes"
-        :style="{ display: coreType.Name === 'Offensive Cores' ? 'block' : 'none' }"
+        :style="{ display: coreType.Name === CoreTypes[0].Name ? 'block' : 'none' }"
         :id="coreType.Name"
         :key="Index">
             <h2> {{ coreType.Name }} </h2>

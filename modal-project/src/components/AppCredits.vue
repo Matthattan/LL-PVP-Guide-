@@ -51,17 +51,6 @@
     }
     </script>
     <style scoped>
-    h1 {
-        text-align: center;
-        
-    }
-    
-    main {
-        font-size: 20px;
-        width: 60%;
-        margin: auto;
-        margin-bottom: 200px;
-    }
 
     .credits {
         text-align: center;
@@ -69,12 +58,6 @@
         width: 780px;
         height: auto;
         color: black;
-    }
-    
-    @media screen and (max-width: 300px){
-        h1 {
-            font-size: 18px;
-        }
     }
   
 </style>

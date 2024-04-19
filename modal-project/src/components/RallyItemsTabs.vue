@@ -1,4 +1,9 @@
 <template>
+<h1 id="RallyItems">Rally Items</h1>
+<p>
+    As hinted at previously, there are several items used to change what stats a Rallied Loomian appears with. 
+    There are 3 categories of items, each with different uses in different contexts:
+</p>
 <div class="boxRallyItem">
     <div class="selectionRallyItem">
         <button v-for="(rallyItem, index) in RallyItems" 
@@ -11,7 +16,7 @@
          v-for="(rallyItem, index) in RallyItems" 
          :key="index" 
          :id="rallyItem.Name"
-         :style="{ display: rallyItem.Name === 'Rally Toys' ? 'block' : 'none' }">
+         :style="{ display: rallyItem.Name === RallyItems[0].Name ? 'block' : 'none' }">
          <h2>{{ rallyItem.Name }}</h2>
         <table>
             <tr>

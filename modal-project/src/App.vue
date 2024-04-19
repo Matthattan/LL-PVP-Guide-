@@ -3,6 +3,7 @@
 </template>
 <style>
     * {
+        text-decoration: none;
         font-family: 'Russo One', sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
@@ -18,6 +19,7 @@
 
     h1 {
         margin: auto;
+        text-align: center;
     }
 
     @media screen and (max-width: 300px){
@@ -25,5 +27,4 @@
             font-size: 18px;
         }
     }
-
 </style>
