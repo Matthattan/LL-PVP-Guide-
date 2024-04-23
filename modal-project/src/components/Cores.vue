@@ -154,20 +154,22 @@
                         ]},
                         {
                         Name: "SpeciMiore (Meditoad + Cosmiore-Unleashed)",
-                        Description: `To an extent, think of this as an upgrade from AceMiore. Specilization Meditoad beholds high potential damage with 1 or 2 moves that form deadly coverage. 
-                        Once passed onto Cos-U, Stratusoar, Tyrecks and Tiklipse do NOT want to pick a fight with it. 
-                        Giving Cosmiore Boots to abuse the single move it has helps with speed control while Meditoad can carry Mega Punch for those who resist its Psycho Blast. `,
+                        Description: [
+                            "To an extent, think of this as an upgrade from AceMiore. Specilization Meditoad beholds high potential damage with 1 or 2 moves that form deadly coverage.",
+                            "Once passed onto Cos-U, Stratusoar, Tyrecks and Tiklipse do NOT want to pick a fight with it.",
+                            "Giving Cosmiore Boots to abuse the single move it has helps with speed control while Meditoad can carry Mega Punch for those who resist its Psycho Blast."
+                        ],
                         Loomians: [
                             {imageAlt: "Meditoad", image: require("@/assets/images/teambuilding/models/Meditoad-model.webp")},
                             {imageAlt: "Cosmiore-Unleashed", image: require("@/assets/images/teambuilding/models/Cosmiore-Unleashed-green-model.PNG.webp")},
                         ]},
                         {
                         Name: "BunnArine (Bunnecki + Samarine)",
-                        Description: `Samarine has a blatant 4x eletric weakness, thats quite obvious. 
-                        However, we can turn this into a good thing by pairing Samarine with Bunnecki. 
-                        With its Electric (and Light) Immunity, Bunnecki can come in freely when an electric attack is immininent. 
-                        From there, Bunnecki can set up and start attacking. 
-                        An answer to toxic types is appreciated as well a pivot to get either Loomian in. `,
+                        Description: [
+                            "Samarine has a blatant 4x eletric weakness, thats quite obvious. However, we can turn this into a good thing by pairing Samarine with Bunnecki.",
+                            "With its Electric (and Light) Immunity, Bunnecki can come in freely on a variety of attacks including pivot moves. From there, Bunnecki can set up and start attacking.",
+                            "An answer to toxic types is appreciated as well a pivot to get either Loomian in."
+                        ],
                         Loomians: [
                             {imageAlt: "Bunnecki", image: require("@/assets/images/teambuilding/models/Bunnecki-model.webp")},
                             {imageAlt: "Samarine", image: require("@/assets/images/teambuilding/models/Samarine-model.webp")},
@@ -177,77 +179,83 @@
                     Name: "Balanced Cores", 
                     Cores: [{
                         Name: "FalkSnac (Falkyrie + Ursnac)",
-                        Description: `You've heard of FalkSoul now get ready for FalkSnac. 
-                        Falkyrie's Base Speed stat is far from perfect, especially when the meta is using faster and faster Loomians. 
-                        Ursnac solves this problem with its Pivot move Baffle. Not only does this allow Ursnac to swap out without wasting a turn (allowing it act as a defensive pivot), 
-                        The opponent's speed stat is decreased by 1 stage allowing Fmattalkyrie to outspeed a plethora of Loomians. 
-                        From there, Falkyrie can come in and start setting up and breaking down Loomians. 
-                        Ursnac also has access to Slap Down to hit plant types that would usually answer Falkyrie such as Mawamurk.`,
+                        Description: [
+                            "You've heard of FalkSoul now get ready for FalkSnac. Falkyrie's Base Speed stat is far from perfect, especially when the meta is using faster and faster Loomians.",
+                            "Ursnac solves this problem with its Pivot move Baffle. Not only does this allow Ursnac to swap out without wasting a turn (allowing it act as a defensive pivot)",
+                            "The opponent's speed stat is decreased by 1 stage allowing Falkyrie to outspeed a plethora of Loomians.",
+                            "From there, Falkyrie can come in and start setting up and breaking down Loomians.",
+                            "Ursnac also has access to Slap Down to hit plant types that would usually answer Falkyrie such as Mawamurk."
+                        ],
                         Loomians: [
                             {imageAlt: "Falkyrie", image: require("@/assets/images/teambuilding/models/Falkyrie-model.webp")},
                             {imageAlt: "Ursnac", image: require("@/assets/images/teambuilding/models/Ursnac-model.webp")},
                         ]},
                         {
                         Name: "WresoTao (Wresolen + Taoshinu)",
-                        Description: `Toashinu is best recognised as an adequate bequeather making use of sharpen and even a Rageful Plushie. 
-                        Once setted up, This Loomian can pass on its somewhat concerning Matk stat to a more fearful utiliser: Wresolen. 
-                        A reliable answer to mind types is preferred as well as Cosmiore can be inserted to make use of Ace once Wresolen has done its job. `,
+                        Description: [
+                            "Toashinu is best recognised as an adequate bequeather making use of sharpen and even a Rageful Plushie. Once setted up, This Loomian can pass on its somewhat concerning Matk stat to a more fearful utiliser: Wresolen.",
+                            "A reliable answer to mind types is preferred as well as Cosmiore can be inserted to make use of Ace once Wresolen has done its job. "],
                         Loomians: [
                             {imageAlt: "Wresolen", image: require("@/assets/images/teambuilding/models/Wresolen-M-model.webp")},
                             {imageAlt: "Taoshinu", image: require("@/assets/images/teambuilding/models/Taoshinu-model.webp")},
                         ]},
                         {
                         Name: "BoarNami (Boarrok + Luminami)",
-                        Description: `Luminami is best recognised as a defensive pivot making us of its natural bulk, flash n' flee and its passive recovery through Power Napper. 
-                        That being said, it can be paired up with virtually any frail Loomian who needs extra support when entering the battlefield. 
-                        This variation pairs Luminami up with Boarrok so it can collect a +1 Matk and start rampaging. 
-                        Answers to Wintrix, Deludrix, Kanibo and many other SE Loomians are appreciated.`,
+                        Description: [
+                            "Luminami is best recognised as a defensive pivot making us of its natural bulk, flash n' flee and its passive recovery through Power Napper. That being said, it can be paired up with virtually any frail Loomian who needs extra support when entering the battlefield.",
+                            "This variation pairs Luminami up with Boarrok so it can collect a +1 Matk and start rampaging. Answers to Wintrix, Deludrix, Kanibo and many other SE Loomians are appreciated. "
+                        ],
                         Loomians: [
                             {imageAlt: "Boarrok", image: require("@/assets/images/teambuilding/models/Boarrok-model.webp")},
                             {imageAlt: "Luminami", image: require("@/assets/images/teambuilding/models/Luminami-model.webp")},
                         ]},
                         {
                         Name: "StratuNecki (Stratusoar + Bunnecki)",
-                        Description: `It's no secret that Bunnecki isn't a favourable Loomian to use due to a sub-optimal stat spread and questionable movesets however there are some benefits that players may enjoy and Stratusoar can make it all the easier to use. 
-                        Stratusoar helps bait out electric type loomians to dish out electric type attacks making it easier for bunnecki to enter the field and start its rampage. 
-                        Stratusoar also offers hazard removal with gust which can clear the likes of icicle traps allowing bunnecki to swap in chip-free. `,
+                        Description: [
+                            "It's no secret that Bunnecki isn't a favourable Loomian to use due to a sub-optimal stat spread and questionable movesets however there are some benefits that players may enjoy and Stratusoar can make it all the easier to use. ",
+                            "Stratusoar helps bait out electric type loomians to dish out electric type attacks making it easier for bunnecki to enter the field and start its rampage.",
+                            "Stratusoar also offers hazard removal with gust which can clear the likes of icicle traps allowing bunnecki to swap in chip-free. "
+                        ],
                         Loomians: [
                             {imageAlt: "Stratusoar", image: require("@/assets/images/teambuilding/models/Stratusoar-model.webp")},
                             {imageAlt: "Bunnecki", image: require("@/assets/images/teambuilding/models/Bunnecki-model.webp")},
                         ]},
                         {
                         Name: "NymErupt (Nymaurae + Eruptidon)",
-                        Description: `Nymaurae can assert offensive pressure with a support-oriented set making it all the easier to pair it with a nuke such as Eruptidon. 
-                        Eruptidon's best strengths can be attributed to being able to set up to use its amazing coverage of moves. 
-                        From there, it can start wallbreaking and swap into Nymaurae once Loomians are within KO range. 
-                        As a plus, Eruptidon can melts icicle traps which Nymaurae is weak to. `,
+                        Description: [
+                            "Nymaurae can assert offensive pressure with a support-oriented set making it all the easier to pair it with a nuke such as Eruptidon. Eruptidon's best strengths can be attributed to being able to set up to use its amazing coverage of moves.",
+                            "From there, it can start wallbreaking and swap into Nymaurae once Loomians are within KO range. As a plus, Eruptidon can melts icicle traps which Nymaurae is weak to."
+                        ],
                         Loomians: [
                             {imageAlt: "Nymaurae", image: require("@/assets/images/teambuilding/models/Nymaurae-model.webp")},
                             {imageAlt: "Eruptidon", image: require("@/assets/images/teambuilding/models/Eruptidon-model.webp")},
                         ]},
                         {
                         Name: "TahMiore (Tahtab + Cosmiore-Cracked)",
-                        Description: `Tahtab helps Cosmiore out by beating nearly every metal type (and provides an immunity to light) while Cosmiore can take advantage of Tahtab defensive answers such as Obsidrugon or Barblast. 
-                        Tahtab can also make use of barter to cripple either's answers. 
-                        Hazards, Hazard Removal and a Harvesect answer is highly advised.`,
+                        Description: [
+                            "Tahtab helps Cosmiore out by beating nearly every metal type (and provides an immunity to light) while Cosmiore can take advantage of Tahtab defensive answers such as Obsidrugon or Barblast.Tahtab can also make use of barter to cripple either's answers.",
+                            "Hazard Setters, Hazard Removal and a Harvesect answer is highly advised."
+                        ],
                         Loomians: [
                             {imageAlt: "Tahtab", image: require("@/assets/images/teambuilding/models/Tahtab-model.webp")},
                             {imageAlt: "Cosmiore-Cracked", image: require("@/assets/images/teambuilding/models/Cosmiore-Cracked-green-model.webp")},
                         ]},
                         {
                         Name: "CharoSoul (Charonyx + Ursoul)",
-                        Description: `Charonyx has shown its versatility in roles which helps it maintain offensive pressure whilst having a high defensive profile. 
-                        That being said, it provides good synergy with Ursoul by shutting down the likes of Obsidrugon or Phagenaut. 
-                        Ursoul can also help out Charonyx by hitting metal types for Super Effective. `,
+                        Description: [
+                            "Charonyx has shown its versatility in roles which helps it maintain offensive pressure whilst having a high defensive profile. That being said, it provides good synergy with Ursoul by shutting down the likes of Obsidrugon or Phagenaut.",
+                            "Ursoul can also help out Charonyx by hitting metal types for Super Effective. "
+                        ],
                         Loomians: [
                             {imageAlt: "Charonyx", image: require("@/assets/images/teambuilding/models/Charonyx-model.webp")},
                             {imageAlt: "Ursoul", image: require("@/assets/images/teambuilding/models/Ursoul-model.webp")},
                         ]},
                         {
                         Name: "DreggoTiki (Dreggodyne + Chartiki)",
-                        Description: `Dreggodyne is a formidable opponent with access to extreme setup using anomaly (with Draco Beam). 
-                        With Wabalisc being one of the few that can stand up to it (with the ability Ignorant), Chartiki provides great cover for the ice thief. 
-                        Additionally, Dreggodyne provides defensive utility against the likes of Vesperatu and Ursoul - two common users of dark type moves. `,
+                        Description: [
+                            "Dreggodyne is a formidable opponent that doesn't get any weaker with Draco Beam (and staunch). With Wabalisc being one of the few that can stand up to it (with the ability Ignorant), Chartiki provides great cover for the ice thief.",
+                            "Additionally, Dreggodyne provides defensive utility against the likes of Vesperatu and Ursoul - two common users of dark type moves."
+                        ],
                         Loomians: [
                             {imageAlt: "Dreggodyne", image: require("@/assets/images/teambuilding/models/Dreggodyne-model.webp")},
                             {imageAlt: "Chartiki", image: require("@/assets/images/teambuilding/models/Chartiki-model.webp")},
@@ -257,10 +265,12 @@
                     Name: "Defensive Cores", 
                     Cores: [{
                         Name: "PyroLumiGool (Pyrolen + Luminami + Icigool)",
-                        Description: `This core is exceptionally well for supporting offensive Loomians on your team given the utility this trio brings. 
-                        First off, both Luminami and Icigool are defensive pivots (with Icigool also having speed control) allowing a chance for Offensive Loomians to enter the battlefield easier. 
-                        Pyrolen offers a good answer for meta ranged attackers and provides hazard removal through Burn-Up while Luminami is staple when it comes to Melee Defensive Loomians. 
-                        As a plus, decent offensive pressure is emitted from the three. `,
+                        Description: [
+                            "This core is exceptionally well for supporting offensive Loomians on your team given the utility this trio brings.",
+                            "First off, both Luminami and Icigool are defensive pivots (with Icigool also having speed control) allowing a chance for Offensive Loomians to enter the battlefield easier.",
+                            "Pyrolen offers a good answer for meta ranged attackers and provides hazard removal through Burn-Up while Luminami is staple when it comes to Melee Defensive Loomians.",
+                            "As a plus, decent offensive pressure is emitted from the three. "
+                        ],
                         Loomians: [
                             {imageAlt: "Pyrolen", image: require("@/assets/images/teambuilding/models/Pyrolen-M-model.webp")},
                             {imageAlt: "Luminami", image: require("@/assets/images/teambuilding/models/Luminami-model.webp")},
@@ -268,57 +278,66 @@
                         ]},
                         {
                         Name: "OxiNami (Oxidrake + Luminami)",
-                        Description: `A very classic defensive core, as well variations such as OxiNamiSwol or OxiNamiToad, this also follows the principle of "What X doesn't answer, Y does" by covering eachothers weaknesses based on resistances and attack moves. 
-                        Furthermore, Luminami provides slow pivot support while Oxidrake can use driving force to shuffle around the opponent's team. 
-                        A barbs setter or offensive Loomian works well with this core. 
-                        The addition of Swolder and Meditoad to the core can help provide speed control via tase/webbing, slap down, poison as well as (poison) barbs removal.  `,
+                        Description: [
+                            "A very classic defensive core, as well variations such as OxiNamiSwol or OxiNamiToad, this also follows the principle of 'What X doesn't answer, Y does' by covering eachothers weaknesses based on resistances and attack moves.",
+                            "Furthermore, Luminami provides slow pivot support while Oxidrake can use driving force to shuffle around the opponent's team.",
+                            "A barbs setter or offensive Loomian works well with this core.",
+                            "The addition of Swolder and Meditoad to the core can help provide speed control via tase/webbing, slap down, poison as well as (poison) barbs removal."
+                        ],
                         Loomians: [
                             {imageAlt: "Oxidrake", image: require("@/assets/images/teambuilding/models/Oxidrake-model.webp")},
                             {imageAlt: "Luminami", image: require("@/assets/images/teambuilding/models/Luminami-model.webp")},
                         ]},
                         {
                         Name: "TundroBlast (Tundrolen + Barblast)",
-                        Description: `This somewhat recent defensive core covers against the majority of Melee Attackers by utilising resistances. 
-                        For example, Wresolen - who can break through tundrolen - can be dealt easily with barblast and Joltooth - which is SE against Barblast - can be stopped by Tundrolen. 
-                        As you might have guessed, Ranged Attackers do invalidate this core especially Gummy Fiscarna who is immune to highly explosive Barblast. `,
+                        Description: [
+                            "This defensive core covers against the majority of Melee Attackers by utilising resistances.",
+                            "For example, Wresolen - who can break through tundrolen - can be dealt easily with barblast and Joltooth - which is SE against Barblast - can be stopped by Tundrolen.",
+                            "As you might have guessed, Ranged Attackers do invalidate this core especially Gummy Fiscarna who is immune to highly explosive Barblast. "
+                        ],
                         Loomians: [
                             {imageAlt: "Tundrolen", image: require("@/assets/images/teambuilding/models/Tundrolen-M-model.webp")},
                             {imageAlt: "Barblast", image: require("@/assets/images/teambuilding/models/Barblast-model.webp")},
                         ]},
                         {
                         Name: "WabaGargD (Wabalisc + Gargolem-Defense)",
-                        Description: `One look at both their Movesets shows they both have Barbs and Driving Force. 
-                        Abusing this common utility means your opponent is in for some trouble with their Loomians constantly being swapped out and gradually chipped. 
-                        Gargolem Defense also has access to Mudslide (for hazard removal) and Slap Down to disable a Loomians capability. 
-                        Adding a Late-Game Sweeper helps clear the field faster as well as adding pressure through speed. `,
+                        Description: [
+                            "One look at both their Movesets shows they both have Barbs and Driving Force. Abusing this common utility means your opponent is in for some trouble with their Loomians constantly being swapped out and gradually chipped.",
+                            "Gargolem Defense also has access to Mudslide (for hazard removal) and Slap Down to disable a Loomians capability.",
+                            "Adding a Late-Game Sweeper helps clear the field faster as well as adding pressure through speed."
+                        ],
                         Loomians: [
                             {imageAlt: "Wabalisc", image: require("@/assets/images/teambuilding/models/Barblast-model.webp")},
                             {imageAlt: "Gargolem-Defense", image: require("@/assets/images/teambuilding/models/Gargolem-Defense-model.webp")},
                         ]},
                         {
                         Name: "ObsiPyro (Obsidrugon + Pyrolen)",
-                        Description: `A slight modernisation of the the ObsiRecks core, this makes use of two extremely capable, meta tanks in the meta who can answers common threats in the meta such as Zuelong, Harvesect, Wintrix and Ursoul (amonst others). 
-                        Obsidrugon can take on a more offensive presence with Drudge whilst Pyrolen has utility such as speed control and Peace of Mind to exert its own offensive pressure. 
-                        An answer for Luminami, Gargolem-D and various attackers - that utilise weaknesses on lower defences - are appreciated. `,
+                        Description: [
+                            "A slight modernisation of the the ObsiRecks core, this makes use of two extremely capable, meta tanks in the meta who can answers common threats in the meta such as Zuelong, Harvesect, Wintrix and Ursoul (amonst others). ",
+                            "Obsidrugon can take on a more offensive presence with Drudge whilst Pyrolen has utility such as speed control and Peace of Mind to exert its own offensive pressure.",
+                            "An answer for Luminami, Gargolem-D and various attackers - that utilise weaknesses on lower defences - are appreciated. "
+                        ],
                         Loomians: [
                             {imageAlt: "Obsidrugon", image: require("@/assets/images/teambuilding/models/Obsidrugon-model.webp")},
                             {imageAlt: "Pyrolen", image: require("@/assets/images/teambuilding/models/Pyrolen-M-model.webp")},
                         ]},
                         {
                         Name: "LumiFernix (Luminami + Infernix)",
-                        Description: `Better known as Double Napper, this core abuses the mutual ability Power Napper by recovering health whenever swapping out. 
-                        This allows for safe exchanging knowing your main core has gotten some of their health back. 
-                        Luminami provides pivot support as always while Infernix can provide speed control, hazard removal or deal crazy damage back with Return to Sender. `,
+                        Description: [
+                            "Better known as Double Napper, this core abuses the mutual ability Power Napper by recovering health whenever swapping out. This allows for safe exchanging knowing your main core has gotten some of their health back.",
+                            "Luminami provides pivot support as always while Infernix can provide speed control, hazard removal or deal crazy damage back with Return to Sender. "
+                        ],
                         Loomians: [
                             {imageAlt: "Luminami", image: require("@/assets/images/teambuilding/models/Luminami-model.webp")},
                             {imageAlt: "Infernix", image: require("@/assets/images/teambuilding/models/Infernix-model.webp")},
                         ]},
                         {
                         Name: "ObsiRecks (Obsidrugon + Tyrecks)",
-                        Description: `A quick glance of Obsidrugon's weaknesses shows light ancient and metal with a lot of Loomians who share this type being ranged attackers. 
-                        Tyrecks has been acknowledged for its great defensive typing allowing it to stay in and hit the likes of Falkyrie or Tiklipse. 
-                        It also has the Melee Bulk to answer some Melee Attackers, that Obsidrugon may be unable to, such as Halvantic. 
-                        Some Loomians like Ikazune, Luminami, Whippledriff (generally Ranged Attackers that hit Tyrecks for SE) can break through this core so add to it accordingly. `,
+                        Description: [
+                            "A quick glance of Obsidrugon's weaknesses shows light ancient and metal with a lot of Loomians who share this type being ranged attackers.",
+                            "Tyrecks has been acknowledged for its great defensive typing allowing it to stay in and hit the likes of Falkyrie or Tiklipse. It also has the Melee Bulk to answer some Melee Attackers, that Obsidrugon may be unable to, such as Halvantic.",
+                            "Some Loomians like Ikazune, Luminami, Whippledriff (generally Ranged Attackers that hit Tyrecks for SE) can break through this core so add to it accordingly."
+                        ],
                         Loomians: [
                             {imageAlt: "Obsidrugon", image: require("@/assets/images/teambuilding/models/Obsidrugon-model.webp")},
                             {imageAlt: "Tyrecks", image: require("@/assets/images/teambuilding/models/Tyrecks-model.webp")},
