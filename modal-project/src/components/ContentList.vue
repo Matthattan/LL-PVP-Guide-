@@ -44,6 +44,7 @@ export default {
         transition: left 0.5s ease;
         z-index: 2;
         width: 20%;
+        min-width: 260px;
     }
 
     .Clist li :hover {
@@ -51,6 +52,7 @@ export default {
     }
 
     .Clist.show {
+        position: fixed;
         left: 20px;
     }
 

@@ -61,13 +61,14 @@ export default {
         height: 100%;
         max-width: 400px;
         width: 20%;
-        min-width: 240px;            
+        min-width: 300px;            
         position: fixed;
         top: 0;
         left: -100%; /* Initially hidden */
         background-color: #154447;  
         transition: left 0.5s ease;
         z-index: 3; /* Set a higher z-index value */
+        overflow-y: scroll;
     }
 
     .sidebar.show {
@@ -104,7 +105,7 @@ export default {
     #sidebarButton {
         left: 20px;
         padding: 20px;
-        transition: right 0.7s ease; /* Smooth transition for content */
+        transition: margin-left 0.7s ease; /* Smooth transition for content */
         margin-left: 0; /* Initially aligned with the viewport */
         position: fixed;
         top: 1rem;
@@ -121,11 +122,17 @@ export default {
 
     #sidebarButton.show {
         background-image: url('../assets/images/sidebar/ArrowLeft.png');
+        margin-left: 300px;
     }
 
-    @media screen and (max-width: 300px) {
+    @media screen and (max-width: 600px) {
+        nav {
+            margin-top: 5rem;
+            transition: none; 
+        }
+
         #sidebarButton.show {
-            
+            margin-left: 0; /* Show sidebar */
         }
     }
 </style>

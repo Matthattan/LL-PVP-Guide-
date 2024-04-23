@@ -11,8 +11,9 @@
     }
 
     main {
-        font-size: 20px;
+        padding: 0px 5px;
         width: 60%;
+        min-width: 280px;
         margin: auto;
         margin-bottom: 200px;
     }
@@ -20,11 +21,5 @@
     h1 {
         margin: auto;
         text-align: center;
-    }
-
-    @media screen and (max-width: 300px){
-        h1 {
-            font-size: 18px;
-        }
     }
 </style>

@@ -44,7 +44,7 @@ export default {
     text-align: center;
     height: 100vh;
     transition: 0.2s;
-    font-size: 30px;
+    font-size: 4vh;
   }
 
   .sticky {
@@ -56,6 +56,12 @@ export default {
     padding: 20px 0;
     margin: auto;
     margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 800px) {
+    .top-container {
+      height: 25vh;
+    }
   }
 
 </style>

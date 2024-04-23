@@ -124,7 +124,6 @@
     }
 
     main {
-        font-size: 20px;
         width: 60%;
         margin: auto;
         margin-bottom: 200px;
