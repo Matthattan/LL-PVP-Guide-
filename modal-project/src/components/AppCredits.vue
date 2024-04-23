@@ -50,7 +50,7 @@
         }
     }
     </script>
-    <style scoped>
+<style scoped>
 
     .credits {
         text-align: center;

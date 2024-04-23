@@ -161,11 +161,16 @@
         padding: 50px;
     }
 
-    img {
+    table tr td img {
         display: grid;
         margin: auto;
         width: 60%;
         border-radius: 25px;
+    }
+
+    table {
+        min-width: 280px;
+        font-size: 1em;
     }
 
     td, th {
