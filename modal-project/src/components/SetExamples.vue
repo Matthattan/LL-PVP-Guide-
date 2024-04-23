@@ -25,7 +25,6 @@
                 <template v-else>
                     <p>{{ Text }}</p>
                 </template>
-                <br>
             </div>   
         </div>
     </div>
@@ -156,7 +155,7 @@
     }
 
     .selection {
-        padding: 10px 10px;
+        padding: 10px;
         background-color: azure;
         border-radius: 25px 25px 0px 0px;
     }
@@ -167,15 +166,15 @@
 
     .description {
         display: none;
-        padding: 50px;
+        padding: 0px 2%;
     }
 
     img {
         display: grid;
         margin: auto;
         max-width: 800px;
-        width: 80%;
-        min-width: 230px;
+        width: 60%;
+        min-width: 260px;
         border-radius: 25px;
     }
 </style>

@@ -58,7 +58,7 @@ export default {
     margin-bottom: 20px;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1080px) {
     .top-container {
       height: 25vh;
     }

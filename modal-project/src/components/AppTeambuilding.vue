@@ -111,22 +111,3 @@
         },
     }
 </script>
-<style>
-    * {
-        font-family: 'Russo One', sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        color: black;
-    }
-
-    h1 {
-        text-align: center;
-    }
-
-    main {
-        width: 60%;
-        margin: auto;
-        margin-bottom: 200px;
-    }
-
-</style>
