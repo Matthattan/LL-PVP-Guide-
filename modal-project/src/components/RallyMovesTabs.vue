@@ -114,13 +114,14 @@
 
     .description {
         display: none;
-        padding: 50px;
+        padding: 0px 2%;
     }
 
     img {
         display: grid;
         margin: auto;
         width: 60%;
+        min-width: 260px;
         border-radius: 25px;
     }
 </style>

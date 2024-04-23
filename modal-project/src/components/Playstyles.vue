@@ -7,13 +7,15 @@
         <button @click="toggleAnswer(index)">{{ playstyle.name }}</button>
         <div class="answer" v-if="playstyle.showDescription">
             {{ playstyle.desc }}
-            <table>
-                <tr>
-                    <td v-for="loomian in playstyle.team"> 
-                        <img :alt="loomian.imageAlt" :src="loomian.image">
-                    </td>
-                </tr>
-            </table>
+            <div class="team">
+                <table>
+                    <tr>
+                        <td v-for="loomian in playstyle.team"> 
+                            <img :alt="loomian.imageAlt" :src="loomian.image">
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </template>
 </template>
@@ -149,5 +151,9 @@
         margin-bottom: 10px;
         font-size: 18px;
         text-align: left;
+    }
+
+    .team {
+        overflow-x: auto;
     }
 </style>

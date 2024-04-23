@@ -153,12 +153,13 @@
     }
 
     .selectionRallyItem button {
-        margin: 0px 10px;
+        margin: 5px;
     }
 
     .descriptionRallyItem {
         display: none;
-        padding: 50px;
+        padding: 10px;
+        overflow-x: auto;
     }
 
     table tr td img {
@@ -170,7 +171,6 @@
 
     table {
         min-width: 280px;
-        font-size: 1em;
     }
 
     td, th {

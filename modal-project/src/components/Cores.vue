@@ -38,15 +38,17 @@
                 <div class="answer"
                 :id="Core.Name"
                 :style="{display: Core.Visible ? 'block' : 'none'}">
-                {{ Core.Description }}
+                <p v-for="(Description, Index) in Core.Description">{{ Description }}</p>
                     <!--Images of Loomians in Core-->
-                    <table>
-                        <tr>
-                            <td v-for="(Loomian, imageIndex) in Core.Loomians" :key="imageIndex"> 
-                                <img :src="Loomian.image" :alt="Loomian.imageAlt">
-                            </td>
-                        </tr>
-                    </table>
+                    <div class="core">
+                        <table>
+                            <tr>
+                                <td v-for="(Loomian, imageIndex) in Core.Loomians" :key="imageIndex"> 
+                                    <img :src="Loomian.image" :alt="Loomian.imageAlt">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </template>
         </div>
@@ -62,74 +64,90 @@
                     Name: "Offensive Cores", 
                     Cores: [{
                         Name: "HalvShaw (Halvantic + Shawchi)",
-                        Description: `A formidable duo, these Loomians alone have great coverage preventing many walls from swapping in without taking a huge hit and together this offensive pressure only becomes scarier. 
-                        Shawchi can comfortably use Pyrokinesis without concern for the likes of Searknight or Eleguana as Halvantic can hit them for SE using its STAB and almost-STAB Gnarly Gash. 
-                        Given these two are quite slow, frail Loomians, Boots can quicken Halvantic while speed control/pivots help both get onto the field to cause chaos.`,
+                        Description: [
+                            "A formidable duo, these Loomians alone have great coverage preventing many walls from swapping in without taking a huge hit and together this offensive pressure only becomes scarier.",
+                            "Shawchi can comfortably use Pyrokinesis without concern for the likes of Searknight or Eleguana as Halvantic can hit them for SE using its STAB and almost-STAB Gnarly Gash.",
+                            "Given these two are quite slow, frail Loomians, Boots can quicken Halvantic while speed control/pivots help both get onto the field to cause chaos."
+                        ],
                         Loomians: [
                             {imageAlt: "Halvantic", image: require("@/assets/images/teambuilding/models/Halvantic-model.webp")},
                             {imageAlt: "Shawchi", image: require("@/assets/images/teambuilding/models/Shawchi-model.webp")},
                         ]},
                         {
                         Name: "FalkSoul (Falkyrie + Ursoul)",
-                        Description: `Falkyrie plus Ursoul is best known for their combination of offensive moves giving very limited answers at any time. 
-                        Falkyrie is able to set up Radiant Forecast and then swap (or rather pivot) into Ursoul to apply pressure as no Loomian can swap in without taking at least a neutral hit. 
-                        Ursoul is also able to hit ranged tanks that would usually come in on Falkyrie as its high Matk is quite threatening especially when many are weak to the likes of Slap Down or Pep Jab/Quick Punch.`,
+                        Description: [
+                            "Falkyrie plus Ursoul is best known for their combination of offensive moves giving very limited answers at any time",
+                            "Falkyrie is able to set up Radiant Forecast and then swap (or rather pivot) into Ursoul to apply pressure as no Loomian can swap in without taking at least a neutral hit.",
+                            "Ursoul is also able to hit ranged tanks that would usually come in on Falkyrie as its high Matk is quite threatening especially when many are weak to the likes of Slap Down or Pep Jab/Quick Punch."
+                        ],
                         Loomians: [
                             {imageAlt: "Falkyrie", image: require("@/assets/images/teambuilding/models/Falkyrie-model.webp")},
                             {imageAlt: "Ursoul", image: require("@/assets/images/teambuilding/models/Ursoul-model.webp")},
                         ]},
                         {
                         Name: "ProtoBrat (Protogon + Umbrat)",
-                        Description: `Initially, Protogon loved being paired up with Ursoul to make use of Chase Down to involuntary incapacitate ranged walls however, ever since the Chase Down nerf, all but one user became less scary: Umbrat. 
-                        This often overlooked rat has Overshadow allowing Chase Down to once again become dark type. 
-                        Umbrat has far from a good MAtk stat by todays standard but the boost from Overshadow as well as Chase Down's swap out bonus has allowed it to shine back into the light once more. 
-                        Similar to FalkSoul, this core appreciates hazards for that extra damage as well as speed control/pivot for safe manoeuvring. `,
+                        Description: [
+                            "Initially, Protogon loved being paired up with Ursoul to make use of Chase Down to involuntary incapacitate ranged walls however, ever since the Chase Down nerf, all but one user became less scary: Umbrat.", 
+                            "This often overlooked rat has Overshadow allowing Chase Down to once again become dark type.",
+                            "Umbrat has far from a good MAtk stat by todays standard but the boost from Overshadow as well as Chase Down's swap out bonus has allowed it to shine back into the light once more.",
+                            "Similar to FalkSoul, this core appreciates hazards for that extra damage as well as speed control/pivot for safe manoeuvring."
+                        ],
                         Loomians: [
                             {imageAlt: "Protogon", image: require("@/assets/images/teambuilding/models/Protogon-model.webp")},
                             {imageAlt: "Umbrat", image: require("@/assets/images/teambuilding/models/Umbrat-model.webp")},
                         ]},
                         {
                         Name: "NeverKnight (Nevermare + Searknight)",
-                        Description: `This is core is best explained as "What X doesn't answer, Y does". 
-                        Searknight is commonly recognised as a solid answer to Nevermare so naturally pairing it up with its counterpart helps expand attack coverage. 
-                        An answer to opposing Searknights and Chartikis are appreciated. `,
+                        Description: [
+                            "This is core is best explained as 'What X doesn't answer, Y does'.",
+                            "Searknight is commonly recognised as a solid answer to Nevermare so naturally pairing it up with its counterpart helps expand attack coverage.",
+                            "An answer to opposing Searknights and Chartikis are appreciated."
+                        ],
                         Loomians: [
                             {imageAlt: "Nevermare", image: require("@/assets/images/teambuilding/models/Nevermare-model.webp")},
                             {imageAlt: "Searknight", image: require("@/assets/images/teambuilding/models/Searknight-model.webp")},
                         ]},
                         {
                         Name: "KaniTooth (Kanibo + Joltooth)",
-                        Description: `Also known as Double Ambush, this core gets its name from the mutual ability: Ambush. 
-                        Similar to the Move Chase Down, this ability allows moves to deal double the damage if a Loomian has been swapped in. 
-                        This can help break down answers to both Loomians allowing for solid progression. 
-                        Pivot support, Speed Control and Barbs to further break down Loomians is appreciated.`,
+                        Description: [
+                            "Also known as Double Ambush, this core gets its name from the mutual ability: Ambush.",
+                            "Similar to the Move Chase Down, this ability allows moves to deal double the damage if a Loomian has been swapped in.",
+                            "This can help break down answers to both Loomians allowing for solid progression.",
+                            "Pivot support, Speed Control and Barbs to further break down Loomians is appreciated."
+                        ],
                         Loomians: [
                             {imageAlt: "Kanibo", image: require("@/assets/images/teambuilding/models/Kanibo-model.webp")},
                             {imageAlt: "Joltooth", image: require("@/assets/images/teambuilding/models/Joltooth-model.webp")},
                         ]},
                         {
                         Name: "ZueBadger (Zuelong + Barbadger)",
-                        Description: `Similar to ProtoBrat, Zuelong can be answered by a variety of ranged walls however Barbadger makes use of this by being a melee wallbreaker. 
-                        As a bonus, Dauntless (which gives a +1 MAtk if the opponent has an SE move) makes it easier to break common Zuelong answers like Pyrolen or Sedimars. 
-                        Barbs plus Slow Pivot support helps make the most of this core. `,
+                        Description: [
+                            "Similar to ProtoBrat, Zuelong can be answered by a variety of ranged walls however Barbadger makes use of this by being a melee wallbreaker.",
+                            "As a bonus, Dauntless (which gives a +1 MAtk if the opponent has an SE move) makes it easier to break common Zuelong answers like Pyrolen or Sedimars.",
+                            "Barbs plus Slow Pivot support helps make the most of this core."
+                        ],
                         Loomians: [
                             {imageAlt: "Zuelong", image: require("@/assets/images/teambuilding/models/Zuelong-model.webp")},
                             {imageAlt: "Barbadger", image: require("@/assets/images/teambuilding/models/Barbadger-model.webp")},
                         ]},
                         {
                         Name: "DeluGlyph (Deludrix + Pharoglyph)",
-                        Description: `Deludrix does what Deludrix does and abuses its absurd collage of coverage by taking on Gargolem-D and Stratusoar while (Idiosyncratic) Pharoglyph can break Venolen, Taoshinu and Icigool. 
-                        A defensive pivot is much appreciated to get either Offensive Loomian into the field and start their chaos.`,
+                        Description: [
+                            "Deludrix does what Deludrix does and abuses its absurd collage of coverage by taking on Gargolem-D and Stratusoar while (Idiosyncratic) Pharoglyph can break Venolen, Taoshinu and Icigool",
+                            "A defensive pivot is much appreciated to get either Offensive Loomian into the field and start their chaos."
+                        ],
                         Loomians: [
                             {imageAlt: "Deludrix", image: require("@/assets/images/teambuilding/models/Deludrix-model.webp")},
                             {imageAlt: "Pharoglpyh", image: require("@/assets/images/teambuilding/models/Pharoglyph-model.webp")},
                         ]},
                         {
                         Name: "AceMiore (Wresolen + Cosmiore-Unleashed)",
-                        Description: `In conjuction with Wresolen's Ace, Cosmiore-Unleashed can enter the field once Wresolen is down and make use of its doubled power. 
-                        Common Answers to Cosmiore such as Stratusoar don't want to stay in long due to the colossal damage output compared to non-Ace Cosmiore. 
-                        Wresolen can also break down defensive answers to Cosmiore before dropping out in order to make Cos-U's job a lot easier. 
-                        This core offers very limited answers however some people may pair up Cosmiore-Unleashed with another Loomian. `,
+                        Description: [
+                            "In conjuction with Wresolen's Ace, Cosmiore-Unleashed can enter the field once Wresolen is down and make use of its doubled power. ",
+                            "Common Answers to Cosmiore such as Stratusoar don't want to stay in long due to the colossal damage output compared to non-Ace Cosmiore.",
+                            "Wresolen can also break down defensive answers to Cosmiore before dropping out in order to make Cos-U's job a lot easier. ",
+                            "This core offers very limited answers however some people may pair up Cosmiore-Unleashed with another Loomian."
+                        ],
                         Loomians: [
                             {imageAlt: "Wresolen", image: require("@/assets/images/teambuilding/models/Wresolen-M-model.webp")},
                             {imageAlt: "Cosmiore-Unleahed", image: require("@/assets/images/teambuilding/models/Cosmiore-Unleashed-green-model.PNG.webp")},
@@ -305,7 +323,6 @@
                             {imageAlt: "Obsidrugon", image: require("@/assets/images/teambuilding/models/Obsidrugon-model.webp")},
                             {imageAlt: "Tyrecks", image: require("@/assets/images/teambuilding/models/Tyrecks-model.webp")},
                         ]},
-
                     ]},
                 ]
             }
@@ -351,12 +368,12 @@
     }
 
     .selectionButton {
-        margin: 0px 10px;
+        margin: 5px 10px;
     }
 
     .description {
         display: block;
-        padding: 10px 50px 50px 50px;
+        padding: 0 2%;
     }
 
     img {
@@ -395,5 +412,9 @@
         margin-bottom: 10px;
         font-size: 18px;
         text-align: left;
+    }
+
+    .core {
+        overflow-x: auto;
     }
 </style>

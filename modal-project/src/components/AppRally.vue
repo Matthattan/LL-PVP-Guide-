@@ -65,28 +65,7 @@ export default {
                     ]
                 },
                 // Add more sections as needed
-        ],
-        tabsData: [
-        {
-            name: 'Normal Rally',
-            buttonText: 'Normal Rally',
-            description: 'This is the description for the Normal Rally.'
-        },
-        {
-            name: 'Reverse Rally',
-            buttonText: 'Reverse Rally',
-            description: [
-            ['Row 1, Cell 1', 'Row 1, Cell 2'],
-            ['Row 2, Cell 1', 'Row 2, Cell 2']
-            ]
-        },
-        {
-            name: 'Indirect Rally',
-            buttonText: 'Indirect Rally',
-            description: {Hello: "Mirror Mirror", Hello2: "On the wall"}
-        }
         ]
-        
         }
     }
 }

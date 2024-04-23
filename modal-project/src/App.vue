@@ -11,15 +11,20 @@
     }
 
     main {
+        font-size: larger;
         padding: 0px 5px;
         width: 60%;
         min-width: 280px;
         margin: auto;
-        margin-bottom: 200px;
+        margin-bottom: 50px;
     }
 
     h1 {
         margin: auto;
         text-align: center;
+    }
+
+    p {
+        text-align: left;
     }
 </style>
