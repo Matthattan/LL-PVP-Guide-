@@ -5,7 +5,12 @@
     <h1 style="text-align: center;">
       Welcome to the unofficial guide to Loomian Legacy PVP!
     </h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.s</p>
+    <p>The Aim of this website is to aid players stepping into Loomian Legacy's Competitive Scene. 
+      This website addresses how to Teambuild, build pvp Loomians, understanding cores and the different facilities (both ingame and online) that can help in your journey.
+    </p>
+    <p>This is an unofficial guide not endorsed by the Loomian Legacy developers but rather created by the community.
+       We strive for information on this website to be correct and up to date; please don't hesitate to suggest information or report incorrect information. 
+    </p>
     </main>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
     <div class="sidebar" :class="{ 'show': showSidebar }">
         <nav>
-            <a href="https://www.roblox.com/games/306964494/Loomian-Legacy">
+            <a href="https://www.roblox.com/games/306964494/Loomian-Legacy" target="_blank">
                 <img src='https://tiermaker.com/images/templates/loomian-legacy-osts-1572992/15729921647733889.png'>
             </a>    
             <ul>
@@ -59,9 +59,7 @@ export default {
 <style scoped>
     .sidebar {
         height: 100%;
-        max-width: 400px;
-        width: 20%;
-        min-width: 300px;            
+        width: 300px;
         position: fixed;
         top: 0;
         left: -100%; /* Initially hidden */
