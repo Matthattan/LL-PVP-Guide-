@@ -98,25 +98,24 @@ export default {
 <style scoped>
 
 table {
+    display: flex;
+    flex-wrap: wrap;
     margin: auto;
-    width: max-content;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     border: 2px black solid;
     border-radius: 5px;
+    width: max-content;
+    align-content: center;
 }
 
 .gallery {
     margin: 5px 10px;
     border: 1px solid #ccc;
     background-color: white;
-    width: auto;
+    width: 360px;
     height: max-content;
     border-radius: 25px;
     text-align: center; 
     vertical-align: middle;
-    max-width: 370px;
 }
 
 .gallery:hover {
@@ -145,17 +144,9 @@ table {
     overflow: hidden;
 }
 
-@media screen and (max-width: 800px) {
-    table {
-        grid-template-columns: 1fr 1fr;
+@media screen and (max-width: 600px) {
+    .gallery {
+      width: calc(100% - 10px); /* Show one column for smaller screens */
     }
-}
-
-@media screen and (max-width: 500px) {
-    table {
-        margin: auto;
-        display: block;
-        grid-template-columns: 1fr;
-    }
-}
+  }
 </style>
