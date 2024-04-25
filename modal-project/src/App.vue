@@ -11,7 +11,6 @@
     }
 
     main {
-        font-size: larger;
         padding: 0px 5px;
         width: 60%;
         min-width: 280px;
@@ -26,5 +25,6 @@
 
     p {
         text-align: left;
+        font-size: 18px;
     }
 </style>

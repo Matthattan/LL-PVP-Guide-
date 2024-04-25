@@ -107,14 +107,6 @@
 };
 </script>
 <style scoped>
-    a {
-        color: black;
-    }
-
-    * {
-        font-size: 20px;
-    }
-
     .highlighted {
         font-weight: bold;
         cursor: pointer;
