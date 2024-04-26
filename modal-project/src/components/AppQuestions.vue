@@ -36,7 +36,7 @@ components: {
 },
 data() {
     return {
-    imageUrl: require("@/assets/images/headers/InsideColosseum.jpg"),
+    imageUrl: require("@/assets/images/headers/BattleColosseum.png"),
     contentData: [
             {
                 id: 'Questions',

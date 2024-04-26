@@ -63,7 +63,7 @@ export default {
     },
     data() {
         return {
-            imageUrl: require("@/assets/images/headers/POLUT_Underwater_Mining_Lab.webp"),
+            imageUrl: require("@/assets/images/headers/Route_5.webp"),
             contentData: [
                 {
                     id: 'What',

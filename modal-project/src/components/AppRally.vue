@@ -4,11 +4,11 @@
     <!-- Your main content here -->
     <main>
         <ContentList id="Questions" :content="contentData"/>
-        <h1 id="What">What is Rally Ranch?</h1>
+        <h1 id="What_Is_Rally_Ranch">What is Rally Ranch?</h1>
         <p> Rally Ranch is a sub-location on Route 6 where Players can give Loomians to an NPC in order to produce more Loomians. 
             Rally Ranch can take up to 2 Loomians (A Rally Leader and A Rally Assistant) and has room for 3 Loomians to be rallied at any one time.
         </p>
-        <h1 id="Why">Why is Rally Ranch used?</h1>
+        <h1 id="Why_Is_Rally_Ranch">Why is Rally Ranch used?</h1>
         <p> Firstly, Rallied Loomians have access to Totemised Personalities which means 3 personalities instead of the regular 2 personalities (or even one). 
             Having access to more personalities helps increase stats, making Loomians increasingly viable.
             Another reason to use Rally Ranch is greater control over a Loomian’s UPs. 
