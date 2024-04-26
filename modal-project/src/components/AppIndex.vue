@@ -26,7 +26,7 @@ export default {
   },
   data() {
     return {
-      imageUrl: require("@/assets/images/headers/BattleColosseum.png"),
+      imageUrl: require("@/assets/images/headers/Mitis_Town.webp"),
     }
   }
 }

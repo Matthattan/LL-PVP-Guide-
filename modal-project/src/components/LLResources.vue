@@ -144,7 +144,7 @@ table {
     overflow: hidden;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1500px) {
     table {
         width: 550px;
     }
@@ -160,7 +160,7 @@ table {
     }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1080px) {
     table {
         display: block;
         width: 1%;

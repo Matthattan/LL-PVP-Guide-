@@ -61,6 +61,7 @@ export default {
   @media screen and (max-width: 1080px) {
     .top-container {
       height: 25vh;
+      font-size: larger;
     }
   }
 

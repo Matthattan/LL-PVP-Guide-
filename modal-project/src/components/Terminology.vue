@@ -80,7 +80,6 @@ export default {
         border: none;
         border-radius: 5px;
         margin-bottom: 10px;
-        font-size: 18px;
         text-align: left;
     }
 </style>
