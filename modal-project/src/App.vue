@@ -12,7 +12,7 @@
 
     main {
         padding: 0px 5px;
-        width: 60%;
+        width: 80%;
         min-width: 280px;
         margin: auto;
         margin-bottom: 50px;
@@ -26,5 +26,11 @@
     p {
         text-align: left;
         font-size: 18px;
+    }
+
+    @media screen and (max-width: 400px) {
+        main {
+            width: auto;
+        }
     }
 </style>

@@ -15,7 +15,7 @@
         :key="Index" 
         :id="Rally.Name">
             <h2>{{ Rally.Name }}</h2>
-            <div v-for="(Text, Index) in Rally.Description" :key="Index">
+            <template v-for="(Text, Index) in Rally.Description" :key="Index">
                 <template v-if="isImagePath(Text)">
                     <img :src="Text">
                 </template>
@@ -25,7 +25,7 @@
                 <template v-else>
                     <p>{{ Text }}</p>
                 </template>
-            </div>   
+            </template>   
         </div>
     </div>
 </template>
