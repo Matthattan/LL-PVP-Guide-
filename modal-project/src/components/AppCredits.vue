@@ -3,12 +3,10 @@
     <SideBar/>
     <main>
         <h1>
-            Welcome to the unofficial guide to Loomian Legacy PVP!
+            Contributions are always welcome!
         </h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.s
+        <p>If you wish to submit any information to this guide in any way, such as a document or writing a section, you are welcome to DM me for it to be featured. 
+            You'll also be credited for your contribution.
         </p>
         <div class="credits">
             <template v-for="(credit, index) in credits">
@@ -20,7 +18,6 @@
                 </template>
             </template>
         </div>
-
     </main>
 </template>  
 <script>
@@ -67,26 +64,16 @@
                     },
                 ]
             }
-        },
-        methods: {
-
-        }
-    
+        },  
     }
     </script>
 <style scoped>
-
     .credits {
         text-align: center;
-        margin: auto;
-        width: 780px;
-        height: auto;
-        color: black;
     }
 
     p {
         text-align: center;
     }
-  
 </style>
   

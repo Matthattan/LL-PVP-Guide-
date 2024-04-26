@@ -103,15 +103,15 @@ table {
     margin: auto;
     border: 2px black solid;
     border-radius: 5px;
-    width: max-content;
+    width: 880px;
     align-content: center;
 }
 
 .gallery {
-    margin: 5px 10px;
+    margin: 5px 5px;
     border: 1px solid #ccc;
     background-color: white;
-    width: 360px;
+    width: 280px;
     height: max-content;
     border-radius: 25px;
     text-align: center; 
@@ -129,7 +129,7 @@ table {
 }
 
 .image {
-    height: 200px;
+    height: 160px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -144,9 +144,37 @@ table {
     overflow: hidden;
 }
 
-@media screen and (max-width: 600px) {
-    .gallery {
-      width: calc(100% - 10px); /* Show one column for smaller screens */
+@media screen and (max-width: 1080px) {
+    table {
+        width: 550px;
     }
-  }
+
+    .gallery {
+        width: 260px;
+        height: auto;
+    }
+
+    .image {
+        height: 160px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    table {
+        display: block;
+        width: 1%;
+    }
+
+    .gallery {
+        width: 260px;
+        height: auto;
+    }
+
+    .image {
+        height: 160px;
+        width: auto;
+    }
+}
+
 </style>
