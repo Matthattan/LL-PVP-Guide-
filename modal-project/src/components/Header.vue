@@ -42,7 +42,7 @@ export default {
     background-position: center;
     background-size: cover;
     text-align: center;
-    height: 100vh;
+    height: 25vh;
     transition: 0.2s;
     font-size: 4vh;
   }
