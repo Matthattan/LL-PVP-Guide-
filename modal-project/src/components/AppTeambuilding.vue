@@ -46,7 +46,7 @@
                 },
                 {
                     id: 'How',
-                    title: 'How should I Build a Team?',
+                    title: 'How should I build a Team?',
                     subitems: [
                         {id: `Playstyle`, title: `Playstyle`},
                         {id: `Cores`, title: `Cores`},
