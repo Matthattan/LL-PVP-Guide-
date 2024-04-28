@@ -166,7 +166,7 @@
 
     .description {
         display: none;
-        padding: 0px 2%;
+        padding: 5px 2%;
     }
 
     img {
