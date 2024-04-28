@@ -4,11 +4,11 @@
     <!-- Your main content here -->
     <main>
         <ContentList id="Questions" :content="contentData"/>
-        <h1>What is a Set?</h1>
+        <h1 id="What_is_a_Set">What is a Set?</h1>
         <p>A set is a specific composure of TP’s, Personalities and items. 
             The way your Loomian plays and performs in battle will depend on what set you’re using. 
         </p>
-        <h1>Where can I make Sets?</h1>
+        <h1 id="Where_can_I_make_Sets">Where can I make Sets?</h1>
         <p>Many programs available online for making sets have been listed in Resources however there are many more on the internet.</p>
         <h1>Why should I make Sets?</h1>
         <p>By analyzing a Loomian’s capabilities, you can choose where to put Training Points, 
@@ -16,7 +16,7 @@
             This can give you an edge in certain match-ups and surprise your opponent by running something unexpected. 
             Of course, not all unconventional sets will perform to the same viability so make sure your reason for running a set is greatly justified. 
         </p>
-        <h1>How do I make a Set?</h1>
+        <h1 id="How_do_I_make_a_Set">How do I make a Set?</h1>
         <p>Though there aren’t set rules when choosing how to run a Loomian, there are some suggested guidelines: </p>
         <ul>
             <li>Base your set around level 50. 
@@ -66,29 +66,25 @@ export default {
             imageUrl: require("@/assets/images/headers/Route_5.webp"),
             contentData: [
                 {
-                    id: 'What',
-                    title: 'What is Rally Ranch?',
+                    id: 'What_is_a_Set',
+                    title: 'What is a Set?',
                 },
                 {
-                    id: 'Why',
-                    title: 'Why is Rally Ranch used?',
+                    id: 'Where_can_I_make_Sets',
+                    title: 'Where can I make Sets?',
                 },
                 {
-                    id: 'RallyItems',
-                    title: 'Rally Items',
+                    id: 'How_do_I_make_a_set',
+                    title: 'How do I make a set?',
+                },
+                {
+                    id: 'Set_Examples',
+                    title: 'Set Examples',
                     subitems: [
-                        {id: `RallyItems`, title: `Rally Feed`},
-                        {id: `RallyItems`, title: `Rally Toys`},
-                        {id: `RallyItems`, title: `Rally Totems`},
-                    ],
-                },
-                {
-                    id: 'RallyMoves',
-                    title: 'Rally Moves',
-                    subitems: [
-                        {id: `RallyMoves`, title: `Normal Rally`},
-                        {id: `RallyMoves`, title: `Reverse Rally`},
-                        {id: `RallyMoves`, title: `Indirect Rally`},
+                        {id: `Set_Examples`, title: `Offensive Set - Example 1`},
+                        {id: `Set_Examples`, title: `Offensive Set - Example 2`},
+                        {id: `Set_Examples`, title: `Defensive Set - Example 1`},
+                        {id: `Set_Examples`, title: `Defensive Set - Example 2`},
                     ]
                 },
             ]
