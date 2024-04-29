@@ -27,10 +27,15 @@
         text-align: left;
     }
 
+    @media screen and (max-width: 720px) {
+        main {
+            font-size: 14px;
+        }
+    }
+
     @media screen and (max-width: 400px) {
         main {
             width: auto;
-            font-size: small;
         }
     }
 </style>

@@ -87,8 +87,7 @@
                         {
                         Name: "ProtoBrat (Protogon + Umbrat)",
                         Description: [
-                            "Initially, Protogon loved being paired up with Ursoul to make use of Chase Down to involuntary incapacitate ranged walls however, ever since the Chase Down nerf, all but one user became less scary: Umbrat.", 
-                            "This often overlooked rat has Overshadow allowing Chase Down to once again become dark type.",
+                            "Initially, Protogon loved being paired up with Ursoul to make use of Chase Down to involuntary incapacitate ranged walls however, ever since the Chase Down nerf, all but one user became less scary: Umbrat. This often overlooked rat has Overshadow allowing Chase Down to once again become dark type.",
                             "Umbrat has far from a good MAtk stat by todays standard but the boost from Overshadow as well as Chase Down's swap out bonus has allowed it to shine back into the light once more.",
                             "Similar to FalkSoul, this core appreciates hazards for that extra damage as well as speed control/pivot for safe manoeuvring."
                         ],
@@ -111,8 +110,7 @@
                         Name: "KaniTooth (Kanibo + Joltooth)",
                         Description: [
                             "Also known as Double Ambush, this core gets its name from the mutual ability: Ambush.",
-                            "Similar to the Move Chase Down, this ability allows moves to deal double the damage if a Loomian has been swapped in.",
-                            "This can help break down answers to both Loomians allowing for solid progression.",
+                            "Similar to the Move Chase Down, this ability allows moves to deal double the damage if a Loomian has been swapped in. This can help break down answers to both Loomians allowing for solid progression.",
                             "Pivot support, Speed Control and Barbs to further break down Loomians is appreciated."
                         ],
                         Loomians: [
@@ -181,9 +179,7 @@
                         Name: "FalkSnac (Falkyrie + Ursnac)",
                         Description: [
                             "You've heard of FalkSoul now get ready for FalkSnac. Falkyrie's Base Speed stat is far from perfect, especially when the meta is using faster and faster Loomians.",
-                            "Ursnac solves this problem with its Pivot move Baffle. Not only does this allow Ursnac to swap out without wasting a turn (allowing it act as a defensive pivot)",
-                            "The opponent's speed stat is decreased by 1 stage allowing Falkyrie to outspeed a plethora of Loomians.",
-                            "From there, Falkyrie can come in and start setting up and breaking down Loomians.",
+                            "Ursnac solves this problem with its Pivot move Baffle. Not only does this allow Ursnac to swap out without wasting a turn (allowing it act as a defensive pivot), The opponent's speed stat is decreased by 1 stage allowing Falkyrie to outspeed a plethora of Loomians. From there, Falkyrie can come in and start setting up and breaking down Loomians.",
                             "Ursnac also has access to Slap Down to hit plant types that would usually answer Falkyrie such as Mawamurk."
                         ],
                         Loomians: [
@@ -307,7 +303,7 @@
                             "Adding a Late-Game Sweeper helps clear the field faster as well as adding pressure through speed."
                         ],
                         Loomians: [
-                            {imageAlt: "Wabalisc", image: require("@/assets/images/teambuilding/models/Barblast-model.webp")},
+                            {imageAlt: "Wabalisc", image: require("@/assets/images/teambuilding/models/Wabalisc-model.webp")},
                             {imageAlt: "Gargolem-Defense", image: require("@/assets/images/teambuilding/models/Gargolem-Defense-model.webp")},
                         ]},
                         {

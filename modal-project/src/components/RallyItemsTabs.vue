@@ -1,5 +1,5 @@
 <template>
-<h1 id="RallyItems">Rally Items</h1>
+<h1 id="Rally_Items">Rally Items</h1>
 <p>
     As hinted at previously, there are several items used to change what stats a Rallied Loomian appears with. 
     There are 3 categories of items, each with different uses in different contexts:
@@ -165,7 +165,7 @@
     table tr td img {
         display: grid;
         margin: auto;
-        width: 60%;
+        width: 80%;
         border-radius: 25px;
     }
 
@@ -176,7 +176,6 @@
     td, th {
         border: 1px solid #000000;
         text-align: left;
-        padding: 8px;
     }
 
     button {
@@ -201,4 +200,5 @@
         padding: 10px;
         transition: 0.3s;
     }
+
 </style>

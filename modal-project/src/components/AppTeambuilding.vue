@@ -3,19 +3,19 @@
     <SideBar/>
     <main>
         <ContentList id="Questions" :content="contentData"/>
-        <h1>What is Teambuilding?</h1>
+        <h1 id="What_is_Teambuilding">What is Teambuilding?</h1>
         <p>Team Building is the process of finding Loomians that work well with each other in a team so you can win pvp battles. 
             You may look at Loomians' weaknesses and how they are commonly used in the meta to make your team as effective as possible when trying to battle players. 
         </p>
         <p>Team Building can be broken down into many stages - starting from creating a singular PVP Loomian - in order to ease the planning of your team and design; 
             however, this page will cover the combining of Loomians to make a synergistic, capable team.
         </p>
-        <h1>How should I build a Team?</h1>
+        <h1 id="How_should_I_build_a_Team">How should I build a Team?</h1>
         <p>First, you should understand some concepts in team building that can make choosing Loomians and understanding when to use certain Loomians easier to comprehend:
         </p>
-        <Playstyles/>
-        <Cores/>
-        <Roles/>
+        <Playstyles id="Playstyle"/>
+        <Cores id="Cores"/>
+        <Roles id="Roles"/>
     </main>
 </template>
 <script>
@@ -41,11 +41,11 @@
                 imageUrl: require("@/assets/images/headers/Judgements_Keep.webp"),
                 contentData: [
                 {
-                    id: 'What',
+                    id: 'What_is_Teambuilding',
                     title: 'What is Teambuilding?',
                 },
                 {
-                    id: 'How',
+                    id: 'How_should_I_build_a_Team',
                     title: 'How should I build a Team?',
                     subitems: [
                         {id: `Playstyle`, title: `Playstyle`},

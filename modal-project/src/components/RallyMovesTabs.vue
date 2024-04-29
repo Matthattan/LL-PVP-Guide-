@@ -1,5 +1,5 @@
 <template>
-    <h1 id="RallyMoves">Rally Moves</h1>
+    <h1 id="Rally_Moves">Rally Moves</h1>
     <p>
         Many Loomians have access to additional moves through rallying (known as Rally Moves) which may be recommended to run. 
         Giving these moves to your Loomians can give a big advantage in battle so it’s worth learning the different techniques of teaching Rally Moves to your Loomians. 
@@ -114,7 +114,7 @@
 
     .description {
         display: none;
-        padding: 0px 2%;
+        padding: 0px 2% 5px;
     }
 
     img {
