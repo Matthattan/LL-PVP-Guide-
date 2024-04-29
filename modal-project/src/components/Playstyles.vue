@@ -132,11 +132,10 @@
         width: auto;
         padding: 0;
         background-color: rgb(68, 127, 196);
-
     }
 
     td img {
-        width: 8rem;
+        width: 6rem;
     }
 
     button {

@@ -9,11 +9,11 @@
         <div class="answer" v-if="item.showDescription">
             {{ item.desc }}
             <table>
-                    <tr>
-                        <td v-for="loomian in item.loomian"> 
-                            <img :alt="loomian.imageAlt" :src="loomian.image">
-                        </td>
-                    </tr>
+                <tr>
+                    <td v-for="loomian in item.loomian"> 
+                        <img :alt="loomian.imageAlt" :src="loomian.image">
+                    </td>
+                </tr>
             </table>
         </div>
     </template>
