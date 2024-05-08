@@ -109,7 +109,7 @@
     }
 
     .selection button {
-        margin: 0px 10px;
+        margin: 5px;
     }
 
     .description {

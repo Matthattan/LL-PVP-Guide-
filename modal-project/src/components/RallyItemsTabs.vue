@@ -165,12 +165,14 @@
     table tr td img {
         display: grid;
         margin: auto;
-        width: 80%;
+        width: auto;
         border-radius: 25px;
     }
 
     table {
-        min-width: 280px;
+        min-width: 360px;
+        width: auto;
+        padding: 5px;
     }
 
     td, th {
