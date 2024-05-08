@@ -14,6 +14,7 @@
         padding: 0px 5px;
         width: 60%;
         min-width: 280px;
+        max-width: auto;
         margin: auto;
         margin-bottom: 50px;
     }
@@ -33,9 +34,4 @@
         }
     }
 
-    @media screen and (max-width: 400px) {
-        main {
-            width: auto;
-        }
-    }
 </style>

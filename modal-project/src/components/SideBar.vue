@@ -133,4 +133,10 @@ export default {
             margin-left: 0; /* Show sidebar */
         }
     }
+
+    @media screen and (max-width: 300px) {
+        .sidebar {
+            width: 100%;
+        }
+    }
 </style>

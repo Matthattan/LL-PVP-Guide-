@@ -30,7 +30,6 @@ export default {
         },
     }
 }
-
 </script>
 <style scoped>
     .Clist {
@@ -72,5 +71,12 @@ export default {
         border: none;
         height: 4rem;
         width: 4rem;
+    }
+
+    @media screen and (max-width: 300px) {
+        .Clist {
+            width: 200px;
+            font-size: x-small;
+        }
     }
 </style>
