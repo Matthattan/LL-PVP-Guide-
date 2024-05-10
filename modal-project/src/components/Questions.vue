@@ -1,4 +1,5 @@
 <template>
+    <h1 id="Questions">Questions</h1>
     Click to reveal answers!
     <div v-for="(question, index) in questions" :key="index" class="container">
         <button @click="toggleAnswer(index)" class="question">{{ question.question }}</button>

@@ -30,13 +30,6 @@ export default {
 };
 </script>
 <style scoped>
-
-  .top-container {
-    background-color: #f1f1f1;
-    padding: 30px;
-    text-align: center;
-  }
-
   header {
     background-repeat: no-repeat;
     background-position: center;
@@ -45,6 +38,10 @@ export default {
     height: 25vh;
     transition: 0.2s;
     font-size: 4vh;
+    min-width: 300px;
+    background-color: #f1f1f1;
+    padding: 30px 0px;
+    text-align: center;
   }
 
   .sticky {
@@ -53,9 +50,10 @@ export default {
     position: sticky;
     top: 0;
     width: 100%;
-    padding: 20px 0;
+    padding: 30px 0;
     margin: auto;
     margin-bottom: 20px;
+    min-width: 300px;
   }
 
   @media screen and (max-width: 1080px) {

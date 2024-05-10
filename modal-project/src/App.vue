@@ -12,11 +12,12 @@
 
     main {
         padding: 0px 5px;
-        width: 60%;
+        width: 80%;
         min-width: 280px;
         max-width: auto;
         margin: auto;
         margin-bottom: 50px;
+        overflow-x: scroll;
     }
 
     h1 {

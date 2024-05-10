@@ -3,7 +3,7 @@
     <SideBar/>
     <!-- Your main content here -->
     <main>
-        <ContentList id="Questions" :content="contentData"/>
+        <ContentList :content="contentData"/>
         <p> 
             If it's your first time stepping into Loomian Legacy PVP, It's understandable if you have an overwhelming amount of questions that are daunting to ask other people. 
             This page tries to cover many basic questions to ease your concerns. 

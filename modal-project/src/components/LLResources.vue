@@ -103,7 +103,7 @@ table {
     margin: auto;
     border: 2px black solid;
     border-radius: 5px;
-    width: 880px;
+    width: calc((4*280px) + (4*16px)); /* each resource is 280px*/
     align-content: center;
 }
 
@@ -146,7 +146,7 @@ table {
 
 @media screen and (max-width: 1500px) {
     table {
-        width: 550px;
+        width: 560px;
     }
 
     .gallery {
