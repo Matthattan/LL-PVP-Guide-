@@ -98,12 +98,14 @@ export default {
 <style scoped>
 
 table {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: fit-content;
     flex-wrap: wrap;
     margin: auto;
     border: 2px black solid;
     border-radius: 5px;
-    width: calc((4*280px) + (4*16px)); /* each resource is 280px*/
+    /*width: calc(4*294px);  each resource is 280px*/
     align-content: center;
 }
 
@@ -146,7 +148,8 @@ table {
 
 @media screen and (max-width: 1500px) {
     table {
-        width: 560px;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: fit-content;
     }
 
     .gallery {
@@ -162,8 +165,25 @@ table {
 
 @media screen and (max-width: 1080px) {
     table {
-        display: block;
-        width: 1%;
+        grid-template-columns: 1fr 1fr;
+        width: fit-content;
+    }
+
+    .gallery {
+        width: 260px;
+        height: auto;
+    }
+
+    .image {
+        height: 160px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    table {
+        grid-template-columns: 1fr;
+        width: fit-content;
     }
 
     .gallery {
