@@ -139,7 +139,7 @@
         }
     }
 </script>
-<style>
+<style scoped>
     .boxRallyItem {
         margin-top: 20px;
         background-color: #0057b4;
