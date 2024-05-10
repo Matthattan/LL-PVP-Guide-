@@ -35,15 +35,16 @@ export default {
     .Clist {
         background-color: rgb(87, 190, 204);
         border-radius: 25px;
-        padding: 10px 5px 5px 10px;
+        padding: 10px 5px;
         min-height: 100px;
         position: fixed;
         bottom: 20px;
         left: -100%; /* Initially hidden */
         transition: left 0.5s ease;
         z-index: 2;
-        width: 20%;
+        width: 280px;
         min-width: 260px;
+        overflow-y: scroll;
     }
 
     .Clist li :hover {
@@ -52,7 +53,7 @@ export default {
 
     .Clist.show {
         position: fixed;
-        left: 20px;
+        left: 10px;
     }
 
     #contentlistButton {
@@ -71,12 +72,5 @@ export default {
         border: none;
         height: 4rem;
         width: 4rem;
-    }
-
-    @media screen and (max-width: 300px) {
-        .Clist {
-            width: 200px;
-            font-size: x-small;
-        }
     }
 </style>
