@@ -1,7 +1,6 @@
 <template>
     <ImageHeader :imageUrl="imageUrl" pageName="Resources"/>
     <SideBar/>
-    <!-- Your main content here -->
     <main>
         <LLResources/>
     </main>

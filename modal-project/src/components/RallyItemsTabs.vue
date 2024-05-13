@@ -185,13 +185,7 @@
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         color: black;
-
-        background-color: rgb(236, 236, 236);
-        border-radius: 25px;
-        border: none;
-        outline: none;
-        padding: 10px;
-        transition: 0.3s;
+        margin: 5px;
     }
 
     button :hover {

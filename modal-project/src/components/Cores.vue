@@ -13,7 +13,7 @@
     <div class="box">
         <!--Buttons for each Core Type-->
         <div class="selection">
-            <button class="selectionButton" v-for="(Type, Index) in CoreTypes" 
+            <button v-for="(Type, Index) in CoreTypes" 
             :key="Index" 
             @click="SwitchTabs(Type.Name)">
             {{ Type.Name }}
@@ -39,7 +39,7 @@
                 :id="Core.Name"
                 :style="{display: Core.Visible ? 'block' : 'none'}">
                 <p v-for="(Description, Index) in Core.Description">{{ Description }}</p>
-                    <!--Images of Loomians in Core-->
+                    <!--Image of Core-->
                     <div class="core">
                         <table>
                             <tr>
@@ -125,7 +125,7 @@
                             "Barbs plus Slow Pivot support helps make the most of this core."
                         ],
                         Loomians: [
-                            {imageAlt: "Zuelong", image: require("@/assets/images/teambuilding/models/Zuelong-model.webp")},
+                            {imageAlt: "Zuelong", image: require("@/assets/images/teambuilding/models/Zuelong-model-new.webp")},
                             {imageAlt: "Barbadger", image: require("@/assets/images/teambuilding/models/Barbadger-model.webp")},
                         ]},
                         {
@@ -382,7 +382,7 @@
         border-radius: 25px 25px 0px 0px;
     }
 
-    .selectionButton {
+    .selection button {
         margin: 5px 10px;
     }
 
@@ -409,6 +409,7 @@
         min-width: 100px;
         width: auto;
         padding: 0;
+        border: 1px solid #000000;
     }
 
     td img {

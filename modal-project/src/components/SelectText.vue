@@ -5,7 +5,7 @@
         It can be overwhelming at first to use its various functions but thanks to i_eaturface, <a href="https://www.youtube.com/watch?v=-9KCrlcM0bs" target="_blank">this video</a> 
         can help ease you into navigating through the calculator and its various functions.
         <br><br>
-        Feel free to interact with the text below for a brief understanding.
+        Interact with the text below for a brief explanation of each section.
         <br><br>
     <span v-for="(word, index) in sentenceArray" 
     :key="index"
@@ -98,7 +98,7 @@
                 case 'summary':
                 return 'A Quick summary of many attacks are needed to knock out the opponent. Anything less than 5 hits is treated as negligible.';
                 case 'extraInfo':
-                return 'If any extra obstacles are placed on the field that increase the damage output such as barbs, they are included after the summary.';
+                return 'If any extra obstacles are placed on the field that increase the damage output such as barbs, they are included in the summary.';
                 default:
                 return '';
             }

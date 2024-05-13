@@ -88,7 +88,6 @@ export default {
                     link: "https://docs.google.com/spreadsheets/d/1Hva9nRXC1cbeiGWW5S8NU5_DqCnpL88lCObMkg_Lr8U/edit?usp=sharing",
                     image: "https://www.gstatic.com/images/branding/product/1x/sheets_2020q4_48dp.png",
                     imageAlt: "Typechart Teambuilder",
-
                 }
             ]
         }
@@ -146,7 +145,7 @@ table {
     overflow: hidden;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1920px) {
     table {
         grid-template-columns: 1fr 1fr 1fr;
         width: fit-content;
@@ -163,7 +162,7 @@ table {
     }
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1400px) {
     table {
         grid-template-columns: 1fr 1fr;
         width: fit-content;
@@ -180,7 +179,7 @@ table {
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 920px) {
     table {
         grid-template-columns: 1fr;
         width: fit-content;
