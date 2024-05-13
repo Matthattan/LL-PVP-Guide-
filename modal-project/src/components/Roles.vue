@@ -136,7 +136,6 @@
         border: 1px solid #000000;
         background-color: #0057b4;
         margin-bottom: 1rem;
-
     }
 
     td {
@@ -144,7 +143,6 @@
         padding: 0;
         background-color: rgb(68, 127, 196);
         border: 1px solid #000000;
-
     }
 
     td img {
