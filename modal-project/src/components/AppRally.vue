@@ -1,7 +1,6 @@
 <template>
     <ImageHeader :imageUrl="imageUrl" pageName="Rally Ranch"/>
     <SideBar/>
-    <!-- Your main content here -->
     <main>
         <ContentList id="Questions" :content="contentData"/>
         <h1 id="What_Is_Rally_Ranch">What is Rally Ranch?</h1>

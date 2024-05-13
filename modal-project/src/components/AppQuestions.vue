@@ -1,7 +1,6 @@
 <template>
     <ImageHeader :imageUrl="imageUrl" pageName="Common Questions"/>
     <SideBar/>
-    <!-- Your main content here -->
     <main>
         <ContentList :content="contentData"/>
         <p> 

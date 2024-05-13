@@ -1,10 +1,12 @@
 <template>
     <button type="button" @click="togglecontentList" id="contentlistButton" class="content"></button>
     <div class="Clist" :class="{ 'show': showcontentList}">Content List
+        <!--List of all contents via IDs-->
         <ol>
             <li v-for="(item, index) in content" :key="index">
                 <a :href="'#' + item.id">{{ item.title }}</a>
                 <ol v-if="item.subitems && item.subitems.length">
+                    <!-- Sub-Content -->
                     <li v-for="(subitem, subIndex) in item.subitems" :key="subIndex">
                         <a :href="'#' + subitem.id">{{ subitem.title }}</a>
                     </li>
@@ -22,7 +24,7 @@ export default {
         }
     },
     props: {
-        content: Array // Assuming content is an array of objects
+        content: Array
     },
     methods: {
         togglecontentList() {

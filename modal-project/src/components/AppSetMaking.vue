@@ -1,7 +1,6 @@
 <template>
     <ImageHeader :imageUrl="imageUrl" pageName="Set Making"/>
     <SideBar/>
-    <!-- Your main content here -->
     <main>
         <ContentList id="Questions" :content="contentData"/>
         <h1 id="What_is_a_Set">What is a Set?</h1>

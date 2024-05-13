@@ -9,9 +9,9 @@
             You'll also be credited for your contribution.
         </p>
         <div class="credits">
+            <!-- Credits including names and links -->
             <template v-for="(credit, index) in credits">
                 <h2>{{ credit.name }}</h2>
-                <!-- Credit without links -->
                 <template v-for="(person, i) in credit.creditee" :key="i">
                     <a :href="person.url" target="_blank">{{ person.name || person }}</a>
                     <br>
