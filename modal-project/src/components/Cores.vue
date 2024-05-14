@@ -10,9 +10,9 @@
         This toxic mix of Loomians that do well for their roles resulted in a change of Baffle’s effect and Magmadire-Eruptidon's Soul Burst Move.
     </p>
     <!--Entire Box that contains controls for different Cores-->
-    <div class="box">
+    <div class="OuterBox">
         <!--Buttons for each Core Type-->
-        <div class="selection">
+        <div class="ButtonArray">
             <button v-for="(Type, Index) in CoreTypes" 
             :key="Index" 
             @click="SwitchTabs(Type.Name)">
@@ -20,7 +20,7 @@
             </button>
         </div>
         <!--Sections for each Core Type-->
-        <div class="description" 
+        <div class="DescriptionBox Cores" 
         v-for="(coreType, Index) in CoreTypes"
         :style="{ display: coreType.Name === CoreTypes[0].Name ? 'block' : 'none' }"
         :id="coreType.Name"
@@ -30,7 +30,7 @@
             <template v-for="(Core, coreIndex) in coreType.Cores" 
             :key="coreIndex">
                 <!--Name of Core-->
-                <button class="coreButton" 
+                <button class="ToggleButton" 
                 @click="toggleAnswer(Core.Name)">
                 {{ Core.Name }}
                 </button>
@@ -345,7 +345,7 @@
         methods: {
             SwitchTabs(Name) {
                 var i, tabcontent
-                tabcontent = document.getElementsByClassName("description")
+                tabcontent = document.getElementsByClassName("Cores")
 
                 // For all the description boxes, make them all invisible
                 for (i = 0; i < tabcontent.length; i++) {

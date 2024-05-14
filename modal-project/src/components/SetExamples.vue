@@ -18,6 +18,7 @@
             <template v-for="(Text, Index) in Rally.Description" :key="Index">
                 <template v-if="isImagePath(Text)">
                     <img class="image" :src="Text">
+                    <br>
                 </template>
                 <template v-else-if="Text == '<br>'">
                     <br>
