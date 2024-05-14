@@ -2,7 +2,7 @@
     <table>
         <div class="gallery" v-for="(resource, index) in resources" :key="index">
             <a target="_blank" :href="resource.link">
-                <div class="image" :alt="resource.imageAlt" :style="{ backgroundImage: 'url(' + resource.image + ')' }"></div>
+                <div class="thumbnail" :alt="resource.imageAlt" :style="{ backgroundImage: 'url(' + resource.image + ')' }"></div>
                 <div class="caption">
                     <p class="desc">{{ resource.name }} by {{ resource.creator }}</p>
                 </div>
@@ -104,7 +104,6 @@ table {
     margin: auto;
     border: 2px black solid;
     border-radius: 5px;
-    /*width: calc(4*294px);  each resource is 280px*/
     align-content: center;
 }
 
@@ -129,7 +128,7 @@ table {
     color: black;
 }
 
-.image {
+.thumbnail {
     height: 160px;
     background-size: cover;
     background-position: center;

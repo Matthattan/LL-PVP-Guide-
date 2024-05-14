@@ -5,15 +5,15 @@
         Giving these moves to your Loomians can give a big advantage in battle so it’s worth learning the different techniques of teaching Rally Moves to your Loomians. 
         There are 3 main ways to use Rally Ranch to put a move on a Loomian: 
     </p>
-    <div class="box">
-        <div class="selection">
+    <div class="OuterBox">
+        <div class="ButtonArray">
             <button v-for="(Rally, Index) in Items" 
             :key="Index" 
             @click="SwitchTabs(Rally.Name)">
             {{ Rally.Name }}
         </button>
         </div>
-        <div class="description"
+        <div class="DescriptionBox RallyMoves"
         :style="{ display: Rally.Name === Items[0].Name ? 'block' : 'none' }"
         v-for="(Rally, Index) in Items" 
         :key="Index" 
@@ -21,7 +21,7 @@
             <h2>{{ Rally.Name }}</h2>
             <div v-for="(Text, Index) in Rally.Description" :key="Index">
                 <template v-if="isImagePath(Text)">
-                    <img :src="Text">
+                    <img class="Diagram" :src="Text">
                 </template>
                 <template v-else>
                     <p>{{ Text }}</p>
@@ -78,12 +78,12 @@
         },
         methods: {
             SwitchTabs(Name) {
-                var i, tabcontent
-                tabcontent = document.getElementsByClassName("description")
+                var i, RallyMovesContent
+                RallyMovesContent = document.getElementsByClassName("RallyMoves")
 
                 // For all the description boxes, make them all invisible
-                for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
+                for (i = 0; i < RallyMovesContent.length; i++) {
+                    RallyMovesContent[i].style.display = "none";
                 }
 
                 // Now get the element that the user selected and make that visible
@@ -117,7 +117,7 @@
         padding: 0px 2% 5px;
     }
 
-    img {
+    .Diagram {
         display: grid;
         margin: auto;
         width: 60%;

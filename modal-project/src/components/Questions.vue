@@ -135,43 +135,43 @@ export default {
 };
 </script>
 <style scoped>
-a {
-  text-decoration: none !important;
-  color: black;
-}
+    a {
+    text-decoration: none !important;
+    color: black;
+    }
 
-.container {
-  width: 100%;
-  min-width: 280px;
-}
+    .container {
+    width: 100%;
+    min-width: 280px;
+    }
 
-.question {
-  width: inherit;
-  background-color: #004691;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-bottom: 10px;
-  font-size: 1em;
-  text-align: left;
-}
+    .question {
+    width: inherit;
+    background-color: #004691;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 1em;
+    text-align: left;
+    }
 
-#text {
-  width: 100%;
-}
+    #text {
+    width: 100%;
+    }
 
-.answer {
-  white-space: pre-wrap;
-  margin-bottom: 1rem;
-}
+    .answer {
+    white-space: pre-wrap;
+    margin-bottom: 1rem;
+    }
 
-img {
-  display: block;
-  margin: auto;
-  border-radius: 25px;
-  width: 60%;
-  min-width: 280px;
-}
+    img {
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+    width: 60%;
+    min-width: 280px;
+    }
 </style>

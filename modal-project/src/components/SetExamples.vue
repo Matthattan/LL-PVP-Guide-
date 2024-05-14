@@ -17,7 +17,7 @@
             <h2>{{ Rally.Name }}</h2>
             <template v-for="(Text, Index) in Rally.Description" :key="Index">
                 <template v-if="isImagePath(Text)">
-                    <img :src="Text">
+                    <img class="image" :src="Text">
                 </template>
                 <template v-else-if="Text == '<br>'">
                     <br>
@@ -151,7 +151,7 @@
         margin-top: 20px;
         background-color: #0057b4;
         border-radius: 25px;
-        min-width: 290px;
+        min-width: 280px;
     }
 
     .selection {
@@ -169,12 +169,12 @@
         padding: 5px 2%;
     }
 
-    img {
+    .image {
         display: grid;
         margin: auto;
         max-width: 800px;
         width: 60%;
         min-width: 260px;
-        border-radius: 25px;
+        border-radius: 10px;
     }
 </style>

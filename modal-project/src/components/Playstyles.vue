@@ -4,14 +4,14 @@
     <p>A Playstyle - colloquially known as a Team Archetype, is the general strategy when using a team. Some Play Styles that you may see in the competitive scene include:
     </p>
     <template v-for="(playstyle, index) in Playstyles" :key="index">
-        <button @click="toggleAnswer(index)">{{ playstyle.name }}</button>
+        <button class="ToggleButton" @click="toggleAnswer(index)">{{ playstyle.name }}</button>
         <div class="answer" v-if="playstyle.showDescription">
             {{ playstyle.desc }}
-            <div class="team">
-                <table>
+            <div class="TeamContainer">
+                <table class="Team">
                     <tr>
                         <td v-for="loomian in playstyle.team"> 
-                            <img :alt="loomian.imageAlt" :src="loomian.image">
+                            <img class="LoomianSprite" :alt="loomian.imageAlt" :src="loomian.image">
                         </td>
                     </tr>
                 </table>
@@ -121,40 +121,25 @@
     }
 </script>
 <style scoped>
-    table {
+    .TeamContainer {
+        overflow-x: auto;
+    }
+
+    .Team {
         margin: auto;
         margin-bottom: 1rem;
-        border: 1px solid #000000;
         background-color: #0057b4;
         border: 1px solid #000000;
     }
 
-    td {
+    .Team tr td {
         width: auto;
         padding: 0;
         background-color: rgb(68, 127, 196);
         border: 1px solid #000000;
     }
 
-    td img {
+    .LoomianSprite {
         width: 6rem;
-    }
-
-    button {
-        width: 100%;
-        background-color: #004691;
-        color: #fff;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        margin: auto;
-        margin-bottom: 10px;
-        font-size: 18px;
-        text-align: left;
-    }
-
-    .team {
-        overflow-x: auto;
     }
 </style>
