@@ -4,20 +4,20 @@
     As hinted at previously, there are several items used to change what stats a Rallied Loomian appears with. 
     There are 3 categories of items, each with different uses in different contexts:
 </p>
-<div class="boxRallyItem">
-    <div class="selectionRallyItem">
+<div class="OuterBox">
+    <div class="ButtonArray">
         <button v-for="(rallyItem, index) in RallyItems" 
                 @click="SwitchTabs(rallyItem.Name)"
                 :key="index">
             {{ rallyItem.Name }}
         </button>
     </div>
-    <div class="descriptionRallyItem"
-         v-for="(rallyItem, index) in RallyItems" 
-         :key="index" 
-         :id="rallyItem.Name"
-         :style="{ display: rallyItem.Name === RallyItems[0].Name ? 'block' : 'none' }">
-         <h2>{{ rallyItem.Name }}</h2>
+    <div class="DescriptionBox RallyItems"
+        v-for="(rallyItem, index) in RallyItems" 
+        :key="index" 
+        :id="rallyItem.Name"
+        :style="{ display: rallyItem.Name === RallyItems[0].Name ? 'block' : 'none' }">
+        <h2>{{ rallyItem.Name }}</h2>
         <table>
             <tr>
                 <th>Image</th>
@@ -27,7 +27,7 @@
             </tr>
             <tr v-for="(item, itemIndex) in rallyItem.Items" :key="itemIndex">
                 <td>
-                    <img :src="item.Image" :alt="item.Name">
+                    <img class="Sprite" :src="item.Image" :alt="item.Name">
                 </td>
                 <td>{{ item.Name }}</td>
                 <td>{{ item.Description }}</td>
@@ -125,12 +125,13 @@
         },
         methods: {
             SwitchTabs(Name) {
-                var i, tabcontent
-                tabcontent = document.getElementsByClassName("descriptionRallyItem")
+                var i, RallyItemsContent
+                // second class name used to not not mix up the universal class names on exclusive components
+                RallyItemsContent = document.getElementsByClassName("RallyItems")
 
                 // For all the description boxes, make them all invisible
-                for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
+                for (i = 0; i < RallyItemsContent.length; i++) {
+                    RallyItemsContent[i].style.display = "none";
                 }
 
                 // Now get the element that the user selected and make that visible
@@ -139,62 +140,3 @@
         }
     }
 </script>
-<style scoped>
-    .boxRallyItem {
-        margin-top: 20px;
-        background-color: #0057b4;
-        border-radius: 25px;
-    }
-
-    .selectionRallyItem {
-        padding: 10px 10px;
-        background-color: azure;
-        border-radius: 25px 25px 0px 0px;
-    }
-
-    .selectionRallyItem button {
-        margin: 5px;
-    }
-
-    .descriptionRallyItem {
-        display: none;
-        padding: 10px;
-        overflow-x: auto;
-    }
-
-    table tr td img {
-        display: grid;
-        margin: auto;
-        width: auto;
-        border-radius: 25px;
-    }
-
-    table {
-        min-width: 360px;
-        width: auto;
-        padding: 5px;
-    }
-
-    td, th {
-        border: 1px solid #000000;
-        text-align: left;
-    }
-
-    button {
-        font-family: 'Russo One', sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        color: black;
-        margin: 5px;
-    }
-
-    button :hover {
-        background-color: rgb(148, 147, 147);
-        border-radius: 25px;
-        border: none;
-        outline: none;
-        padding: 10px;
-        transition: 0.3s;
-    }
-
-</style>
