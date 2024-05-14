@@ -5,10 +5,10 @@
         Furthermore, a Loomian may serve as multiple roles however this isn’t always the case due to Limited Moves and TPs.
     </p>
     <template v-for="(item, index) in Roles" :key="index">
-        <button @click="toggleAnswer(index)">{{ item.name }}</button>
+        <button class="ToggleButton" @click="toggleAnswer(index)">{{ item.name }}</button>
         <div class="answer" v-if="item.showDescription">
             {{ item.desc }}
-            <table>
+            <table class="RoleExamples">
                 <tr>
                     <td v-for="loomian in item.loomian"> 
                         <img :alt="loomian.imageAlt" :src="loomian.image">

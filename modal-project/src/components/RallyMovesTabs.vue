@@ -22,9 +22,10 @@
             <div v-for="(Text, Index) in Rally.Description" :key="Index">
                 <template v-if="isImagePath(Text)">
                     <img class="Diagram" :src="Text">
+                    <br>
                 </template>
                 <template v-else>
-                    <p>{{ Text }}</p>
+                    <p style="max-width: 1000px; margin: auto;">{{ Text }}</p>
                 </template>
             </div>   
         </div>

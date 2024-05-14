@@ -1,23 +1,30 @@
 <template>
     <h1 id="Questions">Questions</h1>
-    Click to reveal answers!
-    <div v-for="(question, index) in questions" :key="index" class="container">
-        <button @click="toggleAnswer(index)" class="question">{{ question.question }}</button>
+    Click to reveal answers
+    <br>
+    <br>
+    <template v-for="(question, index) in questions" :key="index" class="container">
+        <button @click="toggleAnswer(index)" class="ToggleButton">{{ question.question }}</button>
         <div class="answer" v-if="question.showAnswer"> 
             <!-- Render SelectText component if the answer is 'SelectText', otherwise render the answer text -->
             <template v-if="question.answer === 'SelectText'">
+                <!--Damage Calc Component-->
                 <SelectText/>
             </template>
             <template v-else 
             v-for="(answer, index) in question.answer" 
             :key="index">
+                <!--Normal Text-->
                 <p v-if="!answer.text">{{ answer }}</p>
-                <a v-else :href="answer.url" target="_blank"> {{answer.text}}</a>
+                <a v-else :href="answer.url" target="_blank">{{answer.text}}</a>
+                <br>
             </template>
             <br>
-            <img v-if="question.image" :src="question.image" :alt="question.imageAlt">
+            <!--Image (If Applicable)-->
+            <img v-if="question.image" :src="question.image" :alt="question.imageAlt" class="ImageDefault">
         </div>
-    </div>
+        <br>
+    </template>
 </template>
 <script>
 import SelectText from './SelectText.vue';
@@ -52,8 +59,8 @@ export default {
             {
             question: `What are Training Points?`,
             answer: [
-                "Training Points (or TPs abbreviated) are values that can increase any of the 7 Loomian Total Stats. At Level 50, 8 TPs can increase the total stat of a Loomian by 1. Energy works in Multiples of 4.",
-                "In total, Loomians can have 500 Training Points but all stats only allow a maximum of 200 TPs.",
+                `Training Points (or TPs abbreviated) are values that can increase any of the 7 Loomian Total Stats. At Level 50, 8 TPs can increase the total stat of a Loomian by 1. Energy works in Multiples of 4.`,
+                `In total, Loomians can have 500 Training Points but all stats only allow a maximum of 200 TPs.`,
                 "TPs can be earned by using Gummies, which offer 10 Points per use; Battling Trainers, whose Loomians will drop certain points and Battling wild Loomians, who will also drop TPs. Many multipliers are available to boost the amount of TPs earned from Loomians either in NPC battles or the wild. This Includes the Protein Shake, 2x Training Points Gamepass and the 5x Training Points Loomiboost.",
                 "TPs can be redistributed on the statistics page of a Loomian either in 1s or 10s. Previously, TP Resets could be purchased in order to remove Training Points however this item has now been retired. "
             ],
@@ -134,44 +141,3 @@ export default {
     }
 };
 </script>
-<style scoped>
-    a {
-    text-decoration: none !important;
-    color: black;
-    }
-
-    .container {
-    width: 100%;
-    min-width: 280px;
-    }
-
-    .question {
-    width: inherit;
-    background-color: #004691;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 10px;
-    font-size: 1em;
-    text-align: left;
-    }
-
-    #text {
-    width: 100%;
-    }
-
-    .answer {
-    white-space: pre-wrap;
-    margin-bottom: 1rem;
-    }
-
-    img {
-    display: block;
-    margin: auto;
-    border-radius: 25px;
-    width: 60%;
-    min-width: 280px;
-    }
-</style>

@@ -24,7 +24,7 @@
         min-width: 280px;
         max-width: auto;
         margin: auto;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
         overflow-x: scroll;
     }
 
@@ -35,8 +35,25 @@
     }
 
     p {
+        margin: auto;
         text-align: left;
         max-width: 1200px;
+        margin-bottom: 1rem;
+    }
+
+    a {
+        text-decoration: none !important;
+        color: black;
+    }
+
+    
+
+    .ImageDefault {
+        display: block;
+        margin: auto;
+        border-radius: 10px;
+        width: 60%;
+        min-width: 280px;
     }
 
     /* For all those boxes with buttons*/
