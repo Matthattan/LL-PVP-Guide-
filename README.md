@@ -1,4 +1,4 @@
-# https://matthattan.github.io/LL-PVP-Guide-/
+# https://matthattan.github.io/LL-PVP-Guide/
 
 ## Currently being rebuilt - will be back very soon!
 
