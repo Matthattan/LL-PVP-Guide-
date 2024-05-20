@@ -73,7 +73,7 @@ export default {
                     title: 'Where can I make Sets?',
                 },
                 {
-                    id: 'How_do_I_make_a_set',
+                    id: 'How_do_I_make_a_Set',
                     title: 'How do I make a set?',
                 },
                 {
