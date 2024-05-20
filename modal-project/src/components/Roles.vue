@@ -8,13 +8,15 @@
         <button class="ToggleButton" @click="toggleAnswer(index)">{{ item.name }}</button>
         <div class="answer" v-if="item.showDescription">
             {{ item.desc }}
-            <table class="RoleExamples">
-                <tr>
-                    <td v-for="loomian in item.loomian"> 
-                        <img :alt="loomian.imageAlt" :src="loomian.image">
-                    </td>
-                </tr>
-            </table>
+            <div class="RoleContainer">
+                <table class="RoleExamples">
+                    <tr>
+                        <td v-for="loomian in item.loomian"> 
+                            <img :alt="loomian.imageAlt" :src="loomian.image">
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </template>
 </template>
@@ -136,6 +138,7 @@
         border: 1px solid #000000;
         background-color: #0057b4;
         margin-bottom: 1rem;
+        overflow-y: scroll;
     }
 
     td {
@@ -161,6 +164,14 @@
         margin-bottom: 10px;
         font-size: 18px;
         text-align: left;
+    }
+
+    .RoleContainer {
+        overflow-x: auto;
+    }
+
+    .RoleContainer { 
+        overflow-x: scroll;
     }
 
 </style>
