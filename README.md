@@ -4,19 +4,17 @@ The Aim of this website is to aid players stepping into Loomian Legacy's Competi
 This website addresses how to Teambuild, build pvp Loomians, understanding cores and the different facilities (both ingame and online) that can help in your journey. 
 
 Pages:
+- Home
 - Common Questions
     - Terminology
-- PVP Items
-    - Colosseum Marketplace
-    - Atlanthian Arcade
-    - Junk 4 Junk
-    - Events
+    - Usage Terms
 - Rally Ranch
     - Rally Items
     - Rally Moves
 - Set Making
-    - Offensive Set Example
-    - Defensive Set Example
+    - Tips
+    - Offensive Set Examples
+    - Defensive Set Examples
 - Teambuilding
     - Playstyles
     - Cores
