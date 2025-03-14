@@ -8,6 +8,7 @@ Pages:
 - Common Questions
     - Terminology
     - Usage Terms
+- Ranked
 - Rally Ranch
     - Rally Items
     - Rally Moves
